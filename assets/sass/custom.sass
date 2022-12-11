@@ -1923,6 +1923,7 @@ nav.docs-nav
 
 .create-contribute-section
    padding: 50px 0px;
+   padding-bottom: 30px;
    h2
     font-family: $font-family-axiforma;
     font-size: 40px;
@@ -1932,13 +1933,15 @@ nav.docs-nav
     text-transform: uppercase;
     margin-bottom: 62px;
     color: $o3de-black;
-  
+    @include media-breakpoint-down(xs)
+      font-size: 30px;
 .contribute--card
   position: relative;
   background: #ffffff;
   border-radius: 10px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
   overflow: hidden;
+  margin-bottom: 20px;
   
   .contribute--card_img
     padding-top: calc(300/538*100%);
@@ -1972,6 +1975,8 @@ nav.docs-nav
 
 .features-section
   padding: 50px 0px;
+  @include media-breakpoint-down(xs)
+    padding: 30px 0px;
   h2
     font-family: $font-family-axiforma;
     font-size: 40px;
@@ -1981,6 +1986,8 @@ nav.docs-nav
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 25px;
+    @include media-breakpoint-down(xs)
+      font-size: 30px;
 
   p
     font-family: $font-family-axiforma;
@@ -1988,11 +1995,15 @@ nav.docs-nav
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 58px;
-
+    @include media-breakpoint-down(xs)
+      margin-bottom: 30px;
   .flex-container
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @include media-breakpoint-down(xs)
+      flex-wrap: wrap;
+      justify-content: center;
 
     .feature-outer
       height: 170px;
@@ -2007,6 +2018,8 @@ nav.docs-nav
       background: #FFFFFF;
       box-shadow: 0px 0px 7.44785px rgba(0, 0, 0, 0.05);
       border-radius: 2.97914px;
+      @include media-breakpoint-down(xs)
+        margin: 15px;
 
       .title-wrap
         padding-top: 27px;
@@ -2027,7 +2040,8 @@ nav.docs-nav
     background: #000;
     padding-right: 20px;
     z-index: 1;
-
+    @include media-breakpoint-down(sm)
+      position: relative;
     p
       text-transform: uppercase;
       color: #FDFDFD;
@@ -2166,3 +2180,71 @@ nav.docs-nav
     line-height: 72px;
     color: #fff;
     letter-spacing: 0.06em;
+.newsletter-section
+  background: #1F1F1F;
+  padding: 33px 0;
+  h4
+    font-family: $font-family-axiforma;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+.footer-black
+  background: #000;
+  .h5-12
+    margin-bottom: 26px;
+    font-family: $font-family-axiforma;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+  .social
+    padding: 0;
+    padding-right: 25px;
+    font-size: 24px;
+    box-shadow: none;
+
+  .footer-links-wrapper
+    margin-bottom: 55px;
+    h5
+      margin-bottom: 26px;
+      font-family: $font-family-axiforma;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 14px;
+
+    a
+      font-family: $font-family-axiforma;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 153%;
+      letter-spacing: 0.02em; 
+      margin-bottom: 10px;
+      color: #fff;
+      display: block;
+  .bottom-text
+    p
+      font-family: $font-family-axiforma;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 19px;
+      a
+        font-family: $font-family-axiforma;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 153%;
+        letter-spacing: 0.02em; 
+        color: #fff;
+    .footer-links
+      display: flex;
+      justify-content: space-between;
+      a
+        font-family: $font-family-axiforma;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 153%;
+        letter-spacing: 0.02em; 
+        color: #fff;   

@@ -1,0 +1,53 @@
+{{ $social := site.Params.social }}
+{{ $home   := site.BaseURL }}
+{{ $title  := site.Title }}
+{{ $logo   := site.Params.logos.footer }}
+
+<footer class="footer text-white footer-black">
+  <div class="container pt-5 pb-5">
+    <div class="row">
+      <div class="col col-12 col-lg-8">
+        <div class="footer-links-wrapper row">
+            <div class="col">
+                <h5>Get Started</h5>
+                <a href="">About O3DE</a>
+                <a href="">Features</a>
+                <a href="">Support Platforms</a>
+                <a href="">Project Creation</a>
+            </div>
+            <div class="col">
+                <h5>Community</h5>
+                <a href="">Showcase</a>
+                <a href="">Blog</a>
+                <a href="">Events</a>
+                <a href="">Meetings Calender</a>
+            </div>
+            <div class="col">
+                <h5>Support</h5>
+                <a href="">Discord</a>
+                <a href="">Forums</a>
+                <a href="">FAQs</a>
+            </div>
+            <div class="col">
+                <h5>Learn</h5>
+                <a href="">Release Notes</a>
+                <a href="">Tutorials & Examples</a>
+                <a href="">User Guide</a>
+                <a href="">All Guides</a>
+            </div>
+        </div>
+      </div>
+      <div class="col col-12 col-lg-4">
+        <div class="float-lg-right">
+            <h5 class="h5-12">Follow</h5>
+            {{ partial "social-buttons.html" . }}
+        </div>
+      </div>
+    </div>
+    <div class="row bottom-text">
+      <div class="col col-12">
+        {{ partial "newHome/footer-content.html" . }}
+      </div>
+    </div>
+  </div>
+</footer>
