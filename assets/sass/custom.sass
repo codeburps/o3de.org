@@ -66,11 +66,24 @@
 
 // Custom
 
+@font-face 
+  font-family: "Axiforma"; 
+  font-weight: 900;
+  font-style: normal;
+  src: url('/fonts/AxiformaBlack.woff2') format('woff2'), url('/fonts/AxiformaBlack.woff') format('woff'); 
+
+@font-face 
+  font-family: "Axiforma"; 
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/AxiformaRegular.woff2') format('woff2'), url('/fonts/AxiformaRegular.woff') format('woff'); 
+   
 
 // Variables 
 
 $font-family-headers: "Open Sans" 
 $font-family-Poppins: "Poppins", sans-serif;
+$font-family-axiforma: "Axiforma", sans-serif;
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-lightgray: #ddd
@@ -729,26 +742,6 @@ $width: '59vw';
       -webkit-transform: translate(-50%, -50%) scale(1.2)
       opacity: 0
 
-.hero-slideshow-foreground
-  color: $o3de-white
-  h1
-    font-size: 3.8rem
-    font-family: $font-family-Poppins
-    font-weight: 800
-    margin-bottom: 30px;
-    @include media-breakpoint-down(md)
-      font-size: 2.2rem
-      
-  h5
-    font-size: 1rem
-    font-family: $font-family-Poppins
-    font-weight: 900;
-    letter-spacing: 0.2em;
-
-  p
-   font-family: $font-family-Poppins
-   font-weight: 500;
-   letter-spacing: 1px;
 
 
 // layouts/partial/download/hero.html
@@ -1790,14 +1783,326 @@ nav.docs-nav
     position: absolute
     padding-bottom: 7px;
 
+.hero-banner-secton
+  height: calc(100vh - 80px);
+  position: relative;
   .vertical-text
     writing-mode: vertical-lr;
-    color: #fff
-    font-family: $font-family-Poppins
+    color: #fff;
+    font-family: $font-family-Poppins;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
-    position: absolute
-    right: 30px
-    top: 50%
-    transform: translateY(-50%)  
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    z-index: 4;
+    transform: translateY(-50%) 
+
+  .banner_content
+    position: relative;
+    height: 100%;
+    background: #000;
+    .banner-slider
+      height: 100%;
+      width: 100%;
+      .swiper-slide
+        position: relative;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        video
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          
+        .hero-slideshow-foreground
+          color: $o3de-white
+          h1
+            font-size: 3.8rem
+            font-family: $font-family-Poppins
+            font-weight: 800
+            margin-bottom: 30px;
+            @include media-breakpoint-down(md)
+              font-size: 2.2rem
+              
+          h5
+            font-size: 1rem
+            font-family: $font-family-Poppins
+            font-weight: 900;
+            letter-spacing: 0.2em;
+
+          p
+          font-family: $font-family-Poppins
+          font-weight: 500;
+          letter-spacing: 1px;
+
+
+      .container
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+
+        .progress-track
+          border-top: 1px solid #fff;
+          display: flex;
+          justify-content: space-between;
+          .swiper-nav-wrapper
+            padding-top: 24px;
+            margin-bottom: 43px;
+            position: relative;
+            display: flex;
+            .slide-nav
+              width: 30px;
+              height: 28px;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &.swiper-next
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+              &.swiper-prev
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+
+          ul
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            li
+              padding-top: 30px;
+              margin-right: 45px;
+              color: #fff ;
+              position: relative;
+              &.active
+                &:after
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  height: 2px;
+                  left: 0;
+                  width: 100%;
+                  background: $o3de-aqua;
+
+
+
+
+
+    
+ 
+
+
+
+
+
+ 
+
+.create-contribute-section
+   padding: 50px 0px;
+   h2
+    font-family: $font-family-axiforma;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 140%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 62px;
+    color: $o3de-black;
+  
+.contribute--card
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+  
+  .contribute--card_img
+    padding-top: calc(300/538*100%);
+    height: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  .contribute--card_text
+    padding:  29px 32px;
+    h3
+      margin-bottom: 35px; 
+      font-family: $font-family-axiforma;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1.4;
+      letter-spacing: 0.06em;
+      color: $o3de-black;
+
+    a
+      text-transform: uppercase;
+      font-family: $font-family-axiforma;
+      font-weight: 950;
+      font-size: 14px;
+      line-height: 1;
+      text-decoration: none;
+      color: $o3de-aqua;  
+      margin-bottom: 20px;
+
+
+
+
+.features-section
+  padding: 50px 0px;
+  h2
+    font-family: $font-family-axiforma;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+  p
+    font-family: $font-family-axiforma;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 58px;
+
+  .flex-container
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .feature-outer
+      height: 170px;
+      width: 130px;
+      display: flex;
+      padding: 18px 20px;
+      padding-bottom: 0px;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 7.44785px rgba(0, 0, 0, 0.05);
+      border-radius: 2.97914px;
+
+      .title-wrap
+        padding-top: 27px;
+        padding-bottom: 18px;
+
+.news-updates
+  background: #000000;
+  padding: 20px 0px;
+  position: relative;
+
+  .container
+    position: relative;
+
+  .flase
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    padding-right: 20px;
+    z-index: 1;
+
+    p
+      text-transform: uppercase;
+      color: #FDFDFD;
+      font-family: $font-family-axiforma;
+      font-size: 14px;
+      font-weight: 950;
+      line-height: 100%;
+      letter-spacing: 0.2em;
+
+  marquee 
+    font-family: $font-family-axiforma;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #FDFDFD;
+
+.community-secion
+  padding: 50px 0px;
+  h2
+    font-family: $font-family-axiforma;
+    font-size: 40px;
+    font-weight: 950;
+    line-height: 140%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 62px;
+    color: $o3de-black;
+  
+  .community--card
+    position: relative;
+    overflow: hidden;
+    a
+      &:hover
+        .community--card_img
+          scale: 1.2;
+
+      .community--card_img
+        transition: 600ms ease;
+        height: 500px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative
+      
+        &:after
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background: #000;
+          opacity: 0.25;
+        span
+          position: absolute;
+          left: 23px;
+          top: 28px;
+          color: #fff;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.1em;
+          z-index: 1
+
+
+      .community--card_text
+        padding: 30px 30px 36px 30px;
+        background: rgba(63, 60, 255, 0.98);
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        &.aqua
+          background: #0CB9BE;
+
+        h3
+          font-family: $font-family-axiforma;
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 50px;
+          margin-bottom: 14px;
+          color: $o3de-white;
+        .flex-spacebetween
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+        p
+          width: 90%;
+          font-family: $font-family-axiforma;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: $o3de-white;
+          letter-spacing: 0.1em;  

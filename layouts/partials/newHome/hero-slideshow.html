@@ -1,0 +1,60 @@
+{{ $title := site.Title }}
+{{ $desc  := site.Params.description | markdownify }}
+
+<section class="hero-banner-secton">
+  <div class="banner_content">
+    <!-- Slider main container -->
+    <div class="swiper banner-slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <video class="" type="video/mp4"
+          muted  autoplay="true" loop="true" poster="/video/poster.jpg" 
+          src="/video/Website Banner_Full Test_o2gd.mp4" preload="auto" >
+         </video>
+
+          <div class="container hero-slideshow-foreground">
+            <div class="row">
+              <div class="col col-12 col-md-6 pb-4 pt-4">
+                  <h1 class="title">
+                    Open source, <br>real-time 3D <br>engine
+                  </h1>
+                  <p class="buttons">
+                    <a href="/download" class="mt-4 btn btn-lg download-cta">GET THE LATEST VERSION</a>
+                    <a href="/docs" class="mt-4 btn btn-lg border-cta">Learn</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+       
+      </div>
+      <div class="container">
+        <div class="progress-track">
+          <ul>
+            <li class="active">Showcase</li>
+            <li>Community</li>
+          </ul>
+          <div class="swiper-nav-wrapper">
+            <div class="slide-nav swiper-prev">
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.26807 0.864014L1.13184 5.00006L5.26807 9.13605" stroke="black"/>
+                </svg>                
+            </div>
+            <div class="slide-nav swiper-next">
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.13184 0.864014L5.26807 5.00006L1.13184 9.13605" stroke="black"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+    </div>
+    <p class="vertical-text">Open up — Level up</p>  
+  </div>
+</section>
