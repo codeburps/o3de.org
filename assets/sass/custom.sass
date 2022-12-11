@@ -1820,7 +1820,15 @@ nav.docs-nav
           object-fit: cover;
           
         .hero-slideshow-foreground
-          color: $o3de-white
+          color: $o3de-white;
+          top: 42%;
+          transform: translate(-50%, -50%);
+          .subtitle
+            font-family: $font-family-Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0.2em;
           h1
             font-size: 3.8rem
             font-family: $font-family-Poppins
@@ -1864,6 +1872,8 @@ nav.docs-nav
               display: flex;
               justify-content: center;
               align-items: center;
+              &.swiper-button-disabled
+                opacity: 0.5
               &.swiper-next
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;

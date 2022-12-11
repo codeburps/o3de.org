@@ -317,3 +317,17 @@ $(function()
   }
   
 });
+
+// Updated home slider
+$(function(){
+  if($(".hero-banner-secton").length >0 ){
+    const swiper = new Swiper('.banner-slider', {
+      speed: 400,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.slide-nav.swiper-next',
+        prevEl: '.slide-nav.swiper-prev',
+      },
+    });
+  }
+});
