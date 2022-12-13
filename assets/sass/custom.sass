@@ -2248,3 +2248,97 @@ nav.docs-nav
         line-height: 153%;
         letter-spacing: 0.02em; 
         color: #fff;   
+
+.gallery-section
+  margin: 50px 0;
+  .gallery-slider
+    .swiper-slide
+      height: 100vh;
+      padding-top: 52px;
+      padding-bottom: 52px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      
+      &::after
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        background-color: rgba(0, 0, 0,0.35 );
+      
+      .slide-content
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
+        h5
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          font-family: $font-family-axiforma;
+          font-size: 14px;
+          font-weight: 800;
+          line-height: 17px;
+          color: #fff;
+
+        p.h1
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-family: $font-family-axiforma;
+          font-size: 40px;
+          line-height: 46px;
+          letter-spacing: 0.1em;
+          font-weight: 400;
+          color: #fff;
+          strong
+            font-weight: 800;
+
+    .pagination-section
+      padding-bottom: 76px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      z-index: 2;
+      a
+        margin-bottom: 40px;
+      
+      .swiper-pagination  
+        position: relative
+        span.swiper-pagination-bullet
+          width: 69px;
+          height: 4px;
+          background: #fff;
+          border-radius: 2px;
+    
+    .slide-nav 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 4;
+      transform: translate(-50% , -50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 6;
+      .swiper-button svg g
+        opacity: 1;
+      .swiper-button.swiper-button-disabled svg g
+        opacity: 0.35;  
+      
+       
+
+      
+
+
+
