@@ -304,9 +304,10 @@ code
 // layouts/partials/navbar.html 
 
 .main-navbar 
-  background-color: rgba(0, 0, 0, 0.9)
+  background-color: #fff;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
-  padding-bottom: 3px;
+  padding-bottom: 18px;
+  padding-top: 18px;
 
 .navbar-collapse
   @include media-breakpoint-down(md)
@@ -328,16 +329,28 @@ code
     background-color: #222
 
 .new-nav.navbar-dark .navbar-nav .navbar-item
-  &:last-child
-    margin-left: 25px
-    border: 1px solid $o3de-white
+  // &:last-child
+    // margin-left: 25px
+    // border: 1px solid $o3de-white
+    // border-radius: 4px;
+    // .nav-link
+      // padding-right: 1.2rem;
+      // padding-left: 1.2rem;
+.discord
+  padding-right: 40px;
+.download
+  padding-right: 25px;
+  a.aqua-cta
     border-radius: 4px;
-    .nav-link
-      padding-right: 1.2rem;
-      padding-left: 1.2rem;
-
+    background: $o3de-aqua;
+    color: #000;
+    padding: 9px 15px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
 .navbar-dark .navbar-nav .nav-link
-  color: $o3de-white 
+  color: $o3de-black 
   font-size: .9rem
   line-height: 1
   font-family: $font-family-Poppins

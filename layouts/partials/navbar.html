@@ -57,18 +57,19 @@
 {{ else }}
   <div class="new-nav main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
     <div class="container-fluid d-flex flex-row justify-content-between">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="{{ $home }}">
-            {{ if $logo }}
-            {{ $url := printf "img/logos/%s" $logo | relURL }}
-              <img src="{{ $url }}" class="navbar-logo">
-            {{ else }}
-            {{ $title }}
-            {{ end }}
-          </a>
-        </div>
+      <div class="d-flex flex-row align-items-center">  
+          <div class="navbar-brand">
+              <a class="navbar-item" href="{{ $home }}">
+                {{ if $logo }}
+                {{ $url := printf "img/logos/%s" $logo | relURL }}
+                  <img src="{{ $url }}" class="navbar-logo">
+                {{ else }}
+                {{ $title }}
+                {{ end }}
+              </a>
+            </div>
 
-        <div class="d-flex flex-row align-items-center">
+        
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -76,7 +77,14 @@
           <div class="collapse navbar-collapse" id="main-nav">
             {{ partial "menu-loop.html" . }}
           </div>  
-      
+        </div>  
+          <div class="d-flex flex-row align-items-center">
+          <div class="discord">
+            {{ partial "newHome/discord.html" . }}
+          </div>
+          <div class="download">
+            <a href="/download" class="nav-link navbar-item aqua-cta">Download</a>
+          </div>
           <div class="search">
             {{ partial "search.html" . }}
           </div>

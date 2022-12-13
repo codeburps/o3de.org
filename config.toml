@@ -35,7 +35,7 @@ versions = [
 ]
 
 [params.logos]
-navbar = "O3DE-Logo-with-color-white.svg"
+navbar = "O3DE-Logo-with-color-black.svg"
 footer = "O3DE-Logo-REV-Mono.svg"
 og_image = "O3DE-Circle-Icon.png"
 docs_footer = "O3DE-Logo-with-color.svg"
@@ -80,10 +80,10 @@ name = "Open Sans"
 sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
-[[menu.main]]
-name = "DOWNLOAD"
-url = "/download"
-weight = 5
+# [[menu.main]]
+# name = "DOWNLOAD"
+# url = "/download"
+# weight = 5
 
 # [[menu.main]]
 # name = "News"
@@ -104,13 +104,13 @@ identifier = "community"
 # [[menu.main]]
 # name = "Community subitem placeholder"
 # url = "#"
-# weight = 5 
+# weight = 3 
 # parent = "community"
 
 [[menu.main]]
 name = "LEARN"
 url = "/docs"
-weight = 3
+weight = 4
 identifier = "docs"
 
 [[menu.main]]
