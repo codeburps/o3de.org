@@ -1808,10 +1808,10 @@ nav.docs-nav
   .vertical-text
     writing-mode: vertical-lr;
     color: #fff;
-    font-family: $font-family-Poppins;
+    font-family: $font-family-axiforma;
     font-weight: 700;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 16.9px;
     position: absolute;
     right: 30px;
     top: 50%;
@@ -1830,6 +1830,15 @@ nav.docs-nav
         height: 100%;
         background-position: center;
         background-size: cover;
+        &::after
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba(0,0 ,0 ,0.3 ) 
+          height: 100%;
+          width: 100%;
+          z-index: 0;
         video
           position: absolute;
           top: 0;
@@ -1839,31 +1848,33 @@ nav.docs-nav
           object-fit: cover;
           
         .hero-slideshow-foreground
+          z-index: 1;
           color: $o3de-white;
           top: 42%;
           transform: translate(-50%, -50%);
           .subtitle
-            font-family: $font-family-Poppins;
+            font-family: $font-family-axiforma;
             font-weight: 400;
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0.2em;
           h1
-            font-size: 3.8rem
-            font-family: $font-family-Poppins
-            font-weight: 800
+            font-size: 66px;
+            font-family: $font-family-axiforma;
+            font-weight: 900;
+            line-height: 110%;
             margin-bottom: 30px;
             @include media-breakpoint-down(md)
               font-size: 2.2rem
               
           h5
             font-size: 1rem
-            font-family: $font-family-Poppins
+            font-family: $font-family-axiforma;
             font-weight: 900;
             letter-spacing: 0.2em;
 
           p
-          font-family: $font-family-Poppins
+          font-family: $font-family-axiforma;
           font-weight: 500;
           letter-spacing: 1px;
 
@@ -1911,6 +1922,12 @@ nav.docs-nav
               margin-right: 45px;
               color: #fff ;
               position: relative;
+              font-family: $font-family-axiforma;
+              font-weight: 800;
+              font-size: 14px;
+              line-height: 1;
+              letter-spacing: 0.1em;
+
               &.active
                 &:after
                   content: '';
@@ -2047,7 +2064,7 @@ nav.docs-nav
     position: relative;
 
   .flase
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     background: #000;
@@ -2064,13 +2081,14 @@ nav.docs-nav
       line-height: 100%;
       letter-spacing: 0.2em;
 
-  marquee 
+  p 
     font-family: $font-family-axiforma;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.05em;
     color: #FDFDFD;
+    margin: 0;
 
 .community-secion
   padding: 50px 0px;
