@@ -1,0 +1,85 @@
+{{ $home   := site.BaseURL }}
+{{ $here   := .RelPermalink }}
+{{ $main   := site.Menus.main }}
+
+<ul class="mr-auto navbar-nav new-menu">
+  {{ with $main }}
+  {{ range . }}
+  {{ $isHere := eq .URL $here }}
+  <li class="
+  navbar-start 
+  {{ if $isHere }} is-active{{ end }}
+  navbar-item">
+  <a href="{{ .URL }}"
+  class="
+    nav-link 
+    navbar-item
+    {{ if $isHere }} is-active{{ end }}" 
+    {{if .HasChildren }}
+      role="button" 
+      data-toggle="dropdown" 
+      aria-haspopup="true" 
+      aria-expanded="false"
+      {{ end }} >
+    <span>{{ .Name }}</span>
+    
+  </a>
+  <div>
+    {{ if (eq .Name "GET STARTED") }}
+      {{ partial "newHome/megaMenu/get-started.html" . }}
+    {{ else if (eq .Name "ABOUT") }}  
+      {{ partial "newHome/megaMenu/about.html" . }}
+    {{ else if (eq .Name "COMMUNITY") }}  
+      {{ partial "newHome/megaMenu/community.html" . }}
+    {{end}}
+
+
+    
+  </div>  
+ 
+</li>
+{{ end }}
+{{ end }}
+
+    <!-- {{ with $main }}
+      {{ range . }}
+        {{ $isHere := eq .URL $here }}
+        <li class="
+          navbar-start 
+          navbar-item
+          {{ if $isHere }} is-active{{ end }}
+          {{ if .HasChildren }} dropdown {{ end }}">
+          <a href="{{ .URL }}" {{ if eq .Post "external" }} target="_blank"  {{ end }}
+          class="
+            nav-link 
+            navbar-item
+            {{ if $isHere }} is-active{{ end }} 
+            {{ if .HasChildren }} dropdown-toggle {{ end }}" 
+            {{if .HasChildren }}
+              id="navbarDropdown" 
+              role="button" 
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false"
+            {{ end }}>
+            {{ .Name }}
+          </a>
+          <div>
+            {{ partial "newHome/megaMenu/get-started.html" . }} 
+          </div>
+    
+          {{ if .HasChildren }}
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              {{ range .Children }}
+                <a class="dropdown-item bg-dark text-white" 
+                href="{{ .URL }}" 
+                {{ if eq .Post "external" }} target="_blank" {{ end }}>
+                  {{ .Name }}
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
+        </li>
+      {{ end }}
+    {{ end }} -->
+    </ul>

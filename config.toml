@@ -93,6 +93,12 @@ type = "heading_font"
 [[menu.main]]
 name = "GET STARTED"
 url = "/docs/welcome-guide"
+weight = 3
+identifier = "getstarted"
+
+[[menu.main]]
+name = "ABOUT"
+url = "#"
 weight = 1
 
 [[menu.main]]
@@ -108,12 +114,12 @@ identifier = "community"
 # parent = "community"
 
 [[menu.main]]
-name = "LEARN"
+name = "RESOURCES"
 url = "/docs"
 weight = 4
 identifier = "docs"
 
-[[menu.main]]
-name = "CONTRIBUTE"
-url = "/contribute"
-weight = 4
+#[[menu.main]]
+#name = "CONTRIBUTE"
+#url = "/contribute"
+#weight = 4

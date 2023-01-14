@@ -15,6 +15,33 @@ $(() => {
 
 
 // active nav bar link
+$(() => {
+  
+
+  $('.navbar-start').on({
+    mousemove: (e) => {
+       
+        let $this = $(e.currentTarget);
+        console.log();
+        // let title = $this.find('> a').attr('title');
+
+        if(!e.currentTarget.activeTimeout){
+          $this.addClass("is-open");
+        } 
+       
+    },
+    mouseleave: (e) => {
+        let $this = $(e.currentTarget);
+
+        $this.removeClass('is-open');
+        e.currentTarget.activeTimeout = true;
+        setTimeout(()=>{
+            e.currentTarget.activeTimeout = false;
+        
+        },650)
+    }
+});
+});
 
 $(() => {
   const url = window.location.pathname;
