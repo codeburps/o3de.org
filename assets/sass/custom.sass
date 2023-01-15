@@ -65,6 +65,12 @@
 
 
 // Custom
+@font-face 
+  font-family: "icomoon"; 
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src: url('/fonts/icomoon.woff2') format('woff2'), url('/fonts/icomoon.woff') format('woff'); 
 
 @font-face 
   font-family: "Axiforma"; 
@@ -104,7 +110,56 @@ $o3de-green: #58BD61
 $o3de-purple: #700AC7
 $o3de-aqua: #0AC1C7
 
+// Icomoon styles
 
+[class^="icon-"], [class*=" icon-"] 
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+.icon-coc:before 
+  content: "\e909";
+
+.icon-values:before 
+  content: "\e906";
+
+.icon-staff:before 
+  content: "\e904";
+
+.icon-guidelines:before 
+  content: "\e903";
+
+.icon-calendae:before 
+  content: "\e900";
+
+.icon-discord:before 
+  content: "\e901";
+  color: #5865f2;
+
+.icon-github:before 
+  content: "\e902";
+
+.icon-spotify:before 
+  content: "\e905";
+  color: #1ed760;
+
+.icon-store:before 
+  content: "\e907";
+
+.icon-twitter:before 
+  content: "\e908";
+  color: #1da1f2;
+
+.icon-youtube:before 
+  content: "\e90a";
+  color: #ea3323;
+  
 // layouts/section-nav.html typography
 
 .docs-content
@@ -2465,6 +2520,7 @@ nav.docs-nav
         .columns-one
           .main-menu-item
             margin-left: 20px;
+            margin-bottom: 20px;
             .main-menu-item__link
               display: block;
               img
@@ -2531,19 +2587,27 @@ nav.docs-nav
                 line-height: 8px;
                 margin-bottom: 5px;
                 margin-top: auto;
+          ul.menu-social 
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            display: block;
+        
   
-
-
-            
-
           ul
             display: flex;
-            margin-top: 26px;
+            margin-top: 2px;
+            margin-bottom: 10px
             flex-direction: column;
             li
               a
                 padding: 0;
                 margin-bottom: 18px;
+                display: flex;
+                align-items: center;
+                span
+                  margin-right: 16px;
+
 
 
   .lf-menu-title 
@@ -2585,6 +2649,12 @@ nav.docs-nav
   .navbar-nav .nav-link
     padding-top: 31px;
     padding-bottom: 31px;
+  .navbar-nav li.active
+    &:hover 
+      .nav-link.active
+        color: $o3de-black
+      div
+        background-color: #fff
 
        
 
