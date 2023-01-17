@@ -1,0 +1,71 @@
+{{ define "main" }}
+<section class="new-banner key-feature-page">
+  <div class="container">
+    <div class="row">
+      <div class="col col-7">
+        <h1 class="title mb-5">
+          {{ .Title }}
+        </h1>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features-list">
+  <div class="container br-b">
+    <div class="row">
+      <div class="col col-6">
+        <h2>FAMILIAR<br> BUILD SYSTEM</h2>
+      </div>
+      <div class="col col-6">
+        <ul>
+          <li>Create build files, manage dependencies, test, and automate code generation using CMake</li>
+          <li>Projects are created for, and built with, your native IDE and toolchain</li>
+          <li>Proper dependency trees for build targets are created and maintained, keeping the build targets clean</li>
+          <li>Robust support for creating and running automated tests</li>
+          <li>Use debugging and profiling tools, such as Edit and Continue, when supported by compiler tools</li>
+        </ul>
+        <p>
+          <a href="docs/user-guide/build/" class="mt-4 btn black-border border-cta">SEE DOCUMENTATION</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container br-b">
+    <div class="row">
+      <div class="col col-6">
+        <h2>PHYSICALLY BASED <br>PHOTOREALISTIC <br>
+          RENDERER</h2>
+      </div>
+      <div class="col col-6">
+        <p>Create content using the latest multi-threaded, data-driven rendering technology that supports modern rendering pipelines.</p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=GTJ_ie7yHdI&list=PLCQwFpnHSZQgr8Qfq-gNv3AcZ8VLv9d5s&index=7" target="_blank" class="mt-4 btn black-border border-cta">GET OVERVIEW</a>
+          <a href="/docs/atom-guide/" class="mt-4 btn black-border border-cta">SEE DOCUMENTATION</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container br-b">
+    <div class="row">
+      <div class="col col-6">
+        <h2>FLEXIBLE RUNTIME <br>LOGIC CREATION</h2>
+      </div>
+      <div class="col col-6">
+        <ul>
+          <li>Build runtime logic using your choice of scripting environments—a visual scripting tool called Script Canvas, a more traditional scripting model, Lua, or both</li>
+          <li>Create scripts as flow graphs, no programming required, and experiment and iterate quickly, with an easy yet powerful entry point for new developers using Script Canvas</li>
+          <li>Use the editor of your choice through support for Lua, a well-established scripting language</li>
+        </ul>
+        <p>
+          <a href="/docs/user-guide/scripting/" class="mt-4 btn black-border border-cta">SEE DOCUMENTATION</a>
+          <a href="https://www.youtube.com/watch?v=fTNcUV4zAgE&list=PLCQwFpnHSZQgr8Qfq-gNv3AcZ8VLv9d5s&index=11" class="mt-4 btn black-border border-cta">GET SCRIPT CANVAS OVERVIEW</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "newHome/newsletter.html" . }}
+{{ partial "newHome/footer.html" . }}
+{{ end }}

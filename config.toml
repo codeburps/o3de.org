@@ -98,7 +98,7 @@ identifier = "getstarted"
 
 [[menu.main]]
 name = "ABOUT"
-url = "#"
+url = "/about"
 weight = 1
 
 [[menu.main]]
