@@ -1,3 +1,11 @@
+{{ $social := site.Params.social }}
+{{ $discord   := site.Params.socialmedia.discord }}
+{{ $twitter   := site.Params.socialmedia.twitter }}
+{{ $youtube   := site.Params.socialmedia.youtube }}
+{{ $github   := site.Params.socialmedia.github }}
+{{ $calendar   := site.Params.socialmedia.calendar }}
+
+
 <div class="sub-menu">
   <div class="col-container">
     <div class="col1">
@@ -116,19 +124,23 @@
           <ul class="menu-social menu">
             <li
               class="menu-item">
-              <a href="#"><span class="icon-discord"></span> Discord</a>
+              {{ $discord := printf $discord | relURL }}
+              <a href="{{ $discord }}"><span class="icon-discord"></span> Discord</a>
             </li>
             <li
               class="menu-item">
-              <a href="#"><span class="icon-github"></span> Github</a>
+              {{ $github := printf $github | relURL }}
+              <a href="{{ $github }}"><span class="icon-github"></span> Github</a>
             </li>
             <li
               class="menu-item">
-              <a href="#"><span class="icon-twitter"></span> Twitter</a>
+              {{ $twitter := printf $twitter | relURL }}
+              <a href="{{ $twitter }}"><span class="icon-twitter"></span> Twitter</a>
             </li>
             <li
               class="menu-item">
-              <a href="#"><span class="icon-youtube"></span> YouTube</a>
+              {{ $youtube := printf $youtube | relURL }}
+              <a href="{{ $youtube }}"><span class="icon-youtube"></span> YouTube</a>
             </li>
             <li
             class="menu-item">
@@ -146,7 +158,9 @@
         <ul  class="menu">
           <li
             class="menu-item">
-            <a href="#"><span class="icon-calendae"></span> Calendar</a>
+            
+            {{ $calendar := printf $calendar | relURL }}
+            <a href="{{ $calendar }}"><span class="icon-calendae"></span> Calendar</a>
           </li>
           <li
             class="menu-item">
