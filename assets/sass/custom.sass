@@ -89,14 +89,24 @@
   font-weight: 500;
   font-style: normal;
   src: url('/fonts/AxiformaRegular.woff2') format('woff2'), url('/fonts/AxiformaRegular.woff') format('woff'); 
-   
+
+@font-face 
+  font-family: "Clarity City";
+  font-weight: 700;
+  src: url('/fonts/ClarityCity-700.woff2') format('woff2');
+
+@font-face 
+  font-family: "Clarity City";
+  font-weight: 400;
+  src: url('/fonts/ClarityCity-400.woff2') format('woff2');    
+     
 
 // Variables 
 
 $font-family-headers: "Open Sans" 
 $font-family-Poppins: "Poppins", sans-serif;
 $font-family-axiforma: "Axiforma", sans-serif;
-$font-family-clarity-city: "Clarity City","Poppins", sans-serif;
+$font-family-clarity-city: "Clarity City", sans-serif;
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-lightgray: #ddd
@@ -2706,7 +2716,117 @@ nav.docs-nav
 
       
 
-       
+.brandguideline-page
+  .new-banner 
+    padding-top: 76px;  
+    padding-bottom: 55px;    
+    .title
+      font-family: $font-family-axiforma;
+      font-weight: 900;
+      margin-bottom: 0;
+  .article-area  
+    .sticky 
+      display: flex;
+      // flex-direction: column;
+      flex-direction: row;
+      &_column 
+        max-width: 330px;
+        min-width: 330px;
+        width: 330px;
+        margin-right: 50px;
+        .sticky__element
+          width: 330px
+          max-width: 100%
+          .is-style-spaced-uppercase
+            font-size: 16px;
+            font-family: $font-family-clarity-city;
+            font-weight: 700;
+            letter-spacing: .2em;
+            line-height: 125%;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            margin-top: 10px
+          .sticky__nav-wrapper 
+            .sticky__nav 
+              list-style-type: none;
+              margin: 0px;
+              padding-right: 15px;
+              padding-left: 0;
+              &-item
+                margin-left: 0;
+                padding-bottom: 9px;
+                padding-top: 9px;
+                a
+                  background-color: transparent;
+                  border-left: 4px solid transparent;
+                  display: block;
+                  color: $o3de-aqua;
+                  padding: 6px 10px 6px 20px;
+                  &:hover 
+                    border-left: 4px solid #000;
+                    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1); 
+                  &.is-active
+                    border-left: 4px solid #000;
+                    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1); 
+
+
+
+      &_content 
+        max-width: 800px;  
+        .tab-container-block
+          margin-bottom: 67px;
+          padding-bottom: 37px;
+          border-bottom: 1px solid #000
+          h2
+            font-family: $font-family-axiforma;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 150%;
+            margin-bottom: 33px;
+          
+          p
+            font-family: $font-family-clarity-city;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 170%;
+            a
+              color: $o3de-aqua
+              text-decoration: none
+
+          .is-layout-flex 
+            display: flex;  
+            box-sizing: border-box;
+            flex-wrap: wrap!important;
+            align-items: normal!important; 
+            gap: 0 30px;
+            padding-bottom: 70px;
+            border-bottom: 1px solid rgba(0,0,0, 0.25);
+            margin-bottom: 47px;
+            .is-layout-flow
+              flex-basis: 0;
+              flex-grow: 1;
+              min-width: 0;
+              word-break: break-word;
+              overflow-wrap: break-word;
+
+              h3
+                font-family: $font-family-axiforma;  
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 125%;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                margin-bottom: 38px;
+              p
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 170%
+
+
+
+
 
       
 
