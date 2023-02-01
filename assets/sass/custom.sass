@@ -2810,7 +2810,9 @@ nav.docs-nav
               min-width: 0;
               word-break: break-word;
               overflow-wrap: break-word;
-
+              &:first-child
+                flex-basis: 308px;
+                flex-grow: initial;
               h3
                 font-family: $font-family-axiforma;  
                 font-weight: 700;
@@ -2823,6 +2825,9 @@ nav.docs-nav
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 170%
+
+              figure
+                text-align: right;  
 
 
 
