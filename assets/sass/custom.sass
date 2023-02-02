@@ -133,6 +133,81 @@ $o3de-aqua: #0AC1C7
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+.icon-box .path1:before 
+  content: "\e900";
+  color: rgb(211, 187, 93);
+
+.icon-box .path2:before 
+  content: "\e90b";
+  margin-left: -0.9130859375em;
+  color: rgb(185, 152, 21);
+
+.icon-box .path3:before 
+  content: "\e90c";
+  margin-left: -0.9130859375em;
+  color: rgb(185, 152, 21);
+
+.icon-box .path4:before 
+  content: "\e90d";
+  margin-left: -0.9130859375em;
+  color: rgb(185, 152, 21);
+
+.icon-box .path5:before 
+  content: "\e90e";
+  margin-left: -0.9130859375em;
+  color: rgb(185, 152, 21);
+
+.icon-notes:before 
+  content: "\e90f";
+
+.icon-question .path1:before 
+  content: "\e910";
+  color: rgb(41, 100, 180);
+  opacity: 0.3;
+
+.icon-question .path2:before 
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(41, 100, 180);
+  opacity: 0.3;
+
+.icon-question .path3:before 
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+
+.icon-question .path4:before 
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+
+.icon-forum .path1:before 
+  content: "\e914";
+  color: rgb(0, 0, 0);
+
+.icon-forum .path2:before 
+  content: "\e915";
+  margin-left: -1.130859375em;
+  color: rgb(10, 193, 199);
+
+.icon-arrow:before 
+  content: "\e916";
+
+.icon-calender .path1:before 
+  content: "\e917";
+  color: rgb(240, 105, 93);
+
+.icon-calender .path2:before 
+  content: "\e918";
+  margin-left: -0.900390625em;
+  color: rgb(0, 0, 0);
+
+.icon-linkedin:before 
+  content: "\e919";
+  color: #0077b7;
+
 .icon-coc:before 
   content: "\e909";
 
@@ -144,9 +219,6 @@ $o3de-aqua: #0AC1C7
 
 .icon-guidelines:before 
   content: "\e903";
-
-.icon-calendae:before 
-  content: "\e900";
 
 .icon-discord:before 
   content: "\e901";
@@ -169,7 +241,7 @@ $o3de-aqua: #0AC1C7
 .icon-youtube:before 
   content: "\e90a";
   color: #ea3323;
-  
+
 // layouts/section-nav.html typography
 
 .docs-content
@@ -372,8 +444,7 @@ code
 .main-navbar 
   background-color: #fff;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
-  padding-bottom: 18px;
-  padding-top: 18px;
+
 
 .navbar-collapse
   @include media-breakpoint-down(md)
@@ -408,7 +479,7 @@ code
     line-height: 17px;
     text-transform: uppercase;
 .navbar-dark .navbar-nav .nav-link
-  color: $o3de-black 
+  color: $o3de-white 
   font-size: .9rem
   line-height: 1
   font-family: $font-family-Poppins
@@ -428,14 +499,21 @@ code
     width: 100%;
     z-index: 4
   &:hover 
-    color: #000;
+    color: #ddd;
+    opacity: 0.7;
     span:after
       background-color: #000;
       
 
     // color: $o3de-white 
     // opacity: 0.7
-
+.new-nav.navbar-dark .navbar-nav .nav-link
+  color: $o3de-black 
+  &:hover 
+    color: #000;
+    opacity: 1;
+    span:after
+      background-color: #000;
 
 .navbar-docs .navbar-nav .nav-link
   text-transform: uppercase
@@ -2453,6 +2531,21 @@ nav.docs-nav
         opacity: 0.35;  
 
 .new-menu
+  .navbar-start
+    &:nth-child(1)
+      .nav-link:hover span:after 
+        background-color: $o3de-aqua;  
+    &:nth-child(2)
+      .nav-link:hover span:after 
+        background-color: #2964B4;
+    &:nth-child(3)
+      .nav-link:hover span:after 
+        background-color: #F0695D; 
+    &:nth-child(4)
+      .nav-link:hover span:after 
+        background-color: #8122D2;              
+        
+
   .is-open
     .sub-menu
       height: unset;
@@ -2501,10 +2594,13 @@ nav.docs-nav
         padding-left: 0;
         list-style: none;
         margin-left: 0;
+        li
+          display: block;
 
       .columns-one
         grid-row-gap: 16px;
         max-width: 400px;  
+        margin-top: 10px;
       .col1 
         grid-column: span 8;
         padding-bottom: 50px;
@@ -2515,8 +2611,8 @@ nav.docs-nav
           font-weight: 800;
           font-size: 36px;
           line-height: 120%;
-          margin-bottom: 17px;
-          margin-top: 32px;
+          margin-bottom: 18px;
+          margin-top: 70px;
         p
           font-family: $font-family-axiforma;
           font-weight: 500;
@@ -2539,7 +2635,7 @@ nav.docs-nav
         .columns-one
           .main-menu-item
             margin-left: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 35px;
             .main-menu-item__link
               display: block;
               img
@@ -2594,8 +2690,9 @@ nav.docs-nav
                 overflow: hidden;
                 a 
                   color: #000;
-                  font-size: 10px;
+                  font-size: 15px;
                   line-height: 1.5;
+                  font-family: $font-family-axiforma;
                   font-weight: 700;
 
               .main-menu-item__date 
@@ -2607,10 +2704,12 @@ nav.docs-nav
                 margin-bottom: 5px;
                 margin-top: auto;
           ul.menu-social 
-            columns: 2;
-            -webkit-columns: 2;
-            -moz-columns: 2;
+            // columns: 2;
+            // -webkit-columns: 2;
+            // -moz-columns: 2;
             display: block;
+            li
+              display: block
         
   
           ul
@@ -2624,8 +2723,9 @@ nav.docs-nav
                 margin-bottom: 18px;
                 display: flex;
                 align-items: center;
-                span
+                > span
                   margin-right: 16px;
+
 
 
 
@@ -2646,10 +2746,8 @@ nav.docs-nav
     font-size: 16px;
     font-weight: 700;
     line-height: 130%;
-    margin-bottom: 6px;
-    padding-bottom: 11px;
     letter-spacing: 0.1px;
-    padding-top: 11px;
+    padding: 10px 0;
     // text-transform: uppercase;
     text-decoration: none; 
     

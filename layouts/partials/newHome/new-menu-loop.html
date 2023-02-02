@@ -31,6 +31,9 @@
       {{ partial "newHome/megaMenu/about.html" . }}
     {{ else if (eq .Name "COMMUNITY") }}  
       {{ partial "newHome/megaMenu/community.html" . }}
+    {{ else if (eq .Name "RESOURCES") }}  
+      {{ partial "newHome/megaMenu/resources.html" . }}  
+      
     {{end}}
 
 
