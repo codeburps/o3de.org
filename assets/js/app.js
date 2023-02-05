@@ -13,10 +13,31 @@ $(() => {
   navbarBurger();
 });
 
+const newnavBurger = () => {
+  const newMenu = $(".new-nav");
+   let hamburger = newMenu.find(".navbar-toggler");
+   hamburger.click((e) => {
+    e.preventDefault();
+    let $this = $(e.currentTarget);
+    $('.menu-wrapper').toggleClass('is-active');
+    $this.find('.navbar-toggler-icon').toggleClass('is-active');
+    $('html').toggleClass('has-menu-active');
+   });
+   let dropclick = $('.drop-click');
+   dropclick.click((e)=> {
+    let $this = $(e.currentTarget);
+    $this.toggleClass('is-open');
+    $this.parents('.navbar-start').find('.sub-menu').slideToggle();
+
+   });
+}
 
 // active nav bar link
 $(() => {
-  
+
+  if($('.main-navbar').hasClass("new-nav")){
+    newnavBurger();
+  }
 
   $('.navbar-start').on({
     mousemove: (e) => {

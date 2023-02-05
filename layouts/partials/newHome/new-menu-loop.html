@@ -22,8 +22,8 @@
       aria-expanded="false"
       {{ end }} >
     <span>{{ .Name }}</span>
-    
   </a>
+  <i class="icon-d-arrow drop-click"></i>
   <div>
     {{ if (eq .Name "GET STARTED") }}
       {{ partial "newHome/megaMenu/get-started.html" . }}
