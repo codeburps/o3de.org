@@ -1,12 +1,36 @@
-<form id="search"
-    action="/search" method="get" class="d-flex align-items-center justify-content-center pl-2">
-    <div class="search-input-view hide-content">
-        <label hidden for="search-input">Search site</label>
-        <input type="text" id="search-input" class="form-control form-control-sm" name="query"
-        placeholder="Search site">
-    </div> 
-
-    <div class="pt-2">
-        <input type="image" src="/img/home/Search_dark.svg" alt="submit" value="search" id="nav-search">
+<div class="nav-search">
+<a href="" class="search-icon">
+    <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.945">
+        <path opacity="0.945" fill-rule="evenodd" clip-rule="evenodd" d="M11.4261 4.00488C7.46497 4.00488 4.29688 7.16933 4.29688 11.0201C4.29688 14.8708 7.46497 18.0353 11.4261 18.0353C15.3873 18.0353 18.5554 14.8708 18.5554 11.0201C18.5554 7.16933 15.3873 4.00488 11.4261 4.00488ZM0.296875 11.0201C0.296875 4.91292 5.3034 0.00488281 11.4261 0.00488281C17.5489 0.00488281 22.5554 4.91292 22.5554 11.0201C22.5554 17.1272 17.5489 22.0353 11.4261 22.0353C5.3034 22.0353 0.296875 17.1272 0.296875 11.0201Z" fill="black"/>
+        <path opacity="0.945" fill-rule="evenodd" clip-rule="evenodd" d="M25.6965 26.4231L15.9951 16.843L18.8057 13.9968L28.5071 23.577L25.6965 26.4231Z" fill="black"/>
+        </g>
+        </svg>
+</a>
+<div class="search-drop">
+    <div class="container justify-content-end">
+        <form id="search"
+            action="/search" method="get" class="d-flex align-items-center justify-content-center pl-2">
+            <div class="search-input-view">
+                <label hidden for="search-input">Search site</label>
+                <input type="text" id="search-input" class="form-control form-control-sm" name="query"
+                placeholder="Search site">
+            </div> 
+        
+            <div class="">
+                <button type="submit" id="nav-search"> Search</button>
+                <!-- <input type="image" src="/img/home/Search_dark.svg" alt="submit" value="search" > -->
+            </div>
+        </form>
+        <span class="close-popup">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="22.4689" y1="1.68667" x2="3.01379" y2="21.1418" stroke="white" stroke-width="4"/>
+                <line x1="21.5858" y1="21.1418" x2="2.13068" y2="1.68664" stroke="white" stroke-width="4"/>
+            </svg>                        
+        </span>
     </div>
-</form>
+
+</div>
+
+</div>
+

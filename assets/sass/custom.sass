@@ -70,7 +70,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-  src: url('/fonts/icomoon.woff2') format('woff2'), url('/fonts/icomoon.woff') format('woff'); 
+  src: url('/fonts/icomoon.woff') format('woff'); 
 
 @font-face 
   font-family: "Axiforma"; 
@@ -82,7 +82,13 @@
   font-family: "Axiforma"; 
   font-weight: 700;
   font-style: normal;
-  src: url('/fonts/AxiformaBold.woff2') format('woff2'), url('/fonts/AxiformaBold.woff') format('woff');     
+  src: url('/fonts/AxiformaBold.woff2') format('woff2'), url('/fonts/AxiformaBold.woff') format('woff'); 
+
+@font-face 
+  font-family: "Axiforma"; 
+  font-weight: 800;
+  font-style: normal;
+  src: url('/fonts/AxiformaExtraBold.woff2') format('woff2'), url('/fonts/AxiformaExtraBold.woff') format('woff');         
 
 @font-face 
   font-family: "Axiforma"; 
@@ -132,6 +138,10 @@ $o3de-aqua: #0AC1C7
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+.icon-arrow-go:before 
+  content: "\e91c";
+  color: #0ac1c7;
 
 .icon-d-arrow:before 
   content: "\e91a";
@@ -229,7 +239,8 @@ $o3de-aqua: #0AC1C7
 
 .icon-github:before 
   content: "\e902";
-
+.icon-search:before 
+  content: "\e91b";
 .icon-spotify:before 
   content: "\e905";
   color: #1ed760;
@@ -588,6 +599,53 @@ code
 
 
 // layouts/partials/navbar.html secondary
+.social-wrapper
+  .search
+    height: 100%
+    display: flex
+    .nav-search
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      a
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+
+      .search-drop
+        display: none
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        padding: 21px 0;
+        form
+          input
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #fff
+            border-radius: 0
+            color: #fff;
+          button
+            margin-left: 40px !important;
+            border: 1px solid #FFFFFF;
+            border-radius: 4px;
+            height: 32px;
+            text-transform: uppercase
+            font-family: $font-family-axiforma
+            font-weight: 800
+            color: #fff
+            padding: 9px 25px;
+            font-size: 14px
+            line-height: 1
+            background: #000
+            box-shadow: none
+        .close-popup
+          margin-left: 40px;
+          cursor: pointer
 
 .navbar-docs
   ul
@@ -827,14 +885,14 @@ $width: '59vw';
     background-color: darken(#58BD61, 10%)
 
 .btn
-  border-radius: 20px;
+  border-radius: 4px;
 .download-cta 
   background-color: $o3de-aqua
   font-size: .9rem
   line-height: 1
   font-family: $font-family-axiforma
   font-weight: 700
-  padding: 12px 18px;
+  padding: 10px 18px;
   color: $o3de-black
   letter-spacing: 1.4px;
   transition: 300ms
@@ -1965,6 +2023,52 @@ nav.docs-nav
   padding-top: 0;
   padding-bottom: 0;
 
+// new style updates
+body.new-look
+  background: #FCFCFC;  
+  
+  hr.white-hr
+    border-color: rgba(255,255,255,0.4)
+
+  .banenr-feature-wrap
+    display: flex;
+    padding-right: 36px
+    padding-bottom: 58px
+    padding-top: 46px
+    align-items: flex-start
+    .feature-icon
+      width: 32px
+      height: 32px
+      margin-right: 25px
+    .feature-desc
+      p
+        font-size: 0.9rem
+        font-family: $font-family-axiforma;
+        line-height: 1.4
+        letter-spacing: 0.05em;
+        color: #fff
+        strong
+          font-weight: 700
+
+  .line-separator 
+    margin: 50px auto;
+    border-bottom: 1px solid rgba(0, 0, 0,0.5 );
+
+  .btn.btn-underline
+    font-family: $font-family-axiforma;
+    line-height: 1.05
+    font-size: 0.875rem
+    font-weight: 800
+    text-align: center
+    color: #000
+    text-transform: uppercase
+    border: none
+    border-radius: 0
+    padding-left: 0
+    padding-right: 0
+    border-bottom: 2px solid $o3de-aqua
+    box-shadow: none
+
 .home-page
   a.top-banner
     position: absolute
@@ -2117,11 +2221,16 @@ nav.docs-nav
 
 
 
- 
+.flex-bottom
+  display: flex;
+  align-items: flex-end; 
 
 .create-contribute-section
    padding: 50px 0px;
-   padding-bottom: 30px;
+   padding-bottom: 70px;
+   .mb-64
+    margin-bottom: 62px;
+
    h2
     font-family: $font-family-axiforma;
     font-size: 40px;
@@ -2129,7 +2238,8 @@ nav.docs-nav
     line-height: 140%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 62px;
+    margin-bottom: 0;
+  
     color: $o3de-black;
     @include media-breakpoint-down(xs)
       font-size: 30px;
@@ -2152,7 +2262,7 @@ nav.docs-nav
     h3
       margin-bottom: 35px; 
       font-family: $font-family-axiforma;
-      font-weight: 900;
+      font-weight: 800;
       font-size: 32px;
       line-height: 1.4;
       letter-spacing: 0.06em;
@@ -2162,10 +2272,12 @@ nav.docs-nav
       text-transform: uppercase;
       font-family: $font-family-axiforma;
       font-weight: 950;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 1;
       text-decoration: none;
-      color: $o3de-aqua;  
+      color: #000;  
+      letter-spacing: 0.1em;
+      margin-right: 10px;
       margin-bottom: 20px;
 
 
@@ -2175,15 +2287,16 @@ nav.docs-nav
   padding: 50px 0px;
   @include media-breakpoint-down(xs)
     padding: 30px 0px;
+  .mb-45
+    margin-bottom: 25px  
   h2
     font-family: $font-family-axiforma;
     font-size: 40px;
     font-weight: 900;
     line-height: 140%;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
     @include media-breakpoint-down(xs)
       font-size: 30px;
 
@@ -2192,9 +2305,6 @@ nav.docs-nav
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
-    margin-bottom: 58px;
-    @include media-breakpoint-down(xs)
-      margin-bottom: 30px;
   .flex-container
     display: flex;
     width: 100%;
@@ -2204,14 +2314,11 @@ nav.docs-nav
       justify-content: center;
 
     .feature-outer
-      height: 170px;
-      width: 130px;
+      height: 200px;
+      width: 150px;
       display: flex;
       padding: 18px 20px;
-      padding-bottom: 0px;
-      text-align: center;
       flex-direction: column;
-      align-items: center;
       justify-content: space-between;
       background: #FFFFFF;
       box-shadow: 0px 0px 7.44785px rgba(0, 0, 0, 0.05);
@@ -2220,8 +2327,11 @@ nav.docs-nav
         margin: 15px;
 
       .title-wrap
-        padding-top: 27px;
-        padding-bottom: 18px;
+        font-family: $font-family-axiforma;
+        font-weight: 800
+        font-size: 20px
+        line-height: 1.3
+
 
 .news-updates
   background: #000000;
@@ -2273,91 +2383,126 @@ nav.docs-nav
   .community--card
     position: relative;
     overflow: hidden;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
     a
       &:hover
         .community--card_img
           scale: 1.2;
-
-      .community--card_img
-        transition: 600ms ease;
-        height: 500px;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        position: relative
+      .community--card_img-wrapper
+        overflow: hidden;
+        .community--card_img
+          transition: 600ms ease;
+          padding-top: calc(240/379*100%);
+          background-position: center;
+          background-size: cover;
+          position: relative
       
-        &:after
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0;
-          height: 100%;
-          width: 100%;
-          background: #000;
-          opacity: 0.25;
-        span
-          position: absolute;
-          left: 23px;
-          top: 28px;
-          color: #fff;
-          font-size: 14px;
-          line-height: 17px;
-          letter-spacing: 0.1em;
-          z-index: 1
-
-
       .community--card_text
-        padding: 30px 30px 36px 30px;
-        background: rgba(63, 60, 255, 0.98);
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        &.aqua
-          background: #0CB9BE;
+        padding: 29px 21px;
+        // background: rgba(63, 60, 255, 0.98);
+        // position: absolute;
+        // width: 100%;
+        // bottom: 0;
+        span
+          font-family: $font-family-axiforma;
+          font-size: 0.75rem;
+          font-weight: 950;
+          line-height: 1;
+          color: #000
+          letter-spacing: 0.2em
+          text-transform: uppercase
+          margin-bottom: 17px
+          display: block
+        
 
         h3
           font-family: $font-family-axiforma;
-          font-size: 36px;
-          font-weight: 500;
-          line-height: 50px;
-          margin-bottom: 14px;
-          color: $o3de-white;
-        .flex-spacebetween
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
+          font-size: 1.75rem;
+          font-weight: 800;
+          line-height: 1.4;
+          margin-bottom: 30px;
+          color: #000;
+        
         p
-          width: 90%;
           font-family: $font-family-axiforma;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 17px;
-          color: $o3de-white;
+          font-weight: 800;
+          font-size: 0.75rem;
+          line-height: 1;
+          color: #8F8F8F;
           letter-spacing: 0.1em;  
 
 .members-section
   padding: 63px 0;
+  .mb-80
+    margin-bottom: 80px;
   h2
     font-family: $font-family-axiforma;
     font-size: 40px;
     font-weight: 950;
-    line-height: 1.4;
+    line-height: 140%;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    color: $o3de-black;
+  p
+    font-family: $font-family-axiforma;
+    font-weight: 500
+    font-size: 0.875rem
+    line-height: 1.5
 
-  .border-cta-black
-    color: #000;
-    border-color: #000;
+
+  .member-slider
+    padding-bottom: 50px;
+    .member-slider_paginations
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 40px;
+      transform: translateX(-50%);
+      left: 50%;
+      .swiper-pagination
+        top: 50%
+        transform: translateY(-50%)
+        bottom: auto
+        .swiper-pagination-bullet
+          width: 10px
+          height: 10px
+          background: #D9D9D9
+          opacity: 1
+          margin: 0 5px 
+          &.swiper-pagination-bullet-active
+            background: #000
+      .swiper-button-next, .swiper-button-prev
+        color: #0AC1C7;
+        &::after
+          font-size: 24px
+    .swiper-slide
+      text-align: center;  
+      h6
+        font-family: $font-family-axiforma;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+        color: #8f8f8f;
+        letter-spacing: 0.2em;
+      .logo-row
+        display: flex;
+        flex-wrap: wrap;  
+        align-items: center
+        justify-content: center
+        .logo-col
+          width: 25%;
+          margin-bottom: 60px;
+
+
   
-  ul
-    margin: 0;
-    margin-top: 80px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  
+  
 
 .getstarted-secion
   background: #000;
@@ -2573,6 +2718,7 @@ nav.docs-nav
     visibility: hidden;
     width: 100%;
     z-index: 3;
+    transition: opacity .45s ease;
     &:before
       background: linear-gradient(180deg,rgba(0,0,0,.1),transparent);
       content: "";

@@ -104,13 +104,25 @@ $(function() {
 // nav bar search
 
 $(() => {
-  $("#search").submit(function(event){
-    if($(".search-input-view").is(":hidden"))
-    {
-      event.preventDefault();
-      $(".search-input-view").show();
+  $(".search-icon").on('click', (e) => {
+    e.preventDefault();
+    if($(".search-drop").is(":hidden")){
+      $(".search-drop").slideDown();
     }
   });
+  $('.close-popup').on('click', (e) => {
+    e.preventDefault();
+    $(".search-drop").slideUp();
+    
+  });
+ 
+  // $("#search").submit(function(event){
+  //   if($(".search-input-view").is(":hidden"))
+  //   {
+  //     event.preventDefault();
+  //     $(".search-input-view").show();
+  //   }
+  // });
 });
 
 // --- Downloads page
@@ -378,6 +390,23 @@ $(function(){
       },
     });
   }
+  if($(".member-slider").length >0 ){
+    const swiper = new Swiper('.member-slider', {
+      speed: 400,
+      spaceBetween: 30,
+      loop: true,
+      autoHeight: true,
+      pagination: {
+        el: '.member-slider .swiper-pagination',
+        type: 'bullets',
+      },
+      navigation: {
+        nextEl: '.member-slider .swiper-button-next',
+        prevEl: '.member-slider .swiper-button-prev',
+      },
+    });
+  }
+
   if($(".gallery-section").length >0 ){
     const swiper = new Swiper('.gallery-slider', {
       speed: 400,

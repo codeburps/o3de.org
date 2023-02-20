@@ -1,4 +1,5 @@
 {{ $lang := site.LanguageCode }}
+{{ $IsDocs := in .RelPermalink "/docs/" }}
 <!DOCTYPE html>
 <html{{ with $lang }} lang="{{ . }}"{{ end }}>
   <head>
@@ -23,7 +24,7 @@
     {{ partial "meta-tags.html" . }}
   </head>
   {{ partial "javascript.html" }}
-    <body class="{{if .IsHome -}}home-page{{- end }}">
+    <body class="{{if .IsHome -}}home-page{{- end }} {{if not ($IsDocs) -}}new-look {{- end }}">
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8476P6"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
