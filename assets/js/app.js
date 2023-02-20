@@ -390,6 +390,16 @@ $(function(){
       },
     });
   }
+  if($(".industry-slider").length >0 ){
+    const swiper = new Swiper('.industry-slider', {
+      speed: 400,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  }
+  
   if($(".member-slider").length >0 ){
     const swiper = new Swiper('.member-slider', {
       speed: 400,
