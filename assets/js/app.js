@@ -391,12 +391,17 @@ $(function(){
     });
   }
   if($(".industry-slider").length >0 ){
-    const swiper = new Swiper('.industry-slider', {
+    const swiperIndustry = new Swiper('.industry-slider', {
       speed: 400,
       spaceBetween: 30,
       autoplay: {
         delay: 3000,
       },
+    });
+    $("ul.industry-list li").on('click', (e)=>{
+     let $this = e.currentTarget;
+      let index = $this.getAttribute("data-industry");
+      swiperIndustry.slideToLoop(index)
     });
   }
   
