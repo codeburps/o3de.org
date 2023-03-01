@@ -451,15 +451,8 @@ $(function(){
   if($(".gallery-section").length >0 ){
     const swiper = new Swiper('.gallery-slider', {
       speed: 400,
-      spaceBetween: 0,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
-      navigation: {
-        nextEl: '.swiper-button.next',
-        prevEl: '.swiper-button.prev',
-      },
+      spaceBetween: 32,
+      slidesPerView: 'auto'
     });
   }
 });

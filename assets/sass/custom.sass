@@ -2392,6 +2392,10 @@ body.new-look
         &:last-of-type
           margin-right: 15px
       &:hover
+        .card-feature
+          opacity: 0
+          transform: translateY(-50%)
+          transition: 300ms ease
         .hover-card
           transform: translateY(0)
           opacity: 1
@@ -2442,8 +2446,11 @@ body.new-look
         height: 100%
         padding: 18px 20px;
         flex-direction: column;
+        transition: 300ms ease
         justify-content: space-between;
         background: #FFFFFF;
+        opacity: 1
+        transform: translateY(0)
         @include media-breakpoint-down(md)
           padding: 10px 12px 24px;
           flex: 0 0 135px;
@@ -2718,25 +2725,52 @@ body.new-look
 
 .gallery-section
   margin: 50px 0;
+  .mb-80
+    margin-bottom: 80px
+  h2
+    font-family: $font-family-axiforma;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 140%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    // margin-bottom: 25px;
+    @include media-breakpoint-down(xs)
+      font-size: 30px;
+  p
+    font-family: $font-family-axiforma;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;    
+
+
   .gallery-slider
     .swiper-slide
-      height: 100vh;
-      padding-top: 52px;
-      padding-bottom: 52px;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      
-      &::after
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 0;
-        background-color: rgba(0, 0, 0,0.35 );
-      
+      // height: 100vh;
+      // padding-top: 52px;
+      // padding-bottom: 52px;
+      // background-position: center;
+      // background-size: cover;
+      // position: relative;
+      max-width: 788px;
+      .gallery-card
+        img
+          height: 500px
+          object-fit: cover
+          border-radius: 4px
+        .gallery-content
+          h4
+            margin-top: 24px
+            font-size: 1.75rem
+            font-family: $font-family-axiforma;
+            line-height: 40px
+            font-weight: 950
+          p
+            font-size: 0.875rem
+            font-family: $font-family-axiforma;
+            line-height: 20px  
+            color: #727070
+
       .slide-content
         text-align: center;
         position: relative;
