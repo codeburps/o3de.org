@@ -2393,8 +2393,8 @@ body.new-look
           margin-right: 15px
       &:hover
         .card-feature
-          opacity: 0
-          transform: translateY(-50%)
+          // opacity: 0
+          transform: translateY(-100%)
           transition: 300ms ease
         .hover-card
           transform: translateY(0)
@@ -2408,12 +2408,11 @@ body.new-look
         padding: 20px 15px
         top: 0
         left: 0
-        transition: 300ms opacity ease
+        transition: 300ms ease
         display: flex
         justify-content: space-between
         flex-direction: column
-        opacity: 0
-        transform: translateY(50%);
+        transform: translateY(100%);
         div
           height: calc(100% - 13px)
           display: flex
@@ -2889,7 +2888,7 @@ body.new-look
       grid-column-gap: 1.5%;
       grid-row-gap: 30px;
       display: grid;
-      grid-template-columns: repeat(24,1fr);
+      grid-template-columns: repeat(12,1fr);
       margin: auto;
       max-width: 1200px;
       opacity: 1;
@@ -2904,13 +2903,17 @@ body.new-look
         margin-left: 0;
         li
           display: block;
+          a 
+            i
+              font-size: 10px
+              margin-left: 5px
 
       .columns-one
         grid-row-gap: 16px;
         max-width: 400px;  
         margin-top: 10px;
       .col1 
-        grid-column: span 8;
+        grid-column: span 4;
         padding-bottom: 50px;
         padding-right: 50px;
         h3
@@ -2930,14 +2933,14 @@ body.new-look
           color: #000000;
 
       .col2
-        grid-column: span 7;
+        grid-column: span 4;
         padding-bottom: 50px;
         padding-right: 40px;
       .col3
         background: rgba(241, 241, 241, 0.25);
         background: linear-gradient(90deg,#fcfcfc 25%,hsla(0,0%,100%,0));
         border-left: 1px solid #d0d0d0;
-        grid-column: span 9;
+        grid-column: span 4;
         padding-bottom: 50px;
         padding-left: 30px; 
         .columns-one
@@ -3055,7 +3058,7 @@ body.new-look
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0.1px;
-    padding: 10px 0;
+    padding: 7px 0;
     // text-transform: uppercase;
     text-decoration: none; 
     
@@ -3065,7 +3068,7 @@ body.new-look
       font-size: 10px;
       font-weight: 400;
       line-height: 160%;
-      padding-top: 10px;
+      padding-top: 7px;
       letter-spacing: 0.04px;
 
 .new-nav.navbar-dark
