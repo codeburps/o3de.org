@@ -2371,7 +2371,7 @@ body.new-look
       overflow: hidden
       @include media-breakpoint-down(md)
         margin-left: 15px
-        width: 135px
+        min-width: 135px
         height: 180px
         &:last-of-type
           margin-right: 15px
@@ -3464,10 +3464,16 @@ html.has-menu-active
   .industry-container
     display: flex
     justify-content: space-between
+    @include media-breakpoint-down(sm)
+      flex-direction: column-reverse;
     .list-side
       width: 25.5%
+      @include media-breakpoint-down(sm)
+        width: 100%
     .slide-side
       width: 64%
+      @include media-breakpoint-down(sm)
+        width: 100%
 
   h2
     font-family: $font-family-axiforma;

@@ -76,6 +76,25 @@
                 }
                 
             }
+            .alternate-block {
+                flex-direction: row-reverse;
+            }
+            .bold-font{
+                font-family: $font-family-axiforma;
+                font-weight: 900;
+                font-size: 1.75rem;
+                line-height: 1.4;
+                text-transform: uppercase;
+                color: #000;
+                margin-bottom: 0; 
+            }
+            .p-14{
+                font-family: $font-family-axiforma;
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 2;
+                margin-bottom: 20px;
+            }
             &.section-1{
                 margin-top: 100px;
                 margin-bottom: 50px;
@@ -167,7 +186,7 @@
             }
             &.section-3{
                 padding-top: 100px;
-                padding-bottom: 50px;
+                padding-bottom: 100px;
                 background-color: #F4F4F4;
                 h2{
                     font-family: $font-family-axiforma;
@@ -192,6 +211,100 @@
                     font-size: 0.875rem;
                     line-height: 2;
                     margin-bottom: 20px;
+                }
+            }
+            &.section-4{
+                padding-top: 100px;
+                padding-bottom: 50px;
+                .gem-card{
+                    margin-bottom: 50px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+                    border-radius: 10px;
+                    .gen-img--wrapper{
+                        overflow: hidden;
+                        .gen-img{
+                            transition: 600ms ease;
+                            padding-top: calc(240/379*100%);
+                            background-position: center;
+                            background-size: cover;
+                            position: relative;
+                            span{
+                                font-family: $font-family-axiforma;
+                                padding: 15px 30px 12px 15px;
+                                background-color: #000;
+                                border-radius: 10px 0px 100px;
+                                font-weight: 400;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                font-size: 1rem;
+                                color: #fff;
+                                letter-spacing: 0.05em;
+
+                            }
+                        }
+                    }
+                    .gem-text{
+                        padding: 33px 27px;
+                        text-align: left;
+                        h3{
+                            font-family: $font-family-axiforma;
+                            font-weight: 400;
+                            font-size: 1.875rem;
+                            line-height: 1.1;
+                            margin-bottom: 13px;
+                            strong{
+                                font-weight: 800;
+                            }
+                        }
+                        p{
+                            font-size: 0.87rem;
+                            font-family: $font-family-axiforma;
+                            font-weight: 500;
+                            letter-spacing: 0.1em;
+                            line-height: 28px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &.section-5{
+                .mb-40{
+                    margin-bottom: 40px;
+                }
+                .conceptrow{
+                    margin: 0 -15px;
+                    display: flex;
+                    .concept-card{
+                        width: 277px;
+                        height: 323px;
+                        padding: 0 15px;
+                        margin-bottom: 30px;
+                        .concept-card-wrapper{
+                            padding: 23px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+                            border-radius: 4px;
+                            height: 100%;
+                            .icon-wrap{
+                                margin-bottom: 25px;
+                            }
+                            .concept-content{
+                                padding-bottom: 50px;
+                                p{
+                                    font-family: $font-family-axiforma;
+                                    font-weight: 400;
+                                    font-size: 0.875rem;
+                                    margin: 0;
+                                    strong{
+                                        font-weight: 800;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
                 }
             }
         }
