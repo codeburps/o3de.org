@@ -1,0 +1,204 @@
+// @import "./variables";
+
+.about-page{
+    &.short-banner{
+        height: 540px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        .short-container{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            .subtitle{
+                font-size: 1rem;
+                font-family: $font-family-axiforma;
+                font-weight: 300;
+                letter-spacing: 0.3em;
+                color: #fff;
+            }
+            h1.title{
+                font-size: 3.75rem;
+                font-family: $font-family-axiforma;
+                font-weight: 900;
+                line-height: 1.1;
+                color: #fff;
+            }
+        }
+        .scroll-to-nav{
+            background-color: rgba(0,0,0,0.8);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100%;
+            transform: translateX(-50%);
+            ul{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                li{
+                    padding: 0;
+                    padding-top: 22px;
+                    padding-bottom: 22px;
+                    a{
+                        
+                        font-family: $font-family-axiforma;
+                        font-size: 0.875rem;
+                        line-height: 140%;
+                        font-weight: 800;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    &.scrollable-sections{
+        .scroll-section{
+            .title{
+                h3.thin-font{
+                    font-family: $font-family-axiforma;
+                    font-size: 1.25rem;
+                    line-height: 140%;
+                    font-weight: 800;
+                    letter-spacing: 0.2em;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    text-transform: uppercase;
+                    span{
+                        color: #8122d2;
+                    }
+                }
+                
+            }
+            &.section-1{
+                margin-top: 100px;
+                margin-bottom: 50px;
+                .mb-80 {
+                    margin-bottom: 80px;
+                }
+                h2{
+                    font-family: $font-family-axiforma;
+                    font-weight: 900;
+                    font-size: 1.75rem;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                    color: #000;
+                    margin-bottom: 45px;
+                    &.thin-font{
+                        font-family: $font-family-axiforma;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        line-height: 1.5;
+                        text-decoration-line: underline;
+                        margin-bottom: 0;
+                    }
+                }
+                p{
+                    font-family: $font-family-axiforma;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    line-height: 2;
+                    margin-bottom: 20px;
+                }
+            }
+            &.section-2{
+                .feature-row{
+                    margin: 0 -30px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .feature-outer{
+                        width: 25%;
+                        padding: 0 30px;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        .card-feature{
+                            h3{
+                                font-family: $font-family-axiforma;
+                                font-size: 1.75rem;
+                                line-height: 130%;
+                                font-weight: 950;
+                                margin-bottom: 20px;
+                                margin-top: 40px;
+                            }
+                            p{
+                                strong{
+                                    font-family: $font-family-axiforma;
+                                    font-size: 0.875rem;
+                                    line-height: 140%;
+                                    font-weight: 700;
+                                    margin-bottom: 0;
+                                }
+                                font-family: $font-family-axiforma;
+                                font-size: 0.875rem;
+                                line-height: 140%;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                            }
+
+                        }
+                        .lastcard{
+                            padding: 26px 24px;
+                            background-color: $o3de-aqua;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            box-shadow: 0px 0px 7.44785px rgba(0, 0, 0, 0.05);
+                            border-radius: 10px;
+                            height: 100%;
+                            h2{
+                                font-size: 2.5rem;
+                                color: #fff;
+                                font-weight: 800;
+                            }
+                            a{
+                                color: #fff;
+                                border-bottom: 2px solid #000;
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-3{
+                padding-top: 100px;
+                padding-bottom: 50px;
+                background-color: #F4F4F4;
+                h2{
+                    font-family: $font-family-axiforma;
+                    font-weight: 900;
+                    font-size: 1.75rem;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                    color: #000;
+                    margin-bottom: 45px;
+                    &.thin-font{
+                        font-family: $font-family-axiforma;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        line-height: 1.5;
+                        text-decoration-line: underline;
+                        margin-bottom: 0;
+                    }
+                }
+                p{
+                    font-family: $font-family-axiforma;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    line-height: 2;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+    
+    }
+}  
+
+
+
