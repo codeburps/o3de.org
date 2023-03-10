@@ -2308,7 +2308,7 @@ body.new-look
   @include media-breakpoint-down(md)
     margin-bottom: 34px;
   .contribute--card_img
-    padding-top: calc(300/538*100%);
+    padding-top: calc(280/585*100%);
     height: 0;
     width: 100%;
     background-position: center;
@@ -2336,10 +2336,13 @@ body.new-look
       font-size: 16px;
       line-height: 1;
       text-decoration: none;
-      color: #000;  
+      color: #0AC1C7;  
       letter-spacing: 0.1em;
-      margin-right: 10px;
       margin-bottom: 20px;
+      display: block
+      transition: 300ms ease
+      &:hover
+        color: #0BB6BC;
       @include media-breakpoint-down(md)
         margin-bottom: 13px;
         font-size: 10px;
