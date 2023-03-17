@@ -273,8 +273,24 @@
             &.section-4{
                 padding-top: 100px;
                 padding-bottom: 50px;
+                h2{
+                    font-family: $font-family-axiforma;
+                    font-weight: 900;
+                    font-size: 1.75rem;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                    color: #000;
+                    margin-bottom: 45px;
+                    &.thin-font{
+                        font-family: $font-family-axiforma;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        line-height: 1.5;
+                        text-decoration-line: underline;
+                        margin-bottom: 0;
+                    }
+                }
                 .gem-card{
-                    margin-bottom: 50px;
                     background: #FFFFFF;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
                     border-radius: 10px;
