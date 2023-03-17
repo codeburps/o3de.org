@@ -62,9 +62,14 @@
 //@import "bootstrap/scss/spinners" 
 @import "bootstrap/scss/utilities" 
 //@import "bootstrap/scss/print" 
-@import "./variables"
-@import "./extraMixins";
-@import "./about";
+@import "./styles/variables"
+@import "./styles/extraMixins";
+@import "./styles/utility";
+@import "./styles/about";
+
+
+  
+
 
 // Custom
 @font-face 
@@ -2081,14 +2086,15 @@ body.new-look
       padding-bottom: 5%
       padding-top: 5%
     .feature-icon
-      width: 32px
-      height: 32px
-      margin-right: 25px
+      width: 26px
+      height: 26px
+      margin-right: 18px
     .feature-desc
       p
-        font-size: 0.9rem
+        font-size: 0.75rem
         font-family: $font-family-axiforma;
         line-height: 1.4
+        font-weight: 400
         letter-spacing: 0.05em;
         color: #fff
         strong
@@ -2179,15 +2185,16 @@ body.new-look
           .subtitle
             font-family: $font-family-axiforma;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 100%;
             letter-spacing: 0.2em;
+            margin-bottom: 2.5rem
           h1
-            font-size: 66px;
+            font-size: 3.75rem;
             font-family: $font-family-axiforma;
             font-weight: 900;
             line-height: 110%;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             @include media-breakpoint-down(md)
               font-size: 42px
               
@@ -2400,48 +2407,20 @@ body.new-look
           margin-right: 15px
       &:hover
         .card-feature
-          opacity: 0
+          background-color: #000;
           transition: 300ms ease
-        .hover-card
           opacity: 1
-          transition: 300ms ease
-      .hover-card
-        background: #000
-        position: absolute
-        height: 100%
-        width: 100%
-        padding: 20px 15px
-        top: 0
-        left: 0
-        transition: 300ms ease
-        display: flex
-        justify-content: space-between
-        flex-direction: column
-        opacity: 0
-        div
-          height: calc(100% - 13px)
-          display: flex
-          justify-content: space-between
-          flex-direction: column
-
-        h4
-          color: #fff
-          font-weight: 700
-          font-size: 1rem
-          line-height: 1.3
-          margin-bottom: 30px
-        p
-          color: #fff  
-          font-size: 10px
-          line-height: 1.5
-          margin-bottom: 30px
-        a
-          color: $o3de-aqua
-          letter-spacing: 0.03em
-          font-size: 10px
-          font-weight: 700
-          line-height: 1.3
-          text-transform: uppercase
+          .title-wrap
+            color: #fff;
+          svg
+            rect
+              stroke: #fff;  
+            path
+              stroke: #fff;  
+            line
+              stroke: #fff;  
+        
+      
 
 
 
@@ -2745,7 +2724,8 @@ body.new-look
     font-family: $font-family-axiforma;
     font-weight: 500;
     font-size: 14px;
-    line-height: 26px;    
+    line-height: 26px;   
+    margin-bottom: 0 
 
 
   .gallery-slider
@@ -3484,8 +3464,9 @@ html.has-menu-active
   .mt-80
     margin-top: 80px  
   .industry-container
-    display: flex
-    justify-content: space-between
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @include media-breakpoint-down(sm)
       flex-direction: column-reverse;
     .list-side
@@ -3494,6 +3475,8 @@ html.has-menu-active
         width: 100%
     .slide-side
       width: 64%
+      border-radius: 10px
+      overflow: hidden 
       @include media-breakpoint-down(sm)
         width: 100%
 

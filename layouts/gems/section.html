@@ -1,12 +1,15 @@
 {{ define "main" }}
-<div class="short-banner about-page" style="background-image:url('/img/overview/Banner Image.jpg')">
+<div class="text-banner gem-page">
   <div class="container short-container">
     <div class="row">
-      <div class="col col-12 col-md-6 pb-4 pt-4">
-        <p class="subtitle">Gems page</p>
+      <div class="col col-12 col-md-9 ">
+        
           <h1 class="title">
-            Coming soon
+            GEMS
           </h1>
+          <p class="h5">
+            With modular plug-ins (Gems) you can customize and extend the Engine’s capabilities to meet your unique requirements.
+          </p>
       </div>
     </div>
 
@@ -14,6 +17,119 @@
   </div>
 
 </div>
+<div class="gem-page-content">
+  <div class="container">
+    <div class="filter-group">
+      <div class="filter-all">
+        <a href="">Select All</a>
+        <a href=""> Deselect All</a>
+      </div>
+      <ul class="filter-list">
+        <li><a href="" class="active">Animation</a></li>
+        <li><a href="">Artificial Intelligence</a></li>
+        <li><a href="">Assets</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-4 mb-50">
+        <div class="gem-card">
+          <div class="gen-img--wrapper">
+            <div class="gen-img" style="background-image: url('/img/gems/gem-1.jpeg')">
+              <span>AI</span>
+            </div>
+
+          </div>
+          <div class="gem-text">
+            <h3><strong>Artificial World Gem</strong><br>
+              By Kythera AI</h3>
+            <p>Adds a broad tool set of AI features to O3DE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mb-50">
+        <div class="gem-card">
+          <div class="gen-img--wrapper">
+            <div class="gen-img" style="background-image: url('/img/gems/gem-2.jpeg')">
+              <span>Robotics</span>
+            </div>
+
+          </div>
+          <div class="gem-text">
+            <h3><strong>Robotics</strong><br>
+              By Company Name</h3>
+            <p>Provides integration with the Robot Operating System (ROS) 2 library and enables robotics systems simulation</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-4 mb-50">
+        <div class="gem-card">
+          <div class="gen-img--wrapper">
+            <div class="gen-img" style="background-image: url('/img/gems/gem-3.jpeg')">
+              <span>Simulations</span>
+            </div>
+
+          </div>
+          <div class="gem-text">
+            <h3><strong>Global Simulations</strong><br>
+              By O3DE Core</h3>
+            <p>Create rich global simulations and experiences, and add real-world context</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-4 mb-50">
+        <div class="gem-card">
+          <div class="gen-img--wrapper">
+            <div class="gen-img" style="background-image: url('/img/gems/gem-4.jpeg')">
+              <span>Physics</span>
+            </div>
+
+          </div>
+          <div class="gem-text">
+            <h3><strong>PhysX</strong><br>
+              By O3DE Core</h3>
+            <p>Find out why more than 50% of the world’s video games are made with Unity.</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-4 mb-50">
+        <div class="gem-card">
+          <div class="gen-img--wrapper">
+            <div class="gen-img" style="background-image: url('/img/gems/gem-5.jpeg')">
+              <span>Animation</span>
+            </div>
+
+          </div>
+          <div class="gem-text">
+            <h3><strong>EMotionFX</strong><br>
+              By O3DE Core</h3>
+            <p>Create animated behaviors, simulated objects, and colliders for rigged actors</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-4 mb-50">
+        <div class="gem-card">
+          <div class="gen-img--wrapper">
+            <div class="gen-img" style="background-image: url('/img/gems/gem-6.jpeg')">
+              <span>Physics</span>
+            </div>
+
+          </div>
+          <div class="gem-text">
+            <h3><strong>Recast Navigation</strong><br>
+              By O3DE Core</h3>
+            <p>Build navigation meshes and calculate walkable paths within those navigation meshes</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 {{ partial "newHome/newsletter.html" . }}

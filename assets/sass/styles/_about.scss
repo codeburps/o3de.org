@@ -1,5 +1,57 @@
 // @import "./variables";
 
+.gem-card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    height: 100%;
+    .gen-img--wrapper{
+        overflow: hidden;
+        .gen-img{
+            transition: 600ms ease;
+            padding-top: calc(220/380*100%);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            span{
+                font-family: $font-family-axiforma;
+                padding: 15px 30px 12px 15px;
+                background-color: #000;
+                border-radius: 10px 0px 100px;
+                font-weight: 400;
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 1rem;
+                color: #fff;
+                letter-spacing: 0.05em;
+
+            }
+        }
+    }
+    .gem-text{
+        padding: 33px 27px;
+        text-align: left;
+        h3{
+            font-family: $font-family-axiforma;
+            font-weight: 400;
+            font-size: 1.875rem;
+            line-height: 1.1;
+            margin-bottom: 13px;
+            strong{
+                font-weight: 800;
+            }
+        }
+        p{
+            font-size: 0.87rem;
+            font-family: $font-family-axiforma;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+    }
+}
 .about-page{
     &.short-banner{
         height: 540px;
@@ -210,7 +262,12 @@
                     font-weight: 500;
                     font-size: 0.875rem;
                     line-height: 2;
-                    margin-bottom: 20px;
+                    margin-bottom: 56px;
+                }
+                .btn-wrapper{
+                    margin-bottom: 69px;
+                    display: flex;
+                    justify-content: center;
                 }
             }
             &.section-4{
@@ -313,5 +370,68 @@
     }
 }  
 
+.text-banner{
+    padding-bottom: 85px;
+    padding-top: 75px;
+    h1{
+        font-size: 2.5rem;
+        font-family: $font-family-axiforma;
+        font-weight: 900;
+        line-height: 1.4;
+        color: #000;
+        margin-bottom: 45px;
+    }
+    p{
+        font-family: $font-family-axiforma;
+        font-weight: 500;
+        font-size: 1.875rem;
+        color: #000;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
 
+.gem-page-content{
+    .filter-group{
+        margin-bottom: 100px;
+        border-bottom: 1px solid #c4c4c4;
+        .filter-all{
+            display: flex;
+            margin-bottom: 60px;
+            a{
+                text-decoration: underline;
+                color: #000;
+                margin-right: 30px;
+                font-size: 1rem;
+                font-family: $font-family-axiforma;
+                font-weight: 400;
+            }
+        }
+
+        ul.filter-list{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin-top: 40px;
+            margin-bottom: 100px;
+            li{
+                margin-right: 24px;
+                margin-bottom: 24px;
+                a{
+                    padding: 12px 24px;
+                    font-size: 1rem;
+                    font-family: $font-family-axiforma;
+                    font-weight: 400;
+                    border-radius: 64px;
+                    border: 1px solid #e9e9e9;
+                    color: #000;
+                    &.active{
+                        background-color: $o3de-aqua;
+                        border-color: $o3de-aqua;
+                    }
+                }
+            }
+        }
+    }
+}
 
