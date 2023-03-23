@@ -563,3 +563,41 @@
 
 }
 
+.member-page-content{
+    margin-bottom: 60px;
+    .section-seperator{
+        padding-top: 80px;
+        margin-bottom: 80px;
+        border-bottom: 1px solid #C4C4C4;
+        h4{
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-family: $font-family-axiforma;
+            font-weight: 950;
+            line-height: 1.4;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+    }
+    .member-list{
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            li{
+                width: 20%;
+                margin-bottom: 50px;
+                img{
+
+                }
+            }
+        }
+    }
+}
+
