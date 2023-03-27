@@ -211,6 +211,8 @@
                                 line-height: 140%;
                                 font-weight: 400;
                                 margin-bottom: 0;
+                                letter-spacing: 0.02em;
+                                padding-right: 25px;
                             }
 
                         }
@@ -262,7 +264,7 @@
                     font-weight: 500;
                     font-size: 0.875rem;
                     line-height: 2;
-                    margin-bottom: 56px;
+                    margin-bottom: 15px;
                 }
                 .btn-wrapper{
                     margin-bottom: 69px;
@@ -273,6 +275,7 @@
             &.section-4{
                 padding-top: 100px;
                 padding-bottom: 50px;
+                
                 h2{
                     font-family: $font-family-axiforma;
                     font-weight: 900;
@@ -294,6 +297,7 @@
                     background: #FFFFFF;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
                     border-radius: 10px;
+                    overflow: hidden;
                     .gen-img--wrapper{
                         overflow: hidden;
                         .gen-img{
@@ -325,7 +329,7 @@
                             font-family: $font-family-axiforma;
                             font-weight: 400;
                             font-size: 1.875rem;
-                            line-height: 1.1;
+                            line-height: 40px;
                             margin-bottom: 13px;
                             strong{
                                 font-weight: 800;
@@ -343,42 +347,37 @@
                 }
             }
             &.section-5{
+                background-color: #F4F4F4;
+                padding-top: 100px;
+                padding-bottom: 50px;
                 .mb-40{
                     margin-bottom: 40px;
                 }
-                .conceptrow{
-                    margin: 0 -15px;
-                    display: flex;
-                    .concept-card{
-                        width: 277px;
-                        height: 323px;
-                        padding: 0 15px;
-                        margin-bottom: 30px;
-                        .concept-card-wrapper{
-                            padding: 23px;
-                            background: #FFFFFF;
-                            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-                            border-radius: 4px;
-                            height: 100%;
-                            .icon-wrap{
-                                margin-bottom: 25px;
-                            }
-                            .concept-content{
-                                padding-bottom: 50px;
-                                p{
-                                    font-family: $font-family-axiforma;
-                                    font-weight: 400;
-                                    font-size: 0.875rem;
-                                    margin: 0;
-                                    strong{
-                                        font-weight: 800;
-                                    }
-                                }
+                .concept-card{
+                    padding: 23px;
+                    padding-bottom: 30px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
+                    height: 100%;
+                    .concept-card-wrapper{
+                       
+                        height: 100%;
+                        p{
+                            font-family: $font-family-axiforma;
+                            font-weight: 400;
+                            font-size: 0.875rem;
+                            margin: 0;
+                            strong{
+                                font-weight: 800;
+                                margin-bottom: 5px;
                             }
                         }
                         
                     }
+                    
                 }
+                
             }
         }
         
