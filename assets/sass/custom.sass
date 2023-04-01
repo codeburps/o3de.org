@@ -81,6 +81,12 @@
 
 @font-face 
   font-family: "Axiforma"; 
+  font-weight: 950;
+  font-style: normal;
+  src: url('/fonts/AxiformaHeavy.woff2') format('woff2'), url('/fonts/AxiformaHeavy.woff') format('woff'); 
+
+@font-face 
+  font-family: "Axiforma"; 
   font-weight: 900;
   font-style: normal;
   src: url('/fonts/AxiformaBlack.woff2') format('woff2'), url('/fonts/AxiformaBlack.woff') format('woff'); 
@@ -128,6 +134,15 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+.icon-video:before 
+  content: "\e926";
+
+.icon-book:before 
+  content: "\e924";
+
+.icon-doc:before 
+  content: "\e925";
 
 .icon-o3d:before 
   content: "\e91d";
