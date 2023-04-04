@@ -603,3 +603,102 @@
     }
 }
 
+.features-list{
+    .card{
+        border: none;
+        box-shadow: none;
+        background-color: #FCFCFC;
+        &:hover{
+            border: none;
+        }
+        .card-header{
+            border: none;
+            background-color: #FCFCFC ;
+            padding: 60px 0px;
+            border-top:  1px solid rgba(0, 0, 0, 0.05);
+            border-bottom:  1px solid rgba(0, 0, 0, 0.05);
+            a{
+                display: block;
+                font-size: 2.25rem;
+                font-weight: 900;
+                font-family: $font-family-axiforma;
+                line-height: 1.4;
+                letter-spacing: 0.05em;
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+        .card-body{
+            p{
+                font-family: $font-family-axiforma;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.8;
+                letter-spacing: 0.02em;
+                margin-bottom: 32px;
+            }
+            img{
+
+            }
+            .feature-card{
+                padding: 30px 23px;
+                background-color: #fff;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+                border-radius: 10px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
+                .feature-card-label{
+                    margin-bottom: 24px;
+                     h5{
+                        font-size: 1rem;
+                        line-height: 19px;
+                        letter-spacing: 0.1em;
+                        font-weight: 600;
+                        font-family: $font-family-axiforma;
+                        margin-bottom: 0;
+                        .purple-text{
+                            font-weight: 900;
+                            text-transform: uppercase;
+                            color: #8122d2;
+                            padding-right: 16px;
+                            margin-right: 16px;
+                            position: relative;
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                height: 19px;
+                                width: 1px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+                .feature-card-img{
+                    padding-top: calc(300/520*100%);
+                    margin-bottom: 24px ;
+                }
+                .feature-card-text{
+                    p{
+                        color: #6D6D6D;
+                        font-family: $font-family-axiforma;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1.8;
+                        letter-spacing: 0.02em;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

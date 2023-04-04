@@ -1,0 +1,282 @@
+{{ define "main" }}
+<div class="text-banner gem-page">
+  <div class="container short-container">
+    <div class="row">
+      <div class="col col-12 col-md-8 ">
+        
+          <h1 class="title">
+            {{ .Title }}
+          </h1>
+          
+            {{ .Content | replaceRE "<p>" "<p class=\"h5\">" | safeHTML }}
+          
+      </div>
+    </div>  
+  </div>
+</div> 
+
+<section class="features-list">
+  <div class="container br-b">
+<div id="features" class="accordion">
+  <div class="card">
+    <div class="card-header" id="featurehead1">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature1"
+        aria-expanded="true" aria-controls="feature1">Familiar Build System</a>
+    </div>
+
+    <div id="feature1" class="collapse show" aria-labelledby="featurehead1" data-parent="#features">
+        <div class="card-body">
+            <div class="row mb-64">
+              <div class="col-6">
+                    <p>Build, test and package software with CMake, enabling you to create projects with your favorite IDE and toolchain.</p>
+              </div>
+              <div class="col-6">
+                <img src="/img/features/Familiar-build-system.jpg" alt="">
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead2">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature2"
+        aria-expanded="true" aria-controls="feature2">Physically-based Photorealistic Renderer</a>
+    </div>
+
+    <div id="feature2" class="collapse" aria-labelledby="featurehead2" data-parent="#features">
+        <div class="card-body">
+            <div class="row mb-64">
+              <div class="col-6">
+                <p>Create content using the latest multi-threaded, data-driven, cross-platform rendering technology that supports modern rendering pipelines.</p>
+                <div class="btn-wrapper flex-start">
+                  <a href="" class="btn-secondary-black font-10">GET OVERVIEW</a>
+                  <a href="" class="btn-secondary-black font-10">SEE DOCUMENTATION</a>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="/img/features/Physically-based Photorealistic Renderer.jpg" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 mb-30">
+                <div class="feature-card">
+                  <div class="feature-card-label">
+                    <h5><span class="purple-text">Workshop</span> Working with Atom</h5>
+                  </div>
+                  <div class="feature-card-img" style="background:url('/img/features/image-placeholder.jpg')"></div>
+                  <div class="feature-card-text">
+                    <p>In this workshop, we'll dive deep into material type authoring workflows with live demonstrations of how to author and visualize custom material types. Extend built-in shader...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-30">
+                <div class="feature-card">
+                  <div class="feature-card-label">
+                    <h5><span class="purple-text">Workshop</span> Atom Deep Dive</h5>
+                  </div>
+                  <div class="feature-card-img" style="background:url('/img/features/image-placeholder.jpg')"></div>
+                  <div class="feature-card-text">
+                    <p>Atom Deep Dive: In this talk we will dive into the RHI and the Pass System within Atom. The RHI (Render Hardware Interface) is an abstraction layer that sits at the lowest level and...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-30">
+                <div class="feature-card">
+                  <div class="feature-card-label">
+                    <h5><span class="purple-text">LIGHTNING TALK</span> Portable Look Development</h5>
+                  </div>
+                  <div class="feature-card-img" style="background:url('/img/features/image-placeholder.jpg')"></div>
+                  <div class="feature-card-text">
+                    <p>O3DE and the Atom renderer are a capable 'physically based' (PBR) real-time rendering engine but many artists perform content creation, pre-visualization and look development...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mb-30">
+                <div class="feature-card">
+                  <div class="feature-card-label">
+                    <h5><span class="purple-text">COMMUNITY VIDEO</span> The Dev Shop</h5>
+                  </div>
+                  <div class="feature-card-img" style="background:url('/img/features/image-placeholder.jpg')"></div>
+                  <div class="feature-card-text">
+                    <p>O3DE - Material Editor + Our FIRST MATERIAL! | ATOM Renderer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead3">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature3"
+        aria-expanded="true" aria-controls="feature3">Flexible Runtime Scripting</a>
+    </div>
+
+    <div id="feature3" class="collapse" aria-labelledby="featurehead3" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead4">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature4"
+        aria-expanded="true" aria-controls="feature4">Real-Time Physics Simulations</a>
+    </div>
+
+    <div id="feature4" class="collapse" aria-labelledby="featurehead4" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead5">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature35"
+        aria-expanded="true" aria-controls="feature35">High-performance Math</a>
+    </div>
+
+    <div id="feature35" class="collapse" aria-labelledby="featurehead5" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead6">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature6"
+        aria-expanded="true" aria-controls="feature6">Extensible, Visual 3D Content Editor & Scripting Tools</a>
+    </div>
+
+    <div id="feature6" class="collapse" aria-labelledby="featurehead6" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead7">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature7"
+        aria-expanded="true" aria-controls="feature7">Robust Networking</a>
+    </div>
+
+    <div id="feature7" class="collapse" aria-labelledby="featurehead7" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead8">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature8"
+        aria-expanded="true" aria-controls="feature8">Terrain Performance</a>
+    </div>
+
+    <div id="feature8" class="collapse" aria-labelledby="featurehead8" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead9">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature9"
+        aria-expanded="true" aria-controls="feature9">Data-Driven Asset Workflows & Handling</a>
+    </div>
+
+    <div id="feature9" class="collapse" aria-labelledby="featurehead9" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead10">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature10"
+        aria-expanded="true" aria-controls="feature10">Prefab Support</a>
+    </div>
+
+    <div id="feature10" class="collapse" aria-labelledby="featurehead10" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead11">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature11"
+        aria-expanded="true" aria-controls="feature11">Simplified Project Management</a>
+    </div>
+
+    <div id="feature11" class="collapse" aria-labelledby="featurehead11" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead12">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature12"
+        aria-expanded="true" aria-controls="feature12">Flexible Code & Data Templates</a>
+    </div>
+
+    <div id="feature12" class="collapse" aria-labelledby="featurehead12" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="featurehead13">
+        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#feature13"
+        aria-expanded="true" aria-controls="feature13">White Box Tool</a>
+    </div>
+
+    <div id="feature13" class="collapse" aria-labelledby="featurehead13" data-parent="#features">
+        <div class="card-body">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div> 
+
+
+</section>
+
+{{ partial "newHome/newsletter.html" . }}
+{{ partial "newHome/footer.html" . }}
+{{ end }}

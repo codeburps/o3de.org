@@ -4,7 +4,9 @@
 .text-black{
     color: #000;
 }
-
+.btn-wrapper{
+    display: flex;
+}
 .btn-primary-black{
     color: #000;
     font-size: 0.875rem;
@@ -102,6 +104,9 @@
 }
 .mb-70{
     margin-bottom: 70px !important;
+}
+.mb-64{
+    margin-bottom: 64px !important;
 }
 .mb-50{
     margin-bottom: 50px !important;

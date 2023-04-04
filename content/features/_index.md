@@ -1,5 +1,7 @@
 ---
-title: KEY FEATURES
+title: FEATURES
 linkTitle: Features
+layout: feature_landing
 --- 
-Developed with cutting-edge, real-time graphics and complex interactions in mind, the **Open 3D Engine (O3DE)** allows you to create captivating experiences using a suite of tools wrapped in a modular framework that you can modify and extend with your preferred development tools.
+Create captivating experiences with O3DE, using a suite of tools developed for cutting-edge, real-time graphics, and complex interactions.
+
