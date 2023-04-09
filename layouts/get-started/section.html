@@ -1,0 +1,388 @@
+{{ define "main" }}
+<div class="text-banner gem-page">
+  <div class="container short-container">
+    <div class="row">
+      <div class="col col-12 col-md-8 ">
+        
+          <h1 class="title">
+            {{ .Title }}
+          </h1>
+          
+            {{ .Content | replaceRE "<p>" "<p class=\"h5\">" | safeHTML }}
+          
+      </div>
+    </div>  
+  </div>
+</div> 
+
+<section class="get_started-wrapper">
+    <div class="steps-wrapper">
+        <div class="container br-b">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5 class="mb-80">TAKE YOUR FIRST STEPS...</h5>
+                </div>
+                <div class="col-12 mb-40">
+                    <div class="step-card">
+                        <div class="step-count">
+                            <div class="count purple">1</div>
+                            <div class="step-detail">
+                                <h3>INSTALL</h3>
+                                <p>Install and set up your O3DE development environment</p>
+                            </div>
+                        </div>
+                        <div class="step-cta">
+                            <a href="" class="btn-secondary-black">GET O3DE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-40">
+                    <div class="step-card">
+                        <div class="step-count">
+                            <div class="count aqua">2</div>
+                            <div class="step-detail">
+                                <h3 >CREATE</h3>
+                                <p>Create your first O3DE project</p>
+                            </div>
+                        </div>
+                        <div class="step-cta">
+                            <a href="" class="btn-secondary-black">PROJECT CREATION GUIDE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-40">
+                    <div class="step-card">
+                        <div class="step-count">
+                            <div class="count">3</div>
+                            <div class="step-detail">
+                                <h3>SHARE</h3>
+                                <p>Share your creation to our welcoming and friendly community</p>
+                            </div>
+                        </div>
+                        <div class="step-cta">
+                            <a href="" class="btn-secondary-black">SHOWCASE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="helpful-info">
+        <div class="container br-b">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5 class="mb-80">HELPFUL information</h5>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-3 mb-30">
+                            <div class="card-information">
+                                <h4>Learn about O3DE</h4>
+                                <p>Learn more about how O3DE works</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-30">
+                            <div class="card-information">
+                                <h4>Editor Tour</h4>
+                                <p>Take a tour of the O3DE Editor</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-30">
+                            <div class="card-information">
+                                <h4>User Guide</h4>
+                                <p>Information and guidance for those using O3DE for their projects.</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-30">
+                            <div class="card-information">
+                                <h4>Documentation</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur. Tellus vel vulputate faucibus...</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-30">
+                            <div class="card-information">
+                                <h4>Discover your workflow</h4>
+                                <p>Explore how to create using O3DE as an artist, designer or programmer</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-30">
+                            <div class="card-information">
+                                <h4>Tutorials</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur. Tellus vel vulputate faucibus...</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-30">
+                            <div class="card-information">
+                                <h4>More Resources</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur. Tellus vel vulputate faucibus...</p>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="download-section">
+        <div class="container br-b">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title mb-80">
+                        <h3 class="thin-font"><span>02 </span>SUPPORTED PLATFORMS</h3>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 download-wrapper">
+                            <h2>O3DE is available for Linux and Windows</h2>
+                            <div class="download-links">
+                                <div class="linux-link">
+                                    <a href="">
+                                        <img src="/img/logos/linux.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="windows-link">
+                                    <a href="">
+                                        <img src="/img/logos/windows.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-11 col-12">
+                                    <p>Our latest version is now live, with exciting new features built from our incredible open source community</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <a href="" class="btn-primary-black mb-30">DOWNLOAD INSTALLER  <i class="icon-arrow"></i></a>
+                                    <a href="" class="btn-secondary-white mb-30">SEE DOCUMENTATION</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="sys-requirement">
+                                <h4>Minimum system requirements</h4>
+                                <ul>
+                                    <li>2.5 GHz Intel or AMD processor with 4 physical cores</li>
+                                    <li>8 GB RAM</li>
+                                    <li>DirectX 12, Vulkan-compatible, or Metal-compatible video card with 2 GB VRAM minimum</li>
+                                    <li>4 GB VRAM recommended</li>
+                                    <li>40 to 100 GB of free disk space</li>
+                                    <li>1366 x 768 px screen resolution</li>
+                                </ul>
+                                <div class="doc-link">
+                                    <span>
+                                        <svg width="32" height="40" viewBox="0 0 32 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2.91406" y="2" width="26.7338" height="36" stroke="white" stroke-width="4"/>
+                                            <line x1="9.10938" y1="9.99219" x2="23.4518" y2="9.99219" stroke="white" stroke-width="2"/>
+                                            <line x1="9.10938" y1="16.0176" x2="23.4518" y2="16.0176" stroke="white" stroke-width="2"/>
+                                            <line x1="9.10938" y1="22.0137" x2="23.4518" y2="22.0137" stroke="white" stroke-width="2"/>
+                                            <line x1="9.10938" y1="28.0078" x2="23.4518" y2="28.0078" stroke="white" stroke-width="2"/>
+                                        </svg>                                            
+                                    </span>
+                                    <div>
+                                        <p>For the full detailed requirements read our</p>
+                                        <a href="">O3DE System Requirements</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="assets-section">
+        <div class="container br-b">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="title">
+                    <h3 class="thin-font"><span>03 </span>ASSETS</h3>
+                    </div>
+                    <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8">
+                        <h2>CREATE ENDLESS POSSIBILITIES</h2>
+                        <p>You can easily port a wide variety of assets into O3DE. Learn how with this step-by-step tutorial. Then extend and modify these assets to create endless possibilities.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-11">
+                    <div class="yt-wrapper">
+              
+                        <iframe src="https://www.youtube.com/embed/CQmjAxr7LZs?rel=0&disablekb=1" width="1200" height="683" title="O3DE - What is O3DE?" frameborder="0" allowfullscreen></iframe>
+          
+                      </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-8">
+                            <h2>Free source asset sites</h2>
+                            <p>If you plan to open source your end work, you will need to choose openly licensed assets—and there is a big selection. Here’s a starting point, but these examples are by no means exhaustive. Refer to the open source licenses documentation to ensure a license is permissible for use as a part of your creation.</p>
+                        </div>
+                    </div>
+                    
+                        <ul class="source-asset">
+                            <li>
+                                <div class="logo-card">
+                                    <img src="/img/free-source/kenneyLOGO.png" class="img-fluid" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo-card">
+                                    <img src="/img/free-source/itch_io.png" class="img-fluid" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo-card">
+                                    <img src="/img/free-source/open clip art.png" class="img-fluid" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo-card">
+                                    <img src="/img/free-source/wikimedia.png" class="img-fluid" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo-card">
+                                    <img src="/img/free-source/opengameout.png" class="img-fluid" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo-card">
+                                    <img src="/img/free-source/sketchfab.png" class="img-fluid" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo-card">
+                                    <img src="/img/free-source/gameclones.png" class="img-fluid" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gems-section">
+        <div class="container br-b">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title mb-40">
+                        <h3 class="thin-font"><span>04 </span>GEMS</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row mb-80 align-items-end w-100">
+                      <div class="col-sm-9 ">
+                          <h2 class="bold-font">Add features and functionality with O3DES PLUGINS AKA GEMS</h2>
+                      </div> 
+                      <div class="col-sm-3 text-right">
+                          <a href="" class="btn btn-underline">SEE ALL GEMS</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-50">
+                    <div class="gem-card">
+                      <div class="gen-img--wrapper">
+                        <div class="gen-img" style="background-image: url('/img/gems/gem-1.jpeg')">
+                          <span>AI</span>
+                        </div>
+        
+                      </div>
+                      <div class="gem-text">
+                        <h3><strong>Artificial World Gem</strong><br>
+                          By Kythera AI</h3>
+                        <p>Find out why more than 50% of the world’s video games are made with Unity.</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-12 col-md-4 mb-50">
+                    <div class="gem-card">
+                      <div class="gen-img--wrapper">
+                        <div class="gen-img" style="background-image: url('/img/gems/gem-2.jpeg')">
+                          <span>Navigation</span>
+                        </div>
+        
+                      </div>
+                      <div class="gem-text">
+                        <h3><strong>Robotics</strong><br>
+                          By Company Name</h3>
+                        <p>Provides integration with the Robot Operating System (ROS) 2 library and enables robotics systems simulation</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-12 col-md-4 mb-50">
+                    <div class="gem-card">
+                      <div class="gen-img--wrapper">
+                        <div class="gen-img" style="background-image: url('/img/gems/gem-3.jpeg')">
+                          <span>Navigation</span>
+                        </div>
+        
+                      </div>
+                      <div class="gem-text">
+                        <h3><strong>Global Simulations</strong><br>
+                          By O3DE Core</h3>
+                        <p>Create rich global simulations and experiences, and add real-world context</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="community-sectio">
+        <div class="container br-b">
+            <div class="row justify-content-between">
+                <div class="col-sm-5">
+                    <h2>COMMUNITY <br>SUPPORT</h2>
+                    <p>O3DE has a global, open source community has a wide and inclusive family who support and create together to ensure everyone can succeed and take part.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card text-center">
+                                <span>
+                                    <img src="/img/free-source/Discord.png" class="img-fluid" alt="">
+                                </span>
+                                
+                                <p>Get help from a vast, thriving community of O3DE architects, developers and users</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card text-center">
+                                <span>
+                                    <img src="/img/free-source/Forum.png" class="img-fluid" alt="">
+                                </span>
+                                
+                                <p>Find quick answers to commonly asked questions in O3DE forums</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    
+</section>
+
+
+{{ partial "newHome/newsletter.html" . }}
+{{ partial "newHome/footer.html" . }}
+{{ end }}
