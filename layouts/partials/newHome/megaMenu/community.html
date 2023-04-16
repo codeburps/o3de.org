@@ -8,154 +8,157 @@
 
 
 <div class="sub-menu">
-  <div class="col-container">
-    <div class="col1">
-      <ul id="menu-about_01" class="menu">
-        <li id="menu-item-71611" class="menu-item menu-item-type-custom lf-menu-title">
-          COMMUNITY CONTENT
-        </li>
-        <li
-          class="menu-item">
-          <a href="/blog/">News & Blogs
-            <span class="lf-menu-description">
-              Get the latest news and updates, meet the people of O3DE, dive into technical topics, and more.            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="#">O3DE Showcase
-            <span class="lf-menu-description">
-              Discover how artists, designers and developers are using O3DE to realize their 3D visions.            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="/blog/events">Events
-            <span class="lf-menu-description">
-              Connect with the community and learn more about O3DE at upcoming events and meetups.
-            </span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="https://open.spotify.com/show/1zUZ2crUiWSm7J2P88QMw1" target="_blank">
-            Podcast
-            <span class="lf-menu-description">
-              Listen to voices across the world of open source 3D as host Royal O’Brien chats with those who bring it to life.
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="col2">
-      <ul id="menu-about_01" class="menu">
-        <li
-          class="menu-item menu-item-type-custom lf-menu-title">
-          TAKE PART
-        </li>
-        <li
-          class="menu-item">
-          <a href="/sigs">Special Interest Groups
-            <span class="lf-menu-description">
-              Connect with those who are continuously advancing the Engine through O3DE’s special interest groups (SIGs).
-            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="/people">Committees
-            <span class="lf-menu-description">
-              Meet individuals who actively participate on the Technical Steering Committee and Marketing / Outreach Committee.            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="/members/">Members
-            <span class="lf-menu-description">
-              Meet member companies who are committed to advancing the future of open source 3D technology.            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="#">
-            People
-            <span class="lf-menu-description">
-            Add copy here
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col3">
-      <ul class="menu">
-        <li class="lf-menu-title">CONNECT</li>
-      </ul>
-      <div class="columns-one">
-          <ul class="menu-social menu">
-            <li
-              class="menu-item">
-              {{ $calendar := printf $calendar | relURL }}
-              <a href="{{ $calendar }}"><span class="icon-calender"><span class="path1"></span><span class="path2"></span></span> Calendar</a>
+  <div class="col-container container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="col1">
+          <ul id="menu-about_01" class="menu">
+            <li id="menu-item-71611" class="menu-item menu-item-type-custom lf-menu-title">
+              COMMUNITY CONTENT
             </li>
             <li
               class="menu-item">
-              {{ $discord := printf $discord | relURL }}
-              <a href="{{ $discord }}"><span class="icon-discord"></span> Discord</a>
+              <a href="/blog/">News & Blogs
+                <span class="lf-menu-description">
+                  Get the latest news and updates, meet the people of O3DE, dive into technical topics, and more.
+                </span>
+              </a>
             </li>
             <li
               class="menu-item">
-              {{ $github := printf $github | relURL }}
-              <a href="{{ $github }}"><span class="icon-github"></span> Github</a>
+              <a href="#">O3DE Showcase
+                <span class="lf-menu-description">
+                  Discover how artists, designers and developers are using O3DE to realize their 3D visions.
+                </span>
+              </a>
             </li>
             <li
               class="menu-item">
-              {{ $twitter := printf $twitter | relURL }}
-              <a href="{{ $twitter }}"><span class="icon-twitter"></span> Twitter</a>
+              <a href="/blog/events">Events
+                <span class="lf-menu-description">
+                  Connect with the community and learn more about O3DE at upcoming events and meetups.
+                </span>
+              </a>
             </li>
-            <li
-              class="menu-item">
-              {{ $youtube := printf $youtube | relURL }}
-              <a href="{{ $linkedin }}"><span class="icon-linkedin"></span> LinkedIn</a>
+            <li class="menu-item">
+              <a href="https://open.spotify.com/show/1zUZ2crUiWSm7J2P88QMw1" target="_blank">
+                Podcast
+                <span class="lf-menu-description">
+                  Listen to voices across the world of open source 3D as host Royal O’Brien chats with those who bring it to life.
+                </span>
+              </a>
             </li>
-            <!-- <li
-            class="menu-item">
-            <a href="#"><span class="icon-spotify"></span> Spotify</a>
-          </li> -->
           </ul>
-        
+        </div>
       </div>
-      <ul class="menu">
-        <li class="lf-menu-title">MORE LINKS</li>
-      </ul>
-      <div class="columns-one">
-        
-        
-        <ul  class="menu">
-          
-          <li
-            class="menu-item">
-            <a href="#"><span class="icon-store"></span> Store</a>
-          </li>
-          <li
-            class="menu-item">
-            <a href="#"><span class="icon-staff"></span> Code of Conduct</a>
-          </li>
-          <!-- <li
-            class="menu-item">
-            <a href="#"><span class="icon-coc"></span> Code of Conduct</a>
-          </li> -->
-          <!-- <li
-            class="menu-item">
-            <a href="#"><span class="icon-guidelines"></span> Brand Guidelines</a>
-          </li> -->
-          
-          {{/*  <li
-            class="menu-item">
-            <a href="#"><span class="icon-values"></span> Community Values</a>
-          </li>  */}}
+      <div class="col-md-4">
+        <div class="col2">
+          <ul id="menu-about_01" class="menu">
+            <li
+              class="menu-item menu-item-type-custom lf-menu-title">
+              TAKE PART
+            </li>
+            <li
+              class="menu-item">
+              <a href="/sigs">Special Interest Groups
+                <span class="lf-menu-description">
+                  Connect with those who are continuously advancing the Engine through O3DE’s special interest groups (SIGs).
+                </span>
+              </a>
+            </li>
+            <li
+              class="menu-item">
+              <a href="/people">Committees
+                <span class="lf-menu-description">
+                  Meet active participants on the Technical Steering Committee and Marketing/Outreach Committee.
+                </span>
+              </a>
+            </li>
+            <li
+              class="menu-item">
+              <a href="/members/">Members
+                <span class="lf-menu-description">
+                  Meet member companies who are committed to advancing the future of open source 3D technology.
+                </span>
+              </a>
+            </li>
+            <li
+              class="menu-item">
+              <a href="/staff/">
+                Staff
+                <span class="lf-menu-description">
+                  We’re committed to the success of our community. No matter your goals, we support your open 3D journey.
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col3">
+        <ul class="menu">
+          <li class="lf-menu-title">CONNECT</li>
         </ul>
-      
+        <div class="columns-one">
+            <ul class="menu-social menu">
+              <li
+                class="menu-item">
+                {{ $calendar := printf $calendar | relURL }}
+                <a href="{{ $calendar }}"><span class="icon-calender"><span class="path1"></span><span class="path2"></span></span> Calendar</a>
+              </li>
+              <li
+                class="menu-item">
+                {{ $discord := printf $discord | relURL }}
+                <a href="{{ $discord }}"><span class="icon-discord"></span> Discord</a>
+              </li>
+              <li
+                class="menu-item">
+                {{ $github := printf $github | relURL }}
+                <a href="{{ $github }}"><span class="icon-github"></span> Github</a>
+              </li>
+              <li
+                class="menu-item">
+                {{ $twitter := printf $twitter | relURL }}
+                <a href="{{ $twitter }}"><span class="icon-twitter"></span> Twitter</a>
+              </li>
+              <li
+                class="menu-item">
+                {{ $youtube := printf $youtube | relURL }}
+                <a href="{{ $linkedin }}"><span class="icon-linkedin"></span> LinkedIn</a>
+              </li>
+            </ul>
+          
+        </div>
+        <ul class="menu">
+          <li class="lf-menu-title">MORE LINKS</li>
+        </ul>
+        <div class="columns-one"> 
+          <ul  class="menu">
+            <li
+              class="menu-item">
+              <a href="#"><span>
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.95881 0.489299C4.73674 0.166278 5.57079 0 6.41312 0C7.25545 0 8.08949 0.166278 8.86742 0.489299C9.64536 0.81232 10.3519 1.28573 10.9465 1.88238L10.9498 1.88572L11.0081 1.94483L11.0665 1.88573L11.0698 1.88238C11.6644 1.28573 12.3709 0.81232 13.1488 0.489299C13.9267 0.166278 14.7608 0 15.6031 0C16.4454 0 17.2795 0.166278 18.0574 0.489299C18.8351 0.81221 19.5414 1.2854 20.1358 1.88177C22.6809 4.42746 22.7374 8.63661 19.7218 11.7088L19.7153 11.7154L11.7152 19.7154C11.5277 19.9029 11.2733 20.0083 11.0081 20.0083C10.7429 20.0083 10.4885 19.9029 10.301 19.7154L2.29445 11.7088C-0.721245 8.63663 -0.664624 4.42745 1.8804 1.88176C2.47486 1.2854 3.18115 0.812208 3.95881 0.489299Z" fill="#F0695D"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.95881 0.489299C4.73674 0.166278 5.57079 0 6.41312 0C7.25545 0 8.08949 0.166278 8.86742 0.489299C9.64536 0.81232 10.3519 1.28573 10.9465 1.88238L10.9498 1.88572L11.0081 1.94483L11.0665 1.88573L11.0698 1.88238C11.6644 1.28573 12.3709 0.81232 13.1488 0.489299C13.9267 0.166278 14.7608 0 15.6031 0C16.4454 0 17.2795 0.166278 18.0574 0.489299C18.8351 0.81221 19.5414 1.2854 20.1358 1.88177C22.6809 4.42746 22.7374 8.63661 19.7218 11.7088L19.7153 11.7154L11.7152 19.7154C11.5277 19.9029 11.2733 20.0083 11.0081 20.0083C10.7429 20.0083 10.4885 19.9029 10.301 19.7154L2.29445 11.7088C-0.721245 8.63663 -0.664624 4.42745 1.8804 1.88176C2.47486 1.2854 3.18115 0.812208 3.95881 0.489299ZM6.41312 2C5.83402 2 5.26061 2.11432 4.72578 2.33639C4.19096 2.55847 3.70523 2.88394 3.29645 3.29414L3.29523 3.29537C1.60161 4.98898 1.39787 7.93752 3.71863 10.3046L11.0081 17.594L18.2976 10.3046C20.6184 7.93753 20.4146 4.98898 18.721 3.29537L18.7198 3.29414C18.311 2.88394 17.8253 2.55847 17.2905 2.33639C16.7556 2.11432 16.1822 2 15.6031 2C15.024 2 14.4506 2.11432 13.9158 2.33639C13.3817 2.55818 12.8965 2.88308 12.4881 3.29252C12.4875 3.29306 12.487 3.2936 12.4865 3.29414L11.7198 4.07079C11.5319 4.26112 11.2756 4.36826 11.0081 4.36826C10.7407 4.36826 10.4844 4.26112 10.2965 4.07079L9.52979 3.29414C9.52925 3.2936 9.52871 3.29306 9.52817 3.29252C9.11973 2.88308 8.63458 2.55818 8.10045 2.33639C7.56563 2.11432 6.99222 2 6.41312 2Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7141 2.65999C12.1053 3.04989 12.1063 3.68306 11.7164 4.0742L8.5881 7.21245C8.58786 7.2127 8.58761 7.21294 8.58737 7.21319C8.3779 7.42476 8.26038 7.71047 8.26038 8.00822C8.26038 8.30497 8.3771 8.58976 8.58525 8.80111C8.7966 9.00925 9.08138 9.12598 9.37813 9.12598C9.67623 9.12598 9.96225 9.00818 10.1739 8.79825L10.179 8.79324L10.179 8.79325L12.437 6.58518C13.1857 5.84559 14.1957 5.43081 15.2481 5.43081C16.3016 5.43081 17.3126 5.84641 18.0615 6.58736L18.0652 6.59111L18.0652 6.59112L20.4652 8.99112C20.8558 9.38164 20.8558 10.0148 20.4652 10.4053C20.0747 10.7959 19.4415 10.7959 19.051 10.4053L16.6548 8.00909C16.6542 8.00852 16.6537 8.00796 16.6531 8.0074C16.2788 7.63798 15.7741 7.43081 15.2481 7.43081C14.7214 7.43081 14.2159 7.63861 13.8415 8.00909L13.8373 8.01321L13.8373 8.0132L11.5796 10.2209C10.9937 10.8007 10.2026 11.126 9.37813 11.126C8.55241 11.126 7.76014 10.7997 7.1739 10.2182L7.87812 9.50823L7.16815 10.2125C6.58666 9.62621 6.26038 8.83394 6.26038 8.00822C6.26038 7.18251 6.58666 6.39024 7.16815 5.804L7.16989 5.80224L7.16989 5.80225L10.2999 2.66225C10.6898 2.2711 11.323 2.27009 11.7141 2.65999Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3009 10.3011C14.6915 9.91061 15.3246 9.91061 15.7152 10.3011L17.7152 12.3011C18.1057 12.6917 18.1057 13.3248 17.7152 13.7153C17.3246 14.1059 16.6915 14.1059 16.3009 13.7153L14.3009 11.7153C13.9104 11.3248 13.9104 10.6917 14.3009 10.3011Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3009 13.3011C11.6915 12.9106 12.3246 12.9106 12.7152 13.3011L14.7152 15.3011C15.1057 15.6917 15.1057 16.3248 14.7152 16.7153C14.3246 17.1059 13.6915 17.1059 13.3009 16.7153L11.3009 14.7153C10.9104 14.3248 10.9104 13.6917 11.3009 13.3011Z" fill="black"/>
+                  </svg>
+                  
+              </span> Community Values</a>
+            </li>
+            <li
+              class="menu-item">
+              <a href="#"><span class="">
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.369 8.89803C11.615 9.77782 10.6825 10.2497 9.52629 10.2501C8.37007 10.2505 7.43725 9.78045 6.68179 8.89744C5.57308 10.1161 4.22664 10.5154 2.63179 10.0814V17.3216C2.73414 17.3534 6.14476 17.3673 6.44142 17.335C6.44303 17.2819 6.4461 17.2259 6.4461 17.1698C6.4461 15.6891 6.4461 14.2084 6.4461 12.7278C6.4461 12.6207 6.44508 12.5125 6.4594 12.4063C6.51789 11.9715 6.79773 11.7102 7.23782 11.6731C7.31546 11.6665 7.39354 11.666 7.47176 11.666C8.82595 11.666 10.1802 11.6664 11.5345 11.6672C11.6609 11.6658 11.7871 11.6768 11.9114 11.7C12.2595 11.77 12.4649 11.9908 12.5307 12.3361C12.5523 12.4607 12.5623 12.587 12.5607 12.7135C12.5627 14.1947 12.5631 15.6753 12.5619 17.1555V17.3377H16.387V17.1465C16.387 15.4271 16.3876 13.7077 16.3889 11.9885C16.3889 11.8727 16.3952 11.7535 16.4225 11.6416C16.5164 11.2574 16.8379 11.0163 17.236 11.0187C17.6402 11.021 17.9643 11.2727 18.0538 11.6592C18.0736 11.7445 18.0837 11.8318 18.0839 11.9194C18.0854 13.7167 18.0854 15.5139 18.0839 17.3111C18.082 18.1402 17.5722 18.7844 16.7853 18.9621C16.6523 18.9915 16.5164 19.0062 16.3801 19.006C11.8012 19.0082 7.22218 19.0088 2.6432 19.0077C2.38134 19.0077 2.12781 18.9639 1.8911 18.8523C1.28828 18.5694 0.976266 18.0794 0.931965 17.4262C0.906817 17.0528 0.922024 16.6765 0.92217 16.3015C0.923047 14.0075 0.925142 11.7135 0.928456 9.41942C0.928456 9.10179 0.851697 8.82012 0.674784 8.55307C0.353123 8.06968 0.130594 7.54362 0.0395053 6.96581C-0.0289951 6.53157 -0.00825095 6.08793 0.100473 5.66197C0.465801 4.20398 0.831325 2.74579 1.19704 1.2874C1.34325 0.699212 1.70877 0.318148 2.26656 0.106202C2.43926 0.0403233 2.6227 0.00711528 2.80754 0.0082688C7.27452 0.0116307 11.7409 0.00578327 16.2085 0.016746C16.8372 0.0182077 17.3409 0.311571 17.6454 0.883388C17.7237 1.03466 17.7833 1.19486 17.8229 1.36048C18.2121 2.92304 18.5977 4.48652 18.9797 6.05093C18.992 6.1079 18.9984 6.166 18.9986 6.22429C19.0017 6.32164 18.9986 6.41899 18.9995 6.51663C19.0005 7.56788 18.4389 8.66693 17.8762 9.19753C17.3352 9.70708 16.6962 10.0161 15.9791 10.1738C15.1941 10.3469 14.4303 10.2861 13.6991 9.93627C13.2361 9.71483 12.8416 9.401 12.4918 9.02826C12.4541 8.98924 12.4179 8.95021 12.369 8.89803ZM7.55437 1.6882V1.86594C7.55437 2.86438 7.55437 3.86291 7.55437 4.86155C7.55437 5.37782 7.55641 5.89409 7.55641 6.41095C7.55641 6.66543 7.57337 6.91874 7.65496 7.1608C7.90556 7.90378 8.40911 8.38863 9.1808 8.53786C9.95746 8.68857 10.6012 8.41976 11.0913 7.80146C11.3956 7.41747 11.5299 6.96829 11.5308 6.48198C11.5334 4.92342 11.5339 3.36477 11.5324 1.80601C11.5324 1.76859 11.5256 1.73132 11.5213 1.68908L7.55437 1.6882ZM5.85103 1.67461H5.7114L2.9786 1.67197C2.95433 1.67197 2.92992 1.67344 2.9055 1.67197C2.84701 1.66993 2.81558 1.70033 2.80125 1.75383C2.79365 1.78204 2.78502 1.80996 2.778 1.83817C2.43685 3.20242 2.09569 4.56638 1.75454 5.93005C1.66681 6.28086 1.65687 6.63386 1.74913 6.9851C2.13556 8.45645 3.85352 9.06788 5.0479 8.13195C5.60174 7.69783 5.85117 7.10876 5.85059 6.40905C5.84942 4.88459 5.84971 3.36014 5.85147 1.83568L5.85103 1.67461ZM13.1929 1.68104V1.85279C13.1935 3.37675 13.1946 4.90072 13.1961 6.42469C13.1967 6.57549 13.209 6.72602 13.2331 6.87489C13.4159 8.01121 14.5704 8.78226 15.6952 8.53129C16.7736 8.29055 17.5546 7.138 17.2584 6.01336C16.9287 4.76244 16.6297 3.50348 16.3179 2.24803C16.2712 2.06035 16.2227 1.87296 16.1738 1.68104H13.1929ZM10.839 13.3945H8.16333V17.3335H10.839V13.3945Z" fill="#57BE7D"/>
+                  </svg>                  
+              </span> Store</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
     </div>
-    </div>
+  
   </div>
 </div>

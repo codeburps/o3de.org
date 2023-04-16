@@ -8,141 +8,172 @@
 
 
 <div class="sub-menu">
-  <div class="col-container">
-    <div class="col1">
-      <ul id="menu-about_01" class="menu">
-        <li id="menu-item-71611" class="menu-item menu-item-type-custom lf-menu-title">
-          USEFUL RESOURCES
-        </li>
-        <li
-          class="menu-item">
-          <a href="/docs/" target="_blank">Documentation  
-            <span class="lf-menu-description">
-              Dig into comprehensive documentation, and help us make it better.     
-            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="/docs/learning-guide/" target="_blank">Tutorials, Demos & Samples
-            <span class="lf-menu-description">
-              Dive into guided tutorials, demos, samples and recipes. 
-            </span>
-            </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ" target="_blank">Workshops & Presentations
-            <span class="lf-menu-description">
-              Explore O3DE through workshops and presentations.
-            </span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="/docs/user-guide/">
-            Guides
-            <span class="lf-menu-description">
-              Get guides for users, contributors and those developing components, tools and extensions for the O3DE Editor.          
-            </span>
-            </a>
-        </li>
-      </ul>
-    </div>
-    <div class="col2">
-      <ul id="menu-about_01" class="menu">
-        <li
-          class="menu-item menu-item-type-custom lf-menu-title">
-          MORE RESOURCES
-        </li>
-        <li
-          class="menu-item">
-          <a href="#">Training & Certification
-            <span class="lf-menu-description">
-              Coming Soon
-            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="#">Asset Library
-            <span class="lf-menu-description">
-              Coming Soon
-            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="/docs/api/" target="_blank">
-            API Reference <i class="icon-arrow"></i>
-            <span class="lf-menu-description">
-              Check out the public API reference for libraries, gems and systems.
-            </span>
-          </a>
-        </li>
-        <li
-          class="menu-item">
-          <a href="/docs/user-guide/gems/">Gem Catalog <i class="icon-arrow"></i>
-            <span class="lf-menu-description">
-              Coming Soon
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="col-container container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="col1">
+          <ul id="menu-about_01" class="menu">
+            <li id="menu-item-71611" class="menu-item menu-item-type-custom lf-menu-title">
+              USEFUL RESOURCES
+            </li>
+            <li
+              class="menu-item">
+              <a href="/docs/" target="_blank">Documentation  <i class="icon-arrow"></i>
+                <span class="lf-menu-description">
+                  Dig into comprehensive documentation and use your expertise to help us make it better.   
+                </span>
+              </a>
+            </li>
+            <li
+              class="menu-item">
+              <a href="/docs/user-guide/gems/" target="_blank">Gem Catalogue  
+                <span class="lf-menu-description">
+                  Add features and functionality to your 3D project through a modular framework of Gems. 
+                </span>
+              </a>
+            </li>
+            <li
+              class="menu-item">
+              <a href="" target="_blank">Release Notes 
+                <span class="lf-menu-description">
+                  Check out what’s new in the latest O3DE software release.
+                </span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="/docs/api/" target="_blank">
+                API Reference <i class="icon-arrow"></i>
+                <span class="lf-menu-description">
+                  Explore the public API reference for libraries, gems and systems.
+                </span>
+              </a>
+            </li>
 
-    <div class="col3">
-      <ul class="menu">
-        <li class="lf-menu-title">SUPPORT</li>
-      </ul>
-      <div class="columns-one">
-          <ul class="menu-social menu">
             
-            <li
-              class="menu-item">
-              {{ $discord := printf $discord | relURL }}
-              <a href="{{ $discord }}"><span class="icon-discord"></span> Discord</a>
-            </li>
-            <li
-              class="menu-item">
-              <a href="#"><span class="icon-forum"><span class="path1"></span><span class="path2"></span></span> Forums</a>
-            </li>
-            <li
-              class="menu-item">
-              {{ $youtube := printf $youtube | relURL }}
-              <a href="{{ $youtube }}"><span class="icon-youtube"></span> YouTube</a>
-            </li>
-            <li
-            class="menu-item">
-            <a href="#"><span class="icon-question"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span> FAQs Coming Soon</a>
-          </li>
-
-            <li
-              class="menu-item">
-              <a href="#"><span class="icon-notes"></span> Release Notes</a>
-            </li>
-            
-            <!-- <li
-            class="menu-item">
-            <a href="#"><span class="icon-spotify"></span> Spotify</a>
-          </li> -->
           </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="col2">
+          <ul id="menu-about_01" class="menu">
+            <li
+              class="menu-item menu-item-type-custom lf-menu-title">
+              MORE RESOURCES
+            </li>
+           
+            <li class="menu-item">
+              <a href="/docs/learning-guide/" target="_blank">Tutorials & Workshops <i class="icon-arrow"></i>
+                <span class="lf-menu-description">
+                  Watch step-by-step tutorials and hands-on workshops to get up to speed quickly.
+                </span>
+                </a>
+            </li>
+            <li
+              class="menu-item">
+              <a href="https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ" target="_blank">Technical Topics <i class="icon-arrow"></i>
+                <span class="lf-menu-description">
+                  Learn about a diversity of technical topics through presentations from community & industry events.
+                </span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="">
+                Multiplayer Game Development <i class="icon-arrow"></i>
+                <span class="lf-menu-description">
+                  Learn how to build multiplayer games through a series of insightful videos.       
+                </span>
+                </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col3">
+        
+          <ul class="menu">
+            <li class="lf-menu-title">SUPPORT</li>
+          </ul>
+          <div class="columns-one">
+              <ul class="menu-social menu">
+                
+                <li
+                  class="menu-item">
+                  {{ $discord := printf $discord | relURL }}
+                  <a href="{{ $discord }}"><span class="icon-discord"></span> Discord</a>
+                </li>
+                <li
+                  class="menu-item">
+                  <a href="#"><span class="icon-forum"><span class="path1"></span><span class="path2"></span></span> Forums</a>
+                </li>
+                <li
+                  class="menu-item">
+                  {{ $youtube := printf $youtube | relURL }}
+                  <a href="{{ $youtube }}"><span class="icon-youtube"></span> YouTube</a>
+                </li> 
+                <!-- <li
+                class="menu-item">
+                <a href="#"><span class="icon-spotify"></span> Spotify</a>
+              </li> -->
+              </ul>
+            
+          </div>
+          <ul class="menu">
+            <li class="lf-menu-title">ADDITIONAL RESOURCES</li>
+          </ul>
+          <div class="columns-one">
+            
+            
+            <ul  class="menu">
+              <li
+                class="menu-item">
+                <a href="/docs/user-guide/"><span>
+                  <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.11111 16.7778C2.75749 16.7778 2.41835 16.9183 2.1683 17.1683C1.91825 17.4184 1.77778 17.7575 1.77778 18.1111C1.77778 18.602 1.37981 19 0.888889 19C0.397969 19 0 18.602 0 18.1111C0 17.286 0.327777 16.4947 0.911223 15.9112C1.49467 15.3278 2.28599 15 3.11111 15H15.1111C15.602 15 16 15.398 16 15.8889C16 16.3798 15.602 16.7778 15.1111 16.7778H3.11111Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.11111 1.87375C2.75749 1.87375 2.41835 2.02181 2.1683 2.28536C1.91825 2.5489 1.77778 2.90635 1.77778 3.27906V18.7209C1.77778 19.0936 1.91825 19.4511 2.1683 19.7146C2.41835 19.9782 2.75749 20.1262 3.11111 20.1262H14.2222V1.87375H3.11111ZM0.911223 0.960415C1.49467 0.345472 2.28599 0 3.11111 0H15.1111C15.602 0 16 0.419453 16 0.936875V21.0631C16 21.5805 15.602 22 15.1111 22H3.11111C2.28599 22 1.49467 21.6545 0.911223 21.0396C0.327777 20.4246 0 19.5906 0 18.7209L0 3.27906C0 2.4094 0.327777 1.57536 0.911223 0.960415Z" fill="black"/>
+                    <path d="M8.00508 12C9.57868 12 11 11.0957 11 8.90425V4H9.31472V8.82979C9.31472 9.82979 8.75635 10.2979 8.00508 10.2979C7.24365 10.2979 6.68528 9.84043 6.68528 8.82979V4H5V8.90425C5 11.0957 6.44162 12 8.00508 12Z" fill="#F0695D"/>
+                    </svg>                    
+                </span> User Guide</a>
+              </li>
+              <li
+                class="menu-item">
+                <a href="/docs/tools-ui/"><span>
+                  <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.11111 16.7778C2.75749 16.7778 2.41835 16.9183 2.1683 17.1683C1.91825 17.4184 1.77778 17.7575 1.77778 18.1111C1.77778 18.602 1.37981 19 0.888889 19C0.397969 19 0 18.602 0 18.1111C0 17.286 0.327777 16.4947 0.911223 15.9112C1.49467 15.3278 2.28599 15 3.11111 15H15.1111C15.602 15 16 15.398 16 15.8889C16 16.3798 15.602 16.7778 15.1111 16.7778H3.11111Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.11111 1.87375C2.75749 1.87375 2.41835 2.02181 2.1683 2.28536C1.91825 2.5489 1.77778 2.90635 1.77778 3.27906V18.7209C1.77778 19.0936 1.91825 19.4511 2.1683 19.7146C2.41835 19.9782 2.75749 20.1262 3.11111 20.1262H14.2222V1.87375H3.11111ZM0.911223 0.960415C1.49467 0.345472 2.28599 0 3.11111 0H15.1111C15.602 0 16 0.419453 16 0.936875V21.0631C16 21.5805 15.602 22 15.1111 22H3.11111C2.28599 22 1.49467 21.6545 0.911223 21.0396C0.327777 20.4246 0 19.5906 0 18.7209L0 3.27906C0 2.4094 0.327777 1.57536 0.911223 0.960415Z" fill="black"/>
+                    <path d="M8.18 12.11C9.61 12.11 10.8 11.42 11.44 10.55L10.33 9.50998C9.82 10.12 9.1 10.53 8.28 10.53C7.05 10.53 6.09 9.59998 6.09 8.31998C6.09 7.01998 7.07 6.06998 8.29 6.06998C9.11 6.06998 9.8 6.48998 10.29 7.07998L11.37 5.97998C10.72 5.09998 9.56 4.47998 8.2 4.47998C6.12 4.47998 4.38 6.04998 4.38 8.32998C4.38 10.59 6.06 12.11 8.18 12.11Z" fill="#8122D2"/>
+                    </svg>                    
+                </span> Contributor Guide</a>
+              </li>
+              <li
+                class="menu-item">
+                <a href="/docs/tools-ui/"><span>
+                  <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.11111 16.7778C2.75749 16.7778 2.41835 16.9183 2.1683 17.1683C1.91825 17.4184 1.77778 17.7575 1.77778 18.1111C1.77778 18.602 1.37981 19 0.888889 19C0.397969 19 0 18.602 0 18.1111C0 17.286 0.327777 16.4947 0.911223 15.9112C1.49467 15.3278 2.28599 15 3.11111 15H15.1111C15.602 15 16 15.398 16 15.8889C16 16.3798 15.602 16.7778 15.1111 16.7778H3.11111Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.11111 1.87375C2.75749 1.87375 2.41835 2.02181 2.1683 2.28536C1.91825 2.5489 1.77778 2.90635 1.77778 3.27906V18.7209C1.77778 19.0936 1.91825 19.4511 2.1683 19.7146C2.41835 19.9782 2.75749 20.1262 3.11111 20.1262H14.2222V1.87375H3.11111ZM0.911223 0.960415C1.49467 0.345472 2.28599 0 3.11111 0H15.1111C15.602 0 16 0.419453 16 0.936875V21.0631C16 21.5805 15.602 22 15.1111 22H3.11111C2.28599 22 1.49467 21.6545 0.911223 21.0396C0.327777 20.4246 0 19.5906 0 18.7209L0 3.27906C0 2.4094 0.327777 1.57536 0.911223 0.960415Z" fill="black"/>
+                    <path d="M4.84937 13H8.00714C10.5007 13 11.9816 11.4538 11.9816 8.98201C11.9816 6.51024 10.5334 4.95312 8.06159 4.95312H4.84937V13ZM6.64603 11.2687V6.68446H8.08337C9.44448 6.68446 10.1196 7.74068 10.1196 8.97113C10.1196 10.2016 9.44448 11.2687 8.08337 11.2687H6.64603Z" fill="#57BE7D"/>
+                    </svg>                                        
+                </span> Developer Guide</a>
+              </li>
+              <li
+                class="menu-item">
+                <a href="/resources/brand-guidelines/">
+                  <span>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.5 0.5L0.5 14.5L4.5 18.5L18.5 4.5L14.5 0.5Z" fill="#D3BB5D"/>
+                      <path d="M2.48633 0.000371094C2.68412 0.000371094 2.88229 0.000371094 3.08008 0.000371094C3.10271 0.00964844 3.12461 0.0241211 3.14799 0.0270898C3.82561 0.115039 4.37742 0.43418 4.85539 0.915117C6.26221 2.33158 7.67719 3.73988 9.0892 5.15115C9.13559 5.19754 9.18531 5.24096 9.27141 5.32074C9.32225 5.24986 9.35824 5.18232 9.40982 5.13037C10.9996 3.53801 12.5897 1.94639 14.1832 0.358477C14.3161 0.225996 14.4741 0.11875 14.6207 0C14.7198 0 14.8185 0 14.9176 0C15.0642 0.118379 15.2223 0.225254 15.3551 0.357363C16.4543 1.44986 17.5498 2.54533 18.6423 3.64451C18.7744 3.77736 18.8809 3.93545 18.9996 4.08203V4.37891C18.8809 4.52549 18.774 4.68357 18.6415 4.81642C17.0536 6.4099 15.4624 8.00004 13.8689 9.58832C13.8136 9.64361 13.7282 9.66848 13.657 9.70744C13.7538 9.83918 13.8121 9.87629 13.86 9.92416C14.7873 10.8497 15.7158 11.7744 16.6365 12.7062C16.7501 12.8213 16.8473 12.9675 16.9081 13.117C17.3913 14.3057 17.8626 15.4995 18.3409 16.6903C18.5565 17.2265 18.7796 17.7598 18.9996 18.2945V18.5914C18.9117 18.7759 18.7744 18.9106 18.5914 18.9996H18.2945C18.2586 18.9792 18.224 18.9544 18.1862 18.9391C16.5022 18.2649 14.8167 17.5943 13.1349 16.9141C12.9742 16.8491 12.8176 16.7445 12.6944 16.6224C11.7663 15.7065 10.8467 14.7814 9.92453 13.8596C9.87369 13.8088 9.82062 13.7605 9.74232 13.6856C9.68852 13.7524 9.65104 13.8095 9.60354 13.857C8.00895 15.4531 6.41473 17.0488 4.81643 18.6412C4.68357 18.7736 4.52512 18.8805 4.37854 18.9993H4.08166C3.93545 18.8805 3.77736 18.7736 3.64451 18.6415C2.5457 17.549 1.44986 16.4532 0.357363 15.3544C0.225625 15.2223 0.11875 15.0645 0 14.9183C0 14.8193 0 14.7205 0 14.6215C0.11875 14.4749 0.225996 14.3168 0.358477 14.1839C1.95084 12.586 3.54729 10.9918 5.14225 9.39609C5.19309 9.34525 5.2417 9.29219 5.31295 9.21723C5.24912 9.16601 5.19643 9.13187 5.15301 9.08846C3.72727 7.66457 2.30412 6.23846 0.876894 4.81605C0.496152 4.4368 0.222656 3.99816 0.0879492 3.47641C0.0549219 3.34541 0.0293164 3.21256 0 3.08045C0 2.88266 0 2.68449 0 2.4867C0.0115039 2.44588 0.0263477 2.40543 0.0341406 2.3635C0.253086 1.19195 0.936641 0.437891 2.07479 0.0942578C2.20912 0.0538086 2.34902 0.0311719 2.48633 0.000371094ZM14.7881 1.38566C10.3175 5.85586 5.85141 10.322 1.41238 14.7606C2.35199 15.7028 3.30533 16.6588 4.24123 17.5973C4.62977 17.2069 5.03389 16.8009 5.44246 16.3901C5.44617 16.3979 5.4432 16.3845 5.43541 16.3764C5.24838 16.1875 5.06061 15.9993 4.8732 15.8104C4.60639 15.5418 4.58486 15.2074 4.81828 14.9729C5.05318 14.7369 5.38865 14.7539 5.65473 15.0222C5.85289 15.2223 6.04363 15.4297 6.21434 15.6093C6.65111 15.1725 7.05932 14.764 7.47568 14.348C7.1276 14.0021 6.76318 13.6407 6.39988 13.2785C6.11043 12.9898 6.08297 12.6558 6.32641 12.4142C6.57096 12.1719 6.89418 12.2012 7.19068 12.4947C7.44525 12.7471 7.69982 12.9998 7.95143 13.2555C8.06238 13.3683 8.16592 13.4878 8.25387 13.5835C8.68879 13.1486 9.09402 12.743 9.51447 12.3225C9.15043 11.9611 8.77266 11.5885 8.39785 11.2133C8.14365 10.9588 8.12658 10.6181 8.35221 10.3884C8.57895 10.1576 8.92221 10.1695 9.17752 10.4218C9.46809 10.7087 9.75754 10.9962 10.0425 11.2883C10.132 11.38 10.2047 11.4879 10.2715 11.5714C10.7202 11.1206 11.1239 10.7142 11.5477 10.2882C11.3447 10.0904 11.1224 9.88557 10.9142 9.66736C10.6148 9.35379 10.7383 8.86617 11.1443 8.74334C11.3666 8.67617 11.5585 8.74037 11.7191 8.90328C11.9258 9.11258 12.1314 9.32299 12.3288 9.52412C12.7567 9.09625 13.1627 8.69027 13.5754 8.27762C13.5427 8.2431 13.5015 8.19783 13.4585 8.15441C13.1219 7.81746 12.786 7.48014 12.4483 7.14467C12.3036 7.00068 12.2227 6.83258 12.2613 6.62736C12.3018 6.41064 12.4264 6.25924 12.6421 6.19059C12.8666 6.11896 13.058 6.18205 13.2187 6.34162C13.6043 6.72533 13.9862 7.11275 14.3621 7.49127C14.7829 7.07156 15.1933 6.66225 15.6179 6.23883C15.4115 6.03658 15.1993 5.83025 14.9888 5.62207C14.8374 5.47215 14.7718 5.29217 14.8252 5.08176C14.9317 4.66131 15.4304 4.51473 15.7496 4.81642C15.973 5.02758 16.1797 5.25691 16.3593 5.44246C16.7968 5.0157 17.2098 4.61232 17.6169 4.21488C16.6751 3.27305 15.727 2.32453 14.7881 1.38566ZM2.23844 4.58449C3.02441 3.79814 3.80408 3.01848 4.58041 2.24178C4.36184 2.01801 4.13955 1.769 3.895 1.54375C3.24893 0.948887 2.23881 0.976347 1.61277 1.59459C0.978945 2.22062 0.941094 3.23445 1.53855 3.8898C1.7627 4.13584 2.01059 4.35998 2.23844 4.58449ZM4.66279 3.8141C5.67217 4.82496 6.67932 5.83322 7.65158 6.80623C7.89465 6.56428 8.15033 6.30933 8.3882 6.07221C7.40146 5.0851 6.39654 4.08018 5.39756 3.08119C5.15523 3.32277 4.90252 3.57512 4.66279 3.8141ZM3.10012 5.39273C4.10133 6.39357 5.10959 7.40109 6.11117 8.40193C6.34719 8.16592 6.60027 7.91283 6.83926 7.67385C5.83656 6.67078 4.82867 5.66215 3.83043 4.66316C3.58848 4.90475 3.33539 5.15746 3.10012 5.39273ZM16.1641 14.2452C15.5214 14.8864 14.8827 15.5236 14.2422 16.163C15.2768 16.5764 16.3318 16.9983 17.4425 17.4421C16.9968 16.3281 16.5734 15.2687 16.1641 14.2452ZM15.5177 13.2098C14.6411 12.3326 13.7694 11.4601 12.9059 10.5962C12.6625 10.84 12.4075 11.0957 12.1804 11.3232C13.0454 12.1901 13.9205 13.0662 14.7896 13.9372C15.0282 13.6986 15.2813 13.4462 15.5177 13.2098ZM11.3458 12.1741C11.1002 12.4205 10.8448 12.6762 10.6107 12.9111C11.472 13.7709 12.347 14.6445 13.1864 15.4824C13.4258 15.2442 13.6815 14.99 13.9227 14.7502C13.0684 13.8963 12.1964 13.0243 11.3458 12.1741Z" fill="black"/>
+                      </svg>                      
+                  </span>
+                  Brand Guide & Assets</a>
+              </li>
+            </ul>
+          
+        </div>
         
       </div>
-      <ul class="menu">
-        <li class="lf-menu-title">OTHER RESOURCES</li>
-      </ul>
-      <div class="columns-one">
-        
-        
-        <ul  class="menu">
-          
-          <li
-            class="menu-item">
-            <a href="/resources/brand-guidelines/"><span class="icon-box"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span> Branding & Event Kit</a>
-          </li>
-        </ul>
-      
     </div>
-    </div>
+    
+    
+
+
   </div>
 </div>
