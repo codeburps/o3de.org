@@ -2773,10 +2773,10 @@ body.new-look
   .h1
     font-family: $font-family-axiforma;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 72px;
     color: #fff;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
 .newsletter-section
   background: #1F1F1F;
   padding: 33px 0;
@@ -2789,6 +2789,9 @@ body.new-look
 
 .footer-black
   background: #000;
+  hr
+    margin: 40px 0;
+    border-color: rgba(255,255,255,0.25); 
   .h5-12
     margin-bottom: 26px;
     font-family: $font-family-axiforma;
@@ -2801,9 +2804,13 @@ body.new-look
     padding-right: 25px;
     font-size: 24px;
     box-shadow: none;
+    transition: 300ms ease;
+    span
+      &:hover
+        color: #0AC1C7;
 
   .footer-links-wrapper
-    margin-bottom: 55px;
+    margin-bottom: 0px;
     h5
       margin-bottom: 26px;
       font-family: $font-family-axiforma;
@@ -2821,6 +2828,9 @@ body.new-look
       margin-bottom: 10px;
       color: #fff;
       display: block;
+      transition: 300ms ease;
+      &:hover
+        color: #0AC1C7;
   .bottom-text
     p
       font-family: $font-family-axiforma;
@@ -2835,6 +2845,9 @@ body.new-look
         line-height: 153%;
         letter-spacing: 0.02em; 
         color: #fff;
+        transition: 300ms ease;
+        &:hover
+          color: #0AC1C7;
     .footer-links
       display: flex;
       justify-content: space-between;
@@ -2845,6 +2858,9 @@ body.new-look
         line-height: 153%;
         letter-spacing: 0.02em; 
         color: #fff;   
+        transition: 300ms ease;
+        &:hover
+          color: #0AC1C7;
 
 .gallery-section
   margin: 50px 0;
@@ -2987,7 +3003,7 @@ body.new-look
       visibility: visible;
       >.col-container 
         opacity: 1;
-        transition: all 1s ease-out;
+        transition: all 500ms ease-out;
         visibility: visible;
   .sub-menu 
     background-color: #fff;
@@ -3001,7 +3017,7 @@ body.new-look
     visibility: hidden;
     width: 100%;
     z-index: 3;
-    transition: opacity .45s ease;
+    transition: opacity 300ms ease;
     overflow-x: hidden; 
     &:before
       background: linear-gradient(180deg,rgba(0,0,0,.1),transparent);
@@ -3015,7 +3031,7 @@ body.new-look
     .col-container 
       display: block;
       opacity: 1;
-      transition: opacity .75s ease;
+      transition: opacity 300ms ease;
       visibility: visible;
       ul
         padding-left: 0;
@@ -3100,6 +3116,7 @@ body.new-look
             padding: 9px 20px 11px 10px;
             margin-bottom: 14px;
             position: relative;
+            transition: 300ms ease;
 
             .main-menu-item__image-wrapper 
               height: 100px;
@@ -3111,7 +3128,7 @@ body.new-look
                 width: 100%;
                 background-size: cover;
                 background-position: center;
-                transition: 600ms ease;
+                transition: 1200ms ease;
 
 
             .main-menu-item__text-wrapper 
@@ -3120,6 +3137,7 @@ body.new-look
               flex-direction: column;
               padding-left: 15px;
               padding-right: 10px;
+              
 
               .author-category 
                 line-height: 1.3;
@@ -3165,8 +3183,10 @@ body.new-look
               height: 100%;
             
             &:hover
+              box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+              transition: 300ms ease;
               .bg-image
-                scale: 1.2;
+                scale: 1.06;
                 
 
 
