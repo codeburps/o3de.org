@@ -629,6 +629,7 @@ code
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     &:hover
       background: #0BB6BC
@@ -755,20 +756,32 @@ code
         justify-content: center
 
       .search-drop
-        display: none
+        // display: none
         position: absolute;
         top: 76px;
         left: 0;
         width: 100%;
-        background: #000;
+        background-color: rgba(34,34,34,.85);
         padding: 21px 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .15s ease-in;
+        &.is-active 
+          opacity: 1;
+          transition: opacity .15s ease-in;
+          visibility: visible;
+
         form
           input
             border: none;
             background: transparent;
             border-bottom: 1px solid #fff
             border-radius: 0
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
             color: #fff;
+            font-family: $font-family-axiforma
           button
             margin-left: 40px !important;
             border: 1px solid #FFFFFF;
@@ -781,10 +794,16 @@ code
             padding: 9px 25px;
             font-size: 14px
             line-height: 1
-            background: #000
-            box-shadow: none
+            letter-spacing: 0.1em;
+            background: transparent;
+            box-shadow: none;
+            width: 130px;
+            transition: 300ms ease;
+            &:hover
+              background-color: #fff;
+              color: #000;
         .close-popup
-          margin-left: 40px;
+          margin-left: 30px;
           cursor: pointer
 
 .navbar-docs
@@ -3162,16 +3181,16 @@ body.new-look
           ul
             display: flex;
             margin-top: 2px;
-            margin-bottom: 10px
+            padding-bottom: 15px
             flex-direction: column;
             li
               a
                 padding: 0;
-                margin-bottom: 18px;
+                margin-bottom: 22px;
                 display: flex;
                 align-items: center;
                 > span
-                  margin-right: 16px;
+                  margin-right: 24px;
 
 
 
@@ -3180,10 +3199,11 @@ body.new-look
     color: #747474;
     font-size: 10px;
     font-weight: 800;
-    letter-spacing: .3em;
+    letter-spacing: 0.3em;
     line-height: 13px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     margin-top: 0px;
+    font-family: $font-family-axiforma;
     text-transform: uppercase;
 
   .sub-menu .menu * a 
@@ -3194,18 +3214,21 @@ body.new-look
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0.1px;
-    padding: 7px 0;
+    // padding: 7px 0;
+    margin-bottom: 20px;
     // text-transform: uppercase;
     text-decoration: none; 
     
     .lf-menu-description 
       display: block;
       text-transform: none;
-      font-size: 10px;
+      font-family: $font-family-axiforma;
+      font-size: 11px;
       font-weight: 400;
+      color: #747474;
       line-height: 160%;
       padding-top: 7px;
-      letter-spacing: 0.04px;
+      letter-spacing: 0.04em;
 
 .new-nav.navbar-dark
   padding-top: 0;

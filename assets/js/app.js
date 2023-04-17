@@ -106,14 +106,15 @@ $(function() {
 $(() => {
   $(".search-icon").on('click', (e) => {
     e.preventDefault();
-    if($(".search-drop").is(":hidden")){
-      $(".search-drop").slideDown();
+    if(!$(".search-drop.is-active").length){
+      $(".search-drop").addClass('is-active');
+    } else{
+      $(".search-drop").removeClass('is-active');
     }
   });
   $('.close-popup').on('click', (e) => {
     e.preventDefault();
-    $(".search-drop").slideUp();
-    
+    $(".search-drop").removeClass('is-active');
   });
  
   // $("#search").submit(function(event){
