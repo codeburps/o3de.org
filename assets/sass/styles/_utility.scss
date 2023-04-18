@@ -100,6 +100,26 @@
         color: #fff;
     }
 }
+.btn-underline{
+    font-family: $font-family-axiforma;
+    height: 35px;
+    font-size: 1rem;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-bottom: 4px solid $o3de-aqua;
+    border-radius: 0;
+    padding: 0;
+    color: #000;
+    
+    padding-right: 0;
+    box-shadow: none;
+}
+    
+
 .btn-text{
 
 }

@@ -453,7 +453,12 @@ $(function(){
     const swiper = new Swiper('.gallery-slider', {
       speed: 400,
       spaceBetween: 32,
-      slidesPerView: 'auto'
+      slidesPerView: 'auto',
+      navigation: {
+        nextEl: '.gallery-slide-nav .swiper-button.next',
+        prevEl: '.gallery-slide-nav .swiper-button.prev',
+        
+      }
     });
   }
 });
