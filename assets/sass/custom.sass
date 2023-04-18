@@ -712,9 +712,14 @@ code
   
   @include media-breakpoint-down(md)
     display: none
-      
+.navbar-docs .navbar-nav li
+  position: relative
+  
 .navbar-docs .navbar-nav li.active div
   background-color: $o3de-blue-highlight
+  position: absolute
+  padding-bottom: 4px;
+  width: 100%
 
 .navbar-logo
   max-height: 40px
@@ -2204,6 +2209,8 @@ nav.docs-nav
 // new style updates
 body.new-look
   background: #FCFCFC;  
+  .navbar-dark .navbar-nav li.active span:after
+    background-color: transparent;
   .hide-mobile  
     @include breakpoint(767px)
       display: none
@@ -2608,7 +2615,7 @@ body.new-look
     margin: 0;
 
 .community-secion
-  padding: 50px 0px;
+  padding: 80px 0px;
   h2
     font-family: $font-family-axiforma;
     font-size: 40px;
@@ -2695,52 +2702,24 @@ body.new-look
 
   .member-slider
     padding-bottom: 50px;
-    .member-slider_paginations
-      display: inline-block;
-      position: relative;
-      width: 200px;
-      height: 40px;
-      transform: translateX(-50%);
-      left: 50%;
-      .swiper-pagination
-        top: 50%
-        transform: translateY(-50%)
-        bottom: auto
-        .swiper-pagination-bullet
-          width: 10px
-          height: 10px
-          background: #D9D9D9
-          opacity: 1
-          margin: 0 5px 
-          &.swiper-pagination-bullet-active
-            background: #000
-      .swiper-button-next, .swiper-button-prev
-        color: #0AC1C7;
-        &::after
-          font-size: 24px
-    .swiper-slide
-      text-align: center;  
-      h6
-        font-family: $font-family-axiforma;
-        font-weight: 700;
-        font-size: 0.875rem;
-        line-height: 1;
-        margin-bottom: 80px;
-        text-transform: uppercase;
-        color: #8f8f8f;
-        letter-spacing: 0.2em;
-      .logo-row
-        display: flex;
-        flex-wrap: wrap;  
-        align-items: center
-        justify-content: center
-        .logo-col
-          width: 25%;
-          margin-bottom: 60px;
-
-
-  
-  
+    .swiper-wrapper
+      transition-timing-function : linear;
+      .swiper-slide
+        &.logo-col
+          padding: 18px;
+          background: #FFFFFF;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+        &.square
+          width: 120px;
+        &.rectangle
+          width: 160px;
+        &.long-rectangle
+          width: 250px;      
   
 
 .getstarted-secion
@@ -2850,6 +2829,7 @@ body.new-look
 
 .gallery-section
   margin: 50px 0;
+  margin-bottom: 0
   background-color: #1A1A1A;
   padding-top: 124px
   padding-bottom: 74px

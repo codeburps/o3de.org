@@ -433,19 +433,31 @@ $(function(){
   }
   
   if($(".member-slider").length >0 ){
-    const swiper = new Swiper('.member-slider', {
-      speed: 400,
+    const swiper1 = new Swiper('.member-slider-1', {
+      speed: 5000,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false
+      },
+      freeMode: true,
       spaceBetween: 30,
       loop: true,
       autoHeight: true,
-      pagination: {
-        el: '.member-slider .swiper-pagination',
-        type: 'bullets',
+      slidesPerView: "auto",
+
+    });
+    const swiper2 = new Swiper('.member-slider-2', {
+      speed: 5000,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+        reverseDirection: true
       },
-      navigation: {
-        nextEl: '.member-slider .swiper-button-next',
-        prevEl: '.member-slider .swiper-button-prev',
-      },
+      freeMode: true,
+      spaceBetween: 30,
+      loop: true,
+      autoHeight: true,
+      slidesPerView: "auto",
     });
   }
 
