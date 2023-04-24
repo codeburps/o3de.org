@@ -63,7 +63,21 @@
         color: #000;
     }
 }
-
+.btn-black{
+    height: 36px;
+    line-height: 1;
+    font-weight: 800;
+    font-family: $font-family-axiforma;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px 21px;
+    background-color: #000;
+    text-transform: uppercase;
+    color: #fff;
+}
 .btn-primary-white{
     color: #fff;
     font-size: 0.875rem;
@@ -192,3 +206,9 @@
 .mb-40{
     margin-bottom: 40px !important;
 }
+@include breakpoint(767px){
+    .mb-xs-50{
+        margin-bottom: 50px !important;
+    }
+}
+
