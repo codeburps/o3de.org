@@ -2259,6 +2259,7 @@ body.new-look
 
 .hero-banner-secton
   height: calc(100vh - 80px);
+  max-height: 760px;
   position: relative;
   @include breakpoint(767px)
     height: 580px
@@ -2538,33 +2539,13 @@ body.new-look
         height: 180px
         &:last-of-type
           margin-right: 15px
-      &:hover
-        .card-feature
-          // background-color: #000;
-          transition: 300ms ease
-          // opacity: 1
-          .title-wrap
-            // color: #fff;
-            font-weight: 700
-          // svg
-          //   rect
-          //     stroke: #fff;  
-          //   path
-          //     stroke: #fff;  
-          //   line
-          //     stroke: #fff;  
-        
-      
-
-
-
       .card-feature
         display: flex;
         height: 100%
         padding: 18px 20px;
         flex-direction: column;
         transition: 300ms ease
-        justify-content: space-between;
+        // justify-content: space-between;
         // background: #FFFFFF;
         opacity: 1
         transform: translateY(0)
@@ -2635,10 +2616,11 @@ body.new-look
     background: #fff;
     border-radius: 4px;
     overflow: hidden;
+    transform: translateZ(0);
+    transition-duration: .3s;  
+    transition-property: transform;
+    
     a
-      &:hover
-        .community--card_img
-          scale: 1.2;
       .community--card_img-wrapper
         overflow: hidden;
         .community--card_img
@@ -2681,6 +2663,12 @@ body.new-look
           line-height: 1;
           color: #8F8F8F;
           letter-spacing: 0.1em;  
+    
+    &:hover
+      -webkit-transform: scale(1.013);
+      transform: scale(1.013),translateZ(0);
+
+
 
 .members-section
   padding: 63px 0;
