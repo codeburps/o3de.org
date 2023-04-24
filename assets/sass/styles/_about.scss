@@ -574,7 +574,7 @@
 .member-page-content{
     margin-bottom: 60px;
     .section-seperator{
-        padding-top: 80px;
+        padding-top: 55px;
         margin-bottom: 80px;
         border-bottom: 1px solid #C4C4C4;
         h4{
@@ -598,12 +598,37 @@
             display: flex;
             align-items: center;
             width: 100%;
+            margin-bottom: 70px;
             li{
-                width: 20%;
-                margin-bottom: 50px;
-                img{
+                // width: 20%;
+                // margin-bottom: 50px;
+                // @include breakpoint(767px){
+                //     width: 50%;
+                // }
+                // img{
 
+                // }
+                &.logo-col{
+                    padding: 18px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100px;    
+                    margin-right: 40px;
+                    margin-bottom: 36px;
                 }
+              &.square{
+                  width: 120px;
+              }
+              &.rectangle{
+                  width: 160px;
+              }
+              &.long-rectangle{
+                  width: 250px; 
+              }
             }
         }
     }

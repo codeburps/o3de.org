@@ -10,8 +10,11 @@
   navbar-start 
   {{ if $isHere }} is-active{{ end }}
   navbar-item">
+  {{/*  <a href="{{ .URL }}"  */}}
   <a href="{{ .URL }}"
+  tabindex="-1"
   class="
+    no-click
     nav-link 
     navbar-item
     {{ if $isHere }} is-active{{ end }}" 
