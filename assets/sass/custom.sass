@@ -682,14 +682,14 @@ code
   // position: relative
   margin-left: 20px
 
-.navbar-dark .navbar-nav li.active
+.navbar-dark:not(.new-nav) .navbar-nav li.active
   &:hover 
     .nav-link.active
       color: $o3de-blue-highlight
     div
       background-color: $o3de-blue-highlight
 
-.navbar-dark .navbar-nav li.active
+.navbar-dark:not(.new-nav) .navbar-nav li.active
   &:hover 
     .nav-link.active
       color: $o3de-black
@@ -3217,7 +3217,7 @@ body.new-look
     &:hover 
       .nav-link.active
         color: $o3de-black
-      div
+      > div
         background-color: #fff
 
 // .new-banner
