@@ -183,6 +183,9 @@
 .flex-start{
     justify-content: flex-start !important;
 }
+.text-underline{
+    text-decoration: underline;
+}
 .mb-80{
     margin-bottom: 80px !important;
     @include breakpoint(767px){
