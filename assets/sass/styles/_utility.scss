@@ -10,6 +10,14 @@
 .btn-wrapper{
     display: flex;
 }
+.w-160{
+    width: 160px;
+}
+.with-icon{
+    svg{
+        margin-left: 10px;
+    }
+}
 .btn-primary-black{
     color: #000;
     font-size: 0.875rem;
@@ -30,6 +38,15 @@
     text-transform: uppercase;
     .icon-arrow{
         margin-left:12px;
+    }
+    &.with-icon{
+        svg{
+            margin-left: 10px;
+            path{
+                stroke: #000;
+            }
+            
+        }
     }
     &:hover{
         background: #0BB6BC;
@@ -155,13 +172,22 @@
     text-transform: uppercase;
     text-align: center;
     border: none;
-    border-bottom: 4px solid $o3de-aqua;
+    // border-bottom: 4px solid $o3de-aqua;
     border-radius: 0;
     padding: 0;
     color: #000;
-    
+    position: relative;
     padding-right: 0;
     box-shadow: none;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 36px;
+        background-color: $o3de-aqua;
+    }
 }
     
 
@@ -221,4 +247,6 @@
         margin-bottom: 50px !important;
     }
 }
-
+.mr-0{
+    margin-right: 0 !important;
+}
