@@ -1,4 +1,4 @@
 ---
-title: Download Open 3D Engine
+title: Available for Linux + Windows
 ---
-O3DE supports Windows 10 and Linux. Download the latest version of the engine for your operating system here.
+O3DE IS OPEN SOURCE & FREE

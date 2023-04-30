@@ -1,29 +1,36 @@
 {{ define "main" }}
-<div class="scalable download-hero d-flex align-items-center">
-  <div class="container text-light">
-    <div class="row pt-5 pb-5">
-      <div class="col col-12 text-center">
+
+<div class="download-hero">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-5">
+        <h5 class="pb-1">
+          {{ .RawContent }}
+        </h5>
         <h1 class="title">
           {{ .Title }}
         </h1>
-        <h4 class="pb-1">
-          {{ .Content }}
-        </h5>
+      </div>
+      <div class="col-lg-6">
+        <img src="/img/download/Laptop.png" class="img-fluid" alt="">
       </div>
     </div>
   </div>
 </div>
+
+
+
 <div id="os-selector" class="os-selector">
   <div class="os-selector-row">
     <a id="os-windows" class="os-selector-button active" href="#windows" data-os="windows">Windows</a>
     <a id="os-linux" class="os-selector-button" href="#linux" data-os="linux">Linux</a>
   </div>
 </div>
-<div id="content-windows" class="os-content active">
+<div id="content-windows" class="os-content active br-top">
   {{ partial "download/content-windows.html" . }}
   {{ partial "download/getting-started-windows.html" . }}
 </div>
-<div id="content-linux" class="os-content">
+<div id="content-linux" class="os-content br-top">
   {{ partial "download/content-linux.html" . }}
   {{ partial "download/getting-started-linux.html" . }}
 </div>

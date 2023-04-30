@@ -1187,3 +1187,121 @@
         
     }
 }
+
+.showcase-page-content{
+    .showcase-filter-group{
+        .filter-wrapper{
+            display: flex;
+            align-items: center;
+            padding-bottom: 27px;
+            border-bottom: 1px solid #000000;
+            margin-bottom: 20px;
+            p{
+                font-family: $font-family-axiforma;
+                font-style: normal;
+                font-weight: 950;
+                font-size: 12px;
+                line-height: 1;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                color: #000;
+                margin-bottom: 0;
+            }
+            
+            ul{
+                padding-left: 0;
+                list-style: none;
+                display: flex;
+                margin: 0;
+                align-items: center;
+                li{
+                    padding-left: 30px;
+                    text-transform: uppercase;
+                    font-family: $font-family-axiforma;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1;
+                    font-size: 12px;
+                    letter-spacing: 0.15em;
+                    color: #8A8A8A;
+                    cursor: pointer;
+                    transition: 300ms ease;
+                    &:hover{
+                        color: $o3de-aqua;
+                    }
+                }
+            }
+        }
+    }
+    .showcase-grid{
+        margin-top: 20px;
+     
+    }
+    
+}
+
+
+// cards general styles
+
+// gallery card
+.gallery-card{
+    &-image{
+        position: relative;
+        img{
+            width: 100%;
+            max-height: unset;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+        .gallery-tags{
+            position: absolute;
+            top: 28px;
+            padding: 0 28px;
+            left: 0;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .category-tag{
+                font-family: $font-family-axiforma;
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 18px;
+                background: #000000;
+                border-radius: 50px;
+                color: #fff;
+                letter-spacing: 0.3em;
+                text-transform: uppercase;
+            }
+            .extternal-links{
+                a{
+                    display: block;
+                }
+            }
+        }
+    }
+    &-content{
+        padding: 28px 0;
+        h4{
+            font-family: $font-family-axiforma; 
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 140%;
+            letter-spacing: 0.05em;
+            color: #000000;
+            margin: 0;
+        }
+        p{
+            font-family: $font-family-axiforma;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            letter-spacing: 0.05em;
+        }
+    }
+}
