@@ -20,7 +20,7 @@
 }
 .btn-primary-black{
     color: #000;
-    font-size: 0.875rem;
+    font-size: 14px;
     padding: 10px 16px;
     line-height: 1;
     font-weight: 700;
@@ -166,12 +166,12 @@
 .btn-underline{
     font-family: $font-family-axiforma;
     height: 35px;
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.05;
     font-weight: 800;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     border: none;
     // border-bottom: 4px solid $o3de-aqua;
     border-radius: 0;
@@ -188,6 +188,18 @@
         height: 4px;
         width: 36px;
         background-color: $o3de-aqua;
+    }
+    &:hover{
+        color: #333;
+        transition: 200ms ease;
+    }
+}
+.btn-purple{
+    color: #fff;
+    background: #8122D2;
+    &:hover{
+        background: #671ba8;
+        color: #fff;
     }
 }
     
@@ -253,4 +265,20 @@
 }
 .mr-0{
     margin-right: 0 !important;
+}
+
+.m-bt-50{
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+}
+
+.f-700{
+    font-weight: 700;
+}
+.w-250{
+    width: 250px;
+}
+
+.text-upper{
+    text-transform: uppercase;
 }

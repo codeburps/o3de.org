@@ -1159,10 +1159,10 @@ $width: '59vw';
 
 .download-hero 
   max-height: 600px
-  padding: 80px 0
+  padding: 30px 0
   h1
     font-weight: 900;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 120%;
     font-family: $font-family-axiforma;
     letter-spacing: 0.02em;
@@ -1175,7 +1175,7 @@ $width: '59vw';
     color: #0AC1C7
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-bottom: 69px
+    margin-bottom: 50px
 
   @include media-breakpoint-down(md)
     h1
@@ -1188,12 +1188,12 @@ $width: '59vw';
     h5
       font-size: .8rem
 
-$os-selector-height: 72px
+$os-selector-height: 52px
 $os-selector-mobile-height: 48px
 
 .os-selector
   overflow: visible
-  height: $os-selector-height / 2
+  height: $os-selector-height - 1px
   
   @include media-breakpoint-down(md)
     height: $os-selector-mobile-height
@@ -1201,32 +1201,44 @@ $os-selector-mobile-height: 48px
 .os-selector-row
   text-align: center
   height: $os-selector-height
-  transform: translate(0, -50%)
-  -webkit-transform: translate(0, -50%)
   
   @include media-breakpoint-down(md)
     height: $os-selector-mobile-height
 
 .os-selector-button
-  color: #000000
-  background-color: #EEEEEE
+  color: rgba(0, 0,0 ,0.2);
   border-radius: 0 
   cursor: pointer
-  width: 320px
+  width: 235px
   margin: 0 8px
   display: inline-block
   height: 100%
-  line-height: $os-selector-height
-  font-size: 1.25rem
-  box-shadow: 0px 2px 4px 0px #0000001A;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: $os-selector-height - 1px;
+  background: #E2E2E2;
+  border: 1px solid #E2E2E2;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0
+  transition: 300ms ease
+  position: relative
 
-  &:hover
-    color: #000000
-    background-color: #E8E8E8
 
-  &.active
-    background-color: #FFFFFF
-    border-bottom: 3px solid #1E70EB
+
+  &.active, &:hover
+    background-color: #F1F1F1
+    opacity: 1;
+    color: #000;
+    &::after
+      content: '';
+      position: absolute;
+      left: 0
+      bottom: -2px
+      height: 5px
+      width: 100%
+      background: #F1F1F1
+      z-index: 2
+
     
   @include media-breakpoint-down(md)
     width: 128px
@@ -1234,7 +1246,100 @@ $os-selector-mobile-height: 48px
     line-height: $os-selector-mobile-height
 
 .os-content
+  padding: 100px 0;
   display: none
+  position: relative
+  background-color: #fff
+  &::after
+    content: '';
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 175px
+    background: linear-gradient(180deg, #E6E6E6 0%, rgba(230, 230, 230, 0) 100%);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    z-index: 0
+  h3
+    font-family: $font-family-axiforma;
+    font-size: 30px
+    line-height: 140%;
+    font-weight: 950;
+    letter-spacing: 0.05em;
+    // text-transform: uppercase
+    margin-bottom: 33px
+    .version
+      font-size: 16px
+      font-weight: 700
+  p
+    font-family: $font-family-axiforma;
+    margin-bottom: 50px
+    strong
+      font-weight: 700;
+  hr
+    margin: 60px 0
+  h5
+    font-family: $font-family-axiforma;
+    font-size: 16px
+    line-height: 140%;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    margin-bottom: 34px
+  ul
+    padding-left: 17px;
+    margin-bottom: 50px;
+    ul
+        margin-bottom: 0px
+    li
+      font-family: $font-family-axiforma;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 180%;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px     
+
+  .requirements
+    display: flex
+    svg
+      margin-right: 30px
+
+    p
+      font-family: $font-family-axiforma;
+      margin-bottom: 0
+      letter-spacing: 0.05em;
+    a
+      font-weight: 700; 
+      color: #0AC1C7
+      letter-spacing: 0.05em;
+
+  .version-card
+    background: #FFFFFF;
+    padding: 46px 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding-right: 18px
+    p
+      font-family: $font-family-axiforma;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    a
+      font-size: 14px;
+    ul
+      padding-left: 15px;
+      margin-bottom: 40px
+      
+      li    
+        font-family: $font-family-axiforma; 
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;     
+        letter-spacing: 0.05em;   
+        margin-bottom: 10px     
+
 
 .os-content.active
   display: block
@@ -1248,34 +1353,54 @@ $os-selector-mobile-height: 48px
     max-width: 70%
 
 .getting-started
-  background: #111
+  padding-top: 50px
+  padding-bottom: 50px
 
-  a
-    color: #83BAE1
+  h2
+    font-family: $font-family-axiforma; 
+    font-style: normal;
+    font-weight: 950;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    margin-bottom: 60px
+  p
+   font-family: $font-family-axiforma;  
+   font-weight: 400;
+   font-size: 1rem
 
-  .card
-    padding: 1.5rem
-    display: block
-    min-height: 16rem
-    @include media-breakpoint-down(lg)
-      min-height: 18rem
-    @include media-breakpoint-down(md)
-      min-height: 13rem
-
-    p
-      color: $o3de-black
-      font-size: .9rem
-      line-height: 1.1rem
-
+  .card-information
+    padding: 34px 23px
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    height: 100%
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    transform: translateZ(0);
+    transition-duration: .3s;
+    transition-property: transform;
+    &:hover
+      transform: scale(1.013) translateZ(0);
+      transition: 300ms ease;
     h4
-      margin: 0
-      color: $o3de-black
-      min-height: 5.5rem
-      padding-bottom: 1rem
-      @include media-breakpoint-down(lg)
-        font-size: 1.25rem
-      @include media-breakpoint-down(md)
-        min-height: 4rem
+      font-family: $font-family-axiforma; 
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 0.05em;
+    p
+      font-family: $font-family-axiforma; 
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.05em;
+      color: #767676;
+      margin-bottom: 30px
+
+
+ 
 
 .learn-more
   display: block
@@ -1290,6 +1415,65 @@ $os-selector-mobile-height: 48px
   background-color: $o3de-blue
   &:hover 
     background-color: darken(#1E71EB, 10%)
+
+
+.download-page
+  &.system-requirement
+    h3
+      font-family: $font-family-axiforma; 
+      font-style: normal;
+      font-weight: 950;
+      font-size: 30px;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+      color: #000000;
+      margin-bottom: 38px
+
+.community-section-download
+  background-color: #F4F4F4
+  padding: 115px 0;
+  h2
+    font-family: $font-family-axiforma;
+    font-size: 2.5rem;
+    line-height: 140%;
+    font-weight: 950;
+    letter-spacing: 0.03em;
+    margin-bottom: 48px;
+  p
+      font-family: $font-family-axiforma;
+      margin-bottom: 0
+      letter-spacing: 0.03em; 
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 180%;
+
+  .community-card
+    height: 100%
+    padding: 41px 21px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    a
+      display: flex;
+      flex-direction: column;
+      align-items: center  
+      text-align: center
+    p
+      font-family: $font-family-axiforma;
+      font-size: 13px
+      line-height: 180%;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      margin-bottom: 40px;
+      margin-top: 42px
+      color: #000
+
+      
+
+
+
+
+
 
 // layouts/partials/home/features.html 
 

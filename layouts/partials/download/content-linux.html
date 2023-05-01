@@ -1,23 +1,13 @@
-<section class="container pt-lg-5">
-  <div class="row">
-    <div class="col-12 col-lg-5 pr-lg-5">
-      <h3>Get O3DE for Linux (Preview)</h3>
-      <div class="download_release">O3DE 22.10.0 Release</div>
-      <p class="download_notes">Read the <a href="https://o3de.org/docs/release-notes/">Release Notes</a> to learn more about O3DE 22.10.0 Release.</p>
-      <p id="download-page-button-windows" class="mr-5">
-        <a href="https://o3debinaries.org/download/linux.html" class="btn-xl-block btn-lg btn-primary text-white text-center" target="_blank">Download Debian Package</a>
-      </p>
-      <div class="github-box mr-5">
-        <h3><i class="fab fa-github"></i>Customize your Engine</h3>
-        <p>Looking to dive deep into O3DE? Get the engine sources, build O3DE, and start working with the code now.</p>
-        <p id="github-page-button-windows">
-          <a href="https://github.com/o3de/o3de/" class="btn-xl-block btn-lg btn-green text-white text-center" target="_blank">Fork from GitHub</a>
-        </p>
-      </div>
-    </div>
-    <div class="col-12 col-lg-7">
-      <h5>Minimum System Requirements</h5>
-      <p>O3DE for Linux requires Ubuntu 20.04 LTS.</p>
+<div class="container">
+  <div class="row justify-content-between">
+    <div class="col-12 col-lg-6">
+      <h3 class="text-upper">GET THE LATEST VERSION <span class="version">22.10.0</span></h3>
+      <p>The latest version comes with exciting new features built from our incredible open source community.</p>
+      <a href="https://o3debinaries.org/download/linux.html" class="w-250 btn-primary-black with-icon">DOWNLOAD PACKAGE {{ partial "svg-icons/down-arrow.svg" . }}</a>
+      <hr>
+      <h5 class="text-upper">Minimum System Requirements</h5>
+      
+      <p class="f-700 mb-30">O3DE for Linux requires Ubuntu 20.04 LTS.</p>
       <ul>
         <li>2.5 GHz Intel or AMD processor with 4 or more physical cores</li>
         <li>8 GB RAM</li>
@@ -32,9 +22,76 @@
         <li>40 to 100 GB of free disk space</li>
         <li>1366 x 768 px screen resolution</li>
       </ul>
+    
+      <div class="requirements">
+        {{ partial "svg-icons/paper.svg" . }}
+        <div>
+          <p>For the full detailed requirements read our</p>
+          <a href="/docs/welcome-guide/requirements/">O3DE System Requirements</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="version-card">
+        <p>VERSION UPDATES</p>
+        <ul>        
+          <li>Easier onboarding & collaboration</li>
+          <li>Streamlined multiplayer setup</li>
+          <li>Artist workflow enhancements</li>
+          <li>Usability improvements</li>
+          <li>Increased terrain performance</li>
+          <li>New Sky Atmosphere and Stars components</li>
+        </ul>
+        <a href="/docs/release-notes/" class="btn-underline">READ FULL RELEASE NOTES</a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>Customise your engine</h3>
+      <p><strong> Looking to dive deep into O3DE?</strong><br>
+        Get the engine sources, build O3DE, and start working with the code now.
+      </p>
+      <div class="row">
+        <div class="col-sm-10">
+          <p class="d-flex">
+            <a href="https://github.com/o3de/o3de/" class="mt-4 btn-primary-black btn-purple">FORK FROM GITHUB</a>
+            <a href="/gems/" class="mt-4 btn-secondary-black">DISCOVER ALL GEMS</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+
+{{/*  <section class="container pt-lg-5">
+  <div class="row">
+    <div class="col-12 col-lg-5 pr-lg-5">
+      <h3>Get O3DE for Linux (Preview)</h3>
+      <div class="download_release">O3DE 22.10.0 Release</div>
+      <p class="download_notes">Read the <a href="https://o3de.org/docs/release-notes/">Release Notes</a> to learn more about O3DE 22.10.0 Release.</p>
+      <p id="download-page-button-windows" class="mr-5">
+        <a href="" class="btn-xl-block btn-lg btn-primary text-white text-center" target="_blank">Download Debian Package</a>
+      </p>
+      <div class="github-box mr-5">
+        <h3><i class="fab fa-github"></i>Customize your Engine</h3>
+        <p>Looking to dive deep into O3DE? Get the engine sources, build O3DE, and start working with the code now.</p>
+        <p id="github-page-button-windows">
+          <a href="https://github.com/o3de/o3de/" class="btn-xl-block btn-lg btn-green text-white text-center" target="_blank">Fork from GitHub</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-7">
+      <h5>Minimum System Requirements</h5>
+      <p>O3DE for Linux requires Ubuntu 20.04 LTS.</p>
+      
       <p> For more detailed requirements, read <a href="https://o3de.org/docs/welcome-guide/requirements/">O3DE System Requirements</a>.</p>
       <h5>Instructions</h5>
       <p>Choose the "Download O3DE" button, <a href="https://o3de.org/docs/welcome-guide/setup/installing-linux/">read the documentation</a>, and follow the instructions in it.</p>
     </div>
   </div>
-</section>
+</section>  */}}
