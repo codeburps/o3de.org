@@ -145,6 +145,25 @@ $(function() {
   });
 });
 
+// --- Staff page
+// Handle click to switch between staff groups.
+$(function() {
+  $(".staff-selector").click(function(event){
+    if($(this).hasClass("active"))
+    {
+      return;
+    }
+
+    // Switch enabled button
+    $(".staff-selector.active").removeClass("active");
+    $(this).addClass("active");
+
+    // Switch content
+    $(".reslult-list.active").removeClass("active");
+    $("#"+$(this).data("staff")+"-staff").addClass("active");
+  });
+});
+
 // Detect anchor in URL on load and select appropriate tab.
 // This uses the click to switch function, so it must be defined after it.
 $(function() {
@@ -378,6 +397,66 @@ $(function()
   }
   
 });
+//staff popup
+$(function(){
+  $('a[data-modal]').on('click',function(event) {
+    $(this).modal({
+      fadeDuration: 100
+    });
+    return false;
+  });
+   
+});
+// gems filter
+$(function(){
+  if($(".gem-page-content").length >0 ){
+    $(".gem-page-list .gem-item").addClass('active');
+    
+    const gemLength = $('.gem-item.active').length;
+    $('#found').html(gemLength);
+
+    $('ul.filter-list li').on('click',(e)=>{
+      const current =$(e.currentTarget).data('filter');
+     if(current == "all"){
+      $('ul.filter-list li').removeClass('active');
+      $(e.currentTarget).addClass('active');
+      $('.gem-item').addClass('active');
+     } else{
+      if($('ul.filter-list li.all.active').length > 0){
+        $('ul.filter-list li.all.active').removeClass('active');
+        $('.gem-item').removeClass('active');
+        if($(e.currentTarget).hasClass('active')){
+          $(e.currentTarget).removeClass('active');
+          $('.gem-item.'+current).removeClass('active');
+        }else{
+          $(e.currentTarget).addClass('active');
+          $('.gem-item.'+current).addClass('active');
+        }
+      }else{
+        if($(e.currentTarget).hasClass('active')){
+          $(e.currentTarget).removeClass('active');
+          $('.gem-item.'+current).removeClass('active');
+          if(!$('ul.filter-list li.active').length > 0){
+            $('.gem-item').addClass('active');
+            $('ul.filter-list li.all').addClass('active');
+          }
+        }else{
+          $(e.currentTarget).addClass('active');
+          $('.gem-item.'+current).addClass('active');
+        }
+        
+      }
+     }
+     const gemLength = $('.gem-item.active').length;
+     $('#found').html(gemLength);
+  
+      
+      
+
+    })
+  }
+})
+
 
 // Updated home slider
 $(function(){

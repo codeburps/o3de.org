@@ -2,7 +2,7 @@
 <div class="text-banner gem-page">
   <div class="container short-container">
     <div class="row">
-      <div class="col col-12 col-md-9 ">
+      <div class="col col-12 col-lg-8 ">
         
           <h1 class="title">
             GEMS
@@ -20,111 +20,1390 @@
 <div class="gem-page-content">
   <div class="container">
     <div class="filter-group">
-      <div class="filter-all">
+      {{/*  <div class="filter-all">
         <a href="">Select All</a>
         <a href=""> Deselect All</a>
-      </div>
+      </div>  */}}
+      <div class="filter-outer">
       <ul class="filter-list">
-        <li><a href="" class="active">Animation</a></li>
-        <li><a href="">Artificial Intelligence</a></li>
-        <li><a href="">Assets</a></li>
+        <li class="active all" data-filter="all">All</li>
+        <li class="" data-filter="robotics">robotics</li>
+        <li class="" data-filter="simulations">simulations</li>
+        <li class="" data-filter="animation">animation</li>
+        <li class="" data-filter="ai">Artificial Intelligence</li>
+        <li class="" data-filter="assets">assets</li>
+        <li class="" data-filter="audio">audio</li>
+        <li class="" data-filter="cloud">cloud</li>
+        <li class="" data-filter="core">core</li>
+        <li class="" data-filter="debug">debug</li>
+        <li class="" data-filter="design">design</li>
+        <li class="" data-filter="environment">environment</li>
+        <li class="" data-filter="framework">framework</li>
+        <li class="" data-filter="gameplay">gameplay</li>
+        <li class="" data-filter="input">input</li>
+        <li class="" data-filter="multiplayer">multiplayer</li>
+        <li class="" data-filter="network">network</li>
+        <li class="" data-filter="physics">physics</li>
+        <li class="" data-filter="rendering">rendering</li>
+        <li class="" data-filter="script">script</li>
+        <li class="" data-filter="ui">ui</li>
+        <li class="" data-filter="sdk">sdk</li>
+        <li class="" data-filter="utilities">utilities</li>
       </ul>
     </div>
-    <div class="row">
-      <div class="col-4 mb-50">
-        <div class="gem-card">
-          <div class="gen-img--wrapper">
-            <div class="gen-img" style="background-image: url('/img/gems/gem-1.jpeg')">
+      <p>Found <span id="found">5</span> Gems</p>
+    </div>
+    <div class="row gem-page-list">
+      <div class='col-lg-4 col-sm-6 mb-50 gem-item robotics'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/robotics/ros2/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Robotics.jpg)'>
+              <span>Robotics</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Robotics
+ </strong><br>
+              by Robotec.ai</h3>
+            <p>Provides integration with the Robot Operating System (ROS) 2 library and enables robotics systems simulation</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item simulations'>
+        <div class='gem-card'>
+        <a href=''>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Geospatial.jpg)'>
+              <span>Simulations</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Geospatial</strong><br>
+              By Cesium</h3>
+            <p>Create rich global simulations and experiences, and add real-world context</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item animation'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/animation/emotionfx/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/EMotionFX.jpg)'>
+              <span>Animation</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>EMotionFX</strong><br>
+              By O3DE Core</h3>
+            <p>Create animated behaviours, simulated objects, and colliders for rigged actors</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item animation'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/animation/maestro/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/EMotionFX.jpg)'>
+              <span>Animation</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Maestro Cinematics</strong><br>
+              By O3DE Core</h3>
+            <p>The Maestro Cinematics Gem provides Track View, Open 3D Engine’s animated sequence and cinematics editor.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item ai'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/kythera-ai/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
               <span>AI</span>
             </div>
-
           </div>
-          <div class="gem-text">
-            <h3><strong>Artificial World Gem</strong><br>
+          <div class='gem-text'>
+            <h3><strong>Artificial Intelligence
+ </strong><br>
               By Kythera AI</h3>
             <p>Adds a broad tool set of AI features to O3DE</p>
           </div>
+          </a>
         </div>
       </div>
-      <div class="col-4 mb-50">
-        <div class="gem-card">
-          <div class="gen-img--wrapper">
-            <div class="gen-img" style="background-image: url('/img/gems/gem-2.jpeg')">
-              <span>Robotics</span>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item ai'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/ai/recast/recast-navigation/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Recast-Navigation.jpg)'>
+              <span>AI</span>
             </div>
-
           </div>
-          <div class="gem-text">
-            <h3><strong>Robotics</strong><br>
-              By Company Name</h3>
-            <p>Provides integration with the Robot Operating System (ROS) 2 library and enables robotics systems simulation</p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="col-4 mb-50">
-        <div class="gem-card">
-          <div class="gen-img--wrapper">
-            <div class="gen-img" style="background-image: url('/img/gems/gem-3.jpeg')">
-              <span>Simulations</span>
-            </div>
-
-          </div>
-          <div class="gem-text">
-            <h3><strong>Global Simulations</strong><br>
-              By O3DE Core</h3>
-            <p>Create rich global simulations and experiences, and add real-world context</p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="col-4 mb-50">
-        <div class="gem-card">
-          <div class="gen-img--wrapper">
-            <div class="gen-img" style="background-image: url('/img/gems/gem-4.jpeg')">
-              <span>Physics</span>
-            </div>
-
-          </div>
-          <div class="gem-text">
-            <h3><strong>PhysX</strong><br>
-              By O3DE Core</h3>
-            <p>Find out why more than 50% of the world’s video games are made with Unity.</p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="col-4 mb-50">
-        <div class="gem-card">
-          <div class="gen-img--wrapper">
-            <div class="gen-img" style="background-image: url('/img/gems/gem-5.jpeg')">
-              <span>Animation</span>
-            </div>
-
-          </div>
-          <div class="gem-text">
-            <h3><strong>EMotionFX</strong><br>
-              By O3DE Core</h3>
-            <p>Create animated behaviors, simulated objects, and colliders for rigged actors</p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="col-4 mb-50">
-        <div class="gem-card">
-          <div class="gen-img--wrapper">
-            <div class="gen-img" style="background-image: url('/img/gems/gem-6.jpeg')">
-              <span>Physics</span>
-            </div>
-
-          </div>
-          <div class="gem-text">
+          <div class='gem-text'>
             <h3><strong>Recast Navigation</strong><br>
               By O3DE Core</h3>
             <p>Build navigation meshes and calculate walkable paths within those navigation meshes</p>
           </div>
+          </a>
         </div>
-        
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item assets'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/assets/asset-validation/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Asset-Validation.jpg)'>
+              <span>Assets</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Asset Validation
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides seed-related commands to ensure assets have valid seeds for asset bundling.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item assets'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/assets/custom-asset-example/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Custom-Asset-Example.jpg)'>
+              <span>Assets</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Custom Asset Example</strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides example code for creating a custom asset for Open 3D Engine’s asset pipeline.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item assets'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/assets/dev-textures/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Dev-Textures.jpg)'>
+              <span>Assets</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Dev Textures
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides a collection of general purpose texture assets useful for prototypes and preproduction.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item assets'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/assets/prefab/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Prefab-Builder.jpg)'>
+              <span>Assets</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Prefab Builder
+ </strong><br>
+              By O3DE Core</h3>
+            <p>Asset Processor module for prefabs, which are complex assets built by combining smaller...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item assets'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/assets/primitive-assets/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Primitive-Assets.jpg)'>
+              <span>Assets</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Primitive Assets
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem gives primitive shape mesh objects with physics enabled.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item assets'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/assets/scene-processing/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Scene-Processing.jpg)'>
+              <span>Assets</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Scene Processing
+ </strong><br>
+              By O3DE Core</h3>
+            <p>Providing FBX Settings, a tool you can use to specify the default settings for processing .fbx files...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item assets'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/assets/test-asset-builder/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Test-Asset-Builder.jpg)'>
+              <span>Assets</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Test Asset Builder
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Test Asset Builder Gem is used to feature test Asset Processor.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item audio'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/audio/wwise/audio-engine-wwise/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Audio-Engine-Wwise.jpg)'>
+              <span>Audio</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Audio Engine Wwise
+ </strong><br>
+              By Audiokinetic</h3>
+            <p>Integrates Wwise audio authoring tool & cross-platform sound engine</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item audio'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/audio/microphone/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Microphone.jpg)'>
+              <span>Audio</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Microphone
+ </strong><br>
+              By O3DE</h3>
+            <p>Provides support for audio input through microphones</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item audio'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/audio/audio-system/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Audio-System.jpg)'>
+              <span>Audio</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Audio System
+ </strong><br>
+              By O3DE Core</h3>
+            <p>Adds support for audio through an audio translation layer (ATL)</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item cloud'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-client-auth/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Client-Auth.jpg)'>
+              <span>Cloud</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Client Auth
+ </strong><br>
+              By AWS</h3>
+            <p>The AWS Client Auth Gem provides solutions for client authentication and AWS authorization.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item cloud'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-core/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Core.jpg)'>
+              <span>Cloud</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Core</strong><br>
+              By AWS</h3>
+            <p>This Gem provides basic shared AWS functionality such as AWS SDK initialization and client configuration.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item cloud'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-metrics/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Metrics.jpg)'>
+              <span>Cloud</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Metrics
+ </strong><br>
+              By AWS</h3>
+            <p>This Gem provides a solution for AWS metrics submission and analytics.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item cloud'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-gamelift/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/GameLift.jpg)'>
+              <span>Cloud</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>GameLift
+ </strong><br>
+              By AWS</h3>
+            <p>Framework to extend the O3DE networking layer and Multiplayer Gem.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item core'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/o3de-core/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/LmbrCentral.jpg)'>
+              <span>Core</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>LmbrCentral
+ </strong><br>
+              By O3DE</h3>
+            <p>This Gem provides required code and assets for running Open 3D Engine Editor.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item debug'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/debug/crash-reporting/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Crash-Reporting.jpg)'>
+              <span>Debug</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Crash Reporting
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Crash Reporting Gem provides support for external crash reporting for Open 3D Engine projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item debug'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/debug/debug-draw/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Debug-Draw.jpg)'>
+              <span>Debug</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Debug Draw
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Debug Draw Gem provides Editor and runtime debug visualization features for Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item debug'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/debug/imgui/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Immediate-Mode-GUI.jpg)'>
+              <span>Debug</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Immediate Mode GUI
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides the 3rdParty library IMGUI which can be used to create run time immediate mode overlays for...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item debug'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/debug/remote-tools/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Remote-Tools.jpg)'>
+              <span>Debug</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Remote Tools
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Remote Tools Gem facilitates connections between Open 3D Engine applications for debugging purposes.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item design'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/design/white-box/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/White-Box.jpg)'>
+              <span>Design</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>White Box
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The White Box Gem provides White Box rapid design components for Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item environment'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/environment/landscape-canvas/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Landscape-Canvas.jpg)'>
+              <span>Environment</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Landscape Canvas
+ </strong><br>
+              By O3DE Core</h3>
+            <p>Landscape Canvas editor; a node-based graph tool for authoring workflows to populate...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item environment'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/environment/surface-data/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Surface-Data.jpg)'>
+              <span>Environment</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Surface Data
+ </strong><br>
+              By O3DE Core</h3>
+            <p>Providing functionality to emit signals or tags from surfaces such as meshes and terrain.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item environment'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/environment/vegetation/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Vegetation.jpg)'>
+              <span>Environment</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Vegetation
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Vegetation Gem provides tools to place natural-looking vegetation in Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item environment'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/environment/terrain/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Terrain.jpg)'>
+              <span>Environment</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Terrain
+ </strong><br>
+              By O3DE Core</h3>
+            <p>Providing a terrain system that maps height, color, and surface data to regions of the world.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item framework'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/framework/graph-canvas/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Graph-Canvas.jpg)'>
+              <span>framework</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Graph Canvas
+ </strong><br>
+              By O3DE Core</h3>
+            <p>C++ framework for creating custom graphical node based editors for Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item framework'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/framework/graph-model/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Graph-Model.jpg)'>
+              <span>framework</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Graph Model
+ </strong><br>
+              By O3DE Core</h3>
+            <p>Providing a generic node graph data model framework for Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item gameplay'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/gameplay/achievements/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Achievements.jpg)'>
+              <span>Gameplay</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Achievements
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides a target platform agnostic interface for retrieving achievement details and unlocking...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item gameplay'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/gameplay/game-state/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Gameplay</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Game State
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides functionality to determine and manage game states in Open 3D Engine projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item gameplay'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/gameplay/game-state-samples/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Game-State-Samples.jpg)'>
+              <span>Gameplay</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Game State Samples
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Samples Gem provides a set of sample game states (built on top of the Game State Gem), including primary...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item gameplay'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/gameplay/tick-bus-order-viewer/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Tick-Bus-Order-Viewer.jpg)'>
+              <span>Gameplay</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Tick Bus Order Viewer
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Tick Bus Order Console Variable Gem provides a console variable that displays the order of runtime tick...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item input'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/input/gestures/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Input</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Gestures
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Gestures Gem provides detection for common gesture-based input actions.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item input'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/input/local-user/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Input</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Local User
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides functionality for mapping local user ids to local player slots and managing local user profiles.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item input'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/input/starting-point-input/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Input</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Starting Point Input
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Starting Point Input Gem provides functionality to map low-level input events to high-level actions.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item input'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/input/starting-point-movement/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Input</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Starting Point Movement
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Starting Point Movement Gem provides a series of Lua scripts that listen and respond to input events.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item input'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/input/virtual-gamepad/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Input</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Virtual Gamepad
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Virtual Gamepad Gem provides controls that emulate a gamepad on touch screen devices.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item multiplayer'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Multiplayer.jpg)'>
+              <span>Multiplayer</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Multiplayer
+ </strong><br>
+              By O3DE Core</h3>
+            <p>High-level, advanced multiplayer gameplay functionality such as entity replication.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item multiplayer'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-compression/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Compression.jpg)'>
+              <span>Multiplayer</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Compression
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This gem provides an open-source compressor to use with the Multiplayer Gem.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item network'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/network/certificate-manager/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Network</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Certificate Manager
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides access to authentication files for secure game connections from Amazon S3, files on...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item network'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/network/http-requestor/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Network</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Http Requestor
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides functionality to make asynchronous HTTP/HTTPS requests and return data through a user-provided...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item network'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/network/twitch/metastream/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Network</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Metastream
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides functionality for an HTTP server that allows broadcasters to customize game streams with overlays...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item network'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/network/presence/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Network</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Presence
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Presence Gem provides a target platform agnostic interface for Presence services.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item network'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/network/twitch/twitch/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Network</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Twitch
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Twitch Gem provides access to the Twitch API v5 SDK including social functions, channels, and other APIs.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item physics'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/physics/nvidia/nvidia-cloth/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Physics</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>NvCloth
+ </strong><br>
+              By NVIDIA</h3>
+            <p>The NVIDIA Cloth (NvCloth) Gem provides functionality to create realistic cloth and fabric simulation.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item physics'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/physics/nvidia/physx/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/PhysX.jpg)'>
+              <span>Physics</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>PhysX
+ </strong><br>
+              By NVIDIA</h3>
+            <p>Create realistic physical effects such as collision detection and rigid body dynamics simulation</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item physics'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/physics/nvidia/physx-debug/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/PhysX-Debug.jpg)'>
+              <span>Physics</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>PhysX Debug
+ </strong><br>
+              By NVIDIA</h3>
+            <p>This Gem provides debugging functionality and visualizations for PhysX in O3DE projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/atom/atom/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Atom Common Features
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Atom Gem provides Atom Renderer and its associated tools (such as Material Editor), utilities, libraries...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/atom/atom-content/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Atom Content
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Atom Content Gem provides assets including models, textures, and materials that can be used to test...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/atom/atom-o3de-integration/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Atom O3DE Integration
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides components, libraries, and functionality to support and integrate Atom Renderer in O3DE.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/amd/atom-tressfx/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Atom TressFX
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/camera/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Camera
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Camera Gem provides a basic camera component that defines a frustum for runtime rendering.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/camera-framework/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Camera Framework
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Camera Framework Gem provides a base for implementing more complex camera systems.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/pbr-reference-materials/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>PBR Reference Materials
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The PBR Reference Materials Gem provides physically based reference materials for O3DE projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/stars/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Stars
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Stars Gem provides physically-based animated resolution-independent distant stars.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/starting-point-camera/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Starting Point Camera
+ </strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides the behaviors used with the Camera Framework Gem to define a camera rig.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item rendering'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/rendering/video-playback-framework/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Rendering</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Video Playback Framework
+ </strong><br>
+              By O3DE Core</h3>
+            <p>The Video Playback Framework Gem provides the interface to play back video.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/python/editor-python-bindings/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Editor Python Bindings</strong><br>
+              By O3DE Core</h3>
+            <p>The Editor Python Bindings Gem provides Python commands for Open 3D Engine Editor functions.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/expression-evaluation/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Expression Evaluation</strong><br>
+              By O3DE Core</h3>
+            <p>The Expression Evaluation Gem provides a method for parsing and executing string expressions.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/python/python-asset-builder/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Python Asset Builder</strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides functionality to implement custom asset builders in Python for Asset Processor.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/script-canvas/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Script Canvas</strong><br>
+              By O3DE Core</h3>
+            <p>The Script Canvas Gem provides Open 3D Engine’s visual scripting environment Script Canvas.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/script-canvas-developer/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Script Canvas Developer</strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides a suite of utility features for the development and debugging of Script Canvas systems.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/script-canvas-physics/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Script Canvas Physics</strong><br>
+              By O3DE Core</h3>
+            <p>The Script Canvas Physics Gem provides Script Canvas nodes for physics scene queries such as raycasts.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/script-canvas-testing/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Script Canvas Testing</strong><br>
+              By O3DE Core</h3>
+            <p>The Script Canvas Testing Gem provides a framework for testing for and with Script Canvas.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/scripted-entity-tweener/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Scripted Entity Tweener</strong><br>
+              By O3DE Core</h3>
+            <p>The Scripted Entity Tweener Gem provides a script driven animation system for Open 3D Engine projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/script-events/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Script Events</strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides a framework for creating event assets usable from any scripting solution in Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item script'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/script/python/qt-for-python/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>Script</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Qt for Python</strong><br>
+              By O3DE Core</h3>
+            <p>The Qt for Python Gem provides the PySide2 Python libraries to manage Qt widgets.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item ui'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/ui/lyshine/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>UI</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>LyShine</strong><br>
+              By O3DE Core</h3>
+            <p>The LyShine Gem provides the runtime UI system and creation tools for Open 3D Engine projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item ui'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/ui/lyshine-examples/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>UI</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>LyShine Examples</strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides example code and assets for LyShine, the runtime UI system and editor for O3DE projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item ui'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/ui/message-popup/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>UI</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Message Popup</strong><br>
+              By O3DE Core</h3>
+            <p>The Message Popup Gem provides an example implementation of popup messages in an Open 3D Engine project.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item ui'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/ui/ui-basics/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Artificial-Intelligence.png)'>
+              <span>UI</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>UI Basics</strong><br>
+              By O3DE Core</h3>
+            <p>This Gem provides a collection of assets that can be used with LyShine, the O3DE runtime UI system and editor.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item sdk'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/sdk/in-app-purchases/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/In-App-Purchases.jpg)'>
+              <span>SDK</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>In-App Purchases</strong><br>
+              By O3DE Core</h3>
+            <p>The In-App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item utilities'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/utility/fast-noise/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Fast-Noise.jpg)'>
+              <span>Utilities</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Fast Noise</strong><br>
+              By O3DE Core</h3>
+            <p>The Fast Noise Gradient Gem uses the third-party, open source FastNoise library to provide a variety of...</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item utilities'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/utility/gradient-signal/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Gradient-Signal.jpg)'>
+              <span>Utilities</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Gradient Signal</strong><br>
+              By O3DE Core</h3>
+            <p>The Gradient Signal Gem provides a number of components for generating, modifying, and mixing gradient signals.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item utilities'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/utility/save-data/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Save-Data.jpg)'>
+              <span>Utilities</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Save Data</strong><br>
+              By O3DE Core</h3>
+            <p>The Save Data Gem provides an API to save runtime data in Open 3D Engine projects.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item utilities'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/utility/scene-logging-example/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Scene-Logging.jpg)'>
+              <span>Utilities</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Scene Logging</strong><br>
+              By O3DE Core</h3>
+            <p>This Gem demonstrates the basics of extending the O3DE SceneAPI by adding additional logging to the pipeline.</p>
+          </div>
+          </a>
+        </div>
+      </div>
+ <div class='col-lg-4 col-sm-6 mb-50 gem-item utilities'>
+        <div class='gem-card'>
+        <a href='https://www.o3de.org/docs/user-guide/gems/reference/utility/texture-atlas/'>
+          <div class='gen-img--wrapper'>
+            <div class='gen-img' style='background-image:url(/img/gems/Texture-Atlas.jpg)'>
+              <span>Utilities</span>
+            </div>
+          </div>
+          <div class='gem-text'>
+            <h3><strong>Texture Atlas</strong><br>
+              By O3DE Core</h3>
+            <p>The Texture Atlas Gem provides the formatting for texture atlases in Open 3D Engine.</p>
+          </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -132,6 +1411,6 @@
 
 
 
-{{ partial "newHome/newsletter.html" . }}
+{{ partial "newHome/getstarted-secion.html" . }}
 {{ partial "newHome/footer.html" . }}
 {{ end }}

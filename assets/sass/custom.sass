@@ -1261,6 +1261,8 @@ $os-selector-mobile-height: 48px
     mix-blend-mode: normal;
     opacity: 0.5;
     z-index: 0
+  @include media-breakpoint-down(md)
+    padding: 60px 0;
   h3
     font-family: $font-family-axiforma;
     font-size: 30px
@@ -1275,10 +1277,14 @@ $os-selector-mobile-height: 48px
   p
     font-family: $font-family-axiforma;
     margin-bottom: 50px
+    @include media-breakpoint-down(md)
+      margin-bottom: 30px
+      font-size: 14px
     strong
       font-weight: 700;
   hr
     margin: 60px 0
+
   h5
     font-family: $font-family-axiforma;
     font-size: 16px
@@ -1298,16 +1304,24 @@ $os-selector-mobile-height: 48px
       line-height: 180%;
       letter-spacing: 0.05em;
       margin-bottom: 10px     
+      @include media-breakpoint-down(md)
+        font-size: 14px;
+        margin-bottom: 5px     
 
   .requirements
     display: flex
+    margin-bottom: 40px;
     svg
       margin-right: 30px
+      @include media-breakpoint-down(md)
+        margin-right: 15px
 
     p
       font-family: $font-family-axiforma;
       margin-bottom: 0
       letter-spacing: 0.05em;
+      @include media-breakpoint-down(md)
+        font-size: 14px
     a
       font-weight: 700; 
       color: #0AC1C7
@@ -1326,6 +1340,9 @@ $os-selector-mobile-height: 48px
       line-height: 140%;
       letter-spacing: 0.15em;
       text-transform: uppercase;
+      @include media-breakpoint-down(md)
+        font-size: 14px;
+        
     a
       font-size: 14px;
     ul
@@ -1339,6 +1356,10 @@ $os-selector-mobile-height: 48px
         line-height: 180%;     
         letter-spacing: 0.05em;   
         margin-bottom: 10px     
+        @include media-breakpoint-down(md)
+          font-size: 14px;
+          margin-bottom: 5px     
+
 
 
 .os-content.active
@@ -1355,7 +1376,9 @@ $os-selector-mobile-height: 48px
 .getting-started
   padding-top: 50px
   padding-bottom: 50px
-
+  @include media-breakpoint-down(md)
+    padding-top: 0px
+    padding-bottom: 0px
   h2
     font-family: $font-family-axiforma; 
     font-style: normal;
@@ -1368,6 +1391,8 @@ $os-selector-mobile-height: 48px
    font-family: $font-family-axiforma;  
    font-weight: 400;
    font-size: 1rem
+   @include media-breakpoint-down(md)
+    font-size: 14px;
 
   .card-information
     padding: 34px 23px
@@ -1453,11 +1478,15 @@ $os-selector-mobile-height: 48px
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    @include media-breakpoint-down(md)
+      padding: 25px 15px;
     a
       display: flex;
       flex-direction: column;
       align-items: center  
       text-align: center
+    svg
+      width: 100%  
     p
       font-family: $font-family-axiforma;
       font-size: 13px
@@ -1467,6 +1496,9 @@ $os-selector-mobile-height: 48px
       margin-bottom: 40px;
       margin-top: 42px
       color: #000
+      @include media-breakpoint-down(md)
+        margin-bottom: 20px;
+        margin-top: 22px
 
       
 
@@ -2920,6 +2952,9 @@ body.new-look
   color: #fff;
   padding-top: 70px;
   padding-bottom: 10px;
+  @include media-breakpoint-down(md)
+    padding-top: 52px;
+    padding-bottom: 10px;
   .download-cta
     color: #fff;
   p
@@ -2929,6 +2964,9 @@ body.new-look
     line-height: 1.8;
     color: #fff;
     letter-spacing: 0.05em;
+    @include media-breakpoint-down(md)
+      font-size: 14px;
+      line-height: 180%;
   .h1
     font-family: $font-family-axiforma;
     font-size: 60px;
@@ -2936,6 +2974,11 @@ body.new-look
     line-height: 72px;
     color: #fff;
     letter-spacing: 0.05em;
+    @include media-breakpoint-down(md)
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: 0.05em;
+      margin-bottom: 40px
 .newsletter-section
   background: #1F1F1F;
   padding: 33px 0;
