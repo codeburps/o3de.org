@@ -13,9 +13,9 @@
     <div class="row justify-content-between">
       <div class="col col-12 col-md-8 ">
           
-          <p class="p-small mb-xs-50">Explore a collection of demos, sample content, games, simulations and other creations made using O3DE, and share your own inspirations.</p>
+          <p class="p-small ">Explore a collection of demos, sample content, games, simulations and other creations made using O3DE, and share your own inspirations.</p>
       </div>
-      <div class="col-md-4 col-lg-3">
+      <div class="col-md-4 col-xl-3 d-none d-lg-block">
          <p class="mb-40 p-small">Got something cool to share
             with the community?</p>
           <div class="row">
@@ -38,12 +38,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="filter-wrapper">
-                        <p><strong>BROWSE BY:</strong></p>
+                        {{/*  <p><strong>BROWSE BY:</strong></p>
                     <ul class="filter-list">
                         <li data-filter="*">LATEST</li>
                         <li data-filter="gaming">GAMING</li>
                         <li data-filter="general">General</li>
-                    </ul>
+                    </ul>  */}}
                 </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
         <div class="showcase-grid">
             <div class="row">
                 {{ range .Paginator.Pages }}
-                    <div class="col-sm-6 {{ .Param "category" }}" data-category="{{ .Param "category" }}">
+                    <div class="col-md-6 {{ .Param "category" }}" data-category="{{ .Param "category" }}">
                         <div class="gallery-card">
                             <div class="gallery-card-image">
                                 <img src='{{ .Param "proj_img" }}' alt="">
