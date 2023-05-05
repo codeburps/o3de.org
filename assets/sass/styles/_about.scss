@@ -791,31 +791,45 @@
 }
 
 .features-list{
+    padding-top: 40px;
+    background-color: #F3F3F3;
     .card{
         border: none;
         box-shadow: none;
-        background-color: #FCFCFC;
+        background-color: #F3F3F3;
         &:hover{
             border: none;
         }
+        
         .card-header{
             border: none;
-            background-color: #FCFCFC ;
+            background-color: #F3F3F3 ;
             padding: 0;
-            border-top:  1px solid rgba(0, 0, 0, 0.05);
-            border-bottom:  1px solid rgba(0, 0, 0, 0.05);
+            // border-top:  1px solid rgba(0, 0, 0, 0.05);
+            // border-bottom:  1px solid rgba(0, 0, 0, 0.05);
             a{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 2.25rem;
+                font-size: 30px;
+                line-height: 150%;
                 font-weight: 900;
                 font-family: $font-family-axiforma;
-                line-height: 1.4;
                 letter-spacing: 0.05em;
                 text-align: left;
                 padding: 60px 0px;
                 margin: 0;
+                border: 0;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgba(0, 0, 0, 0.05);    
+                }
                 @include breakpoint(767px){
                     font-size: 18px;
                      padding: 28px 0px;
@@ -852,9 +866,25 @@
                 }
             }
         }
+        &:first-of-type{
+            .card-header{
+                border-top: 0;
+                a{
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
         .card-body{
             padding-left: 0;
             padding-right: 0;
+            h3{
+                font-family: $font-family-axiforma;
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 800;
+            }
             p{
                 font-family: $font-family-axiforma;
                 font-size: 1rem;
@@ -867,7 +897,7 @@
 
             }
             .feature-card{
-                padding: 30px 23px;
+                // padding: 30px 23px;
                 background-color: #fff;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
                 border-radius: 10px;
@@ -875,9 +905,6 @@
                 display: flex;
                 flex-direction: column;
                 height: 100%;
-                @include breakpoint(767px){
-                    padding: 30px 15px;
-                }
 
                 .feature-card-label{
                     margin-bottom: 24px;
@@ -916,18 +943,29 @@
                 }
                 .feature-card-img{
                     padding-top: calc(300/520*100%);
-                    margin-bottom: 24px ;
+                    margin-bottom: 0 ;
                     background-size: cover;
                 }
                 .feature-card-text{
+                    padding: 20px 17px;
+                    h5{
+                        font-family: $font-family-axiforma;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 20px;
+                        line-height: 150%;
+                    }
+
                     p{
                         color: #6D6D6D;
                         font-family: $font-family-axiforma;
-                        font-size: 1rem;
-                        font-weight: 400;
-                        line-height: 1.8;
-                        letter-spacing: 0.02em;
-                        margin-bottom: 0;
+                        font-style: normal;
+                        font-weight: 950;
+                        font-size: 10px;
+                        line-height: 12px;
+                        letter-spacing: 0.2em;
+                        margin-bottom: 18px;
+                        text-transform: uppercase;
                     }
                 }
             }
