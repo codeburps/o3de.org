@@ -3,11 +3,15 @@
   <div class="container short-container">
     <div class="row">
       <div class="col col-12 col-md-6 pb-4 pt-4">
-        <p class="subtitle">ABOUT O3DE</p>
+        <p class="subtitle">ENGINE OVERVIEW</p>
           <h1 class="title">
-            Open up<br>
-            your world
+            Open up your<br>
+            world with O3DE
           </h1>
+          <p class="d-flex">
+            <a href="/download" class="mt-4 btn-primary-outline with-icon">DOWNLOAD {{ partial "svg-icons/down-arrow.svg" . }}</a>
+          </p>
+          
       </div>
     </div>
 
@@ -18,12 +22,12 @@
       <div class="row">
         <div class="col-12">
           <ul>
-            <li><a href="">01 INTRO</a></li>
-            <li><a href="">02 WHY O3DE</a></li>
-            <li><a href="">03 KEY CONCEPTS</a></li>
-            <li><a href="">04 FEATURES</a></li>
-            <li><a href="">05 GEMS </a></li>
-            <li><a href="">06 SUPPORTED PLATFORMS</a></li>
+            <li><a href="#intro">01 <span class="f-400">INTRO</span></a></li>
+            <li><a href="#why-o3de">02 <span class="f-400">WHY O3DE</span></a></li>
+            <li><a href="#key-concept">03 <span class="f-400">KEY CONCEPTS</span></a></li>
+            <li><a href="#features">04 <span class="f-400">FEATURES</span></a></li>
+            <li><a href="#gems">05 <span class="f-400">GEMS </span></a></li>
+            <li><a href="#platform">06 <span class="f-400">SUPPORTED PLATFORMS</span></a></li>
           </ul>
         </div>
       </div>
@@ -32,7 +36,7 @@
   </div>
 </div>
 <div class="about-page scrollable-sections">
-  <div class="scroll-section section-1">
+  <div id="intro" class="scroll-section section-1">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -75,7 +79,7 @@
       </div>
     </div>
   </div>
-  <div class="scroll-section section-2">
+  <div id="why-o3de" class="scroll-section section-2">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -225,7 +229,7 @@
       </div>
     </div>
   </div>
-  <div class="scroll-section section-5">
+  <div id="key-concept" class="scroll-section section-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -255,7 +259,7 @@
               <div class="concept-card">
                 <div class="concept-card-wrapper">
                     <p><strong>Core <br>modules</strong></p>
-                    <p>supplied by the O3DE software development kit (SDK), that provide math, memory management, serialization, event messaging, and more</p>
+                    <p>Supplied by the O3DE software development kit (SDK), that provide math, memory management, serialization, event messaging etc.</p>
                 </div>
               </div>
             </div>
@@ -264,7 +268,7 @@
                 <div class="concept-card-wrapper">
                     <p><strong>Authoring <br>Tools</strong></p>
                     
-                    <p>Such as the Editor and related applications for placing objects in a level, adding components, and scripting logic</p>
+                    <p>Such as the Editor and related applications for placing objects in a level, adding components, and scripting logic.</p>
                 </div>
               </div>
             </div>
@@ -272,7 +276,7 @@
               <div class="concept-card">
                 <div class="concept-card-wrapper">
                     <p><strong>Plug in & <br>Extension System</strong></p>
-                    <p>A plugin and extension system for adding more features</p>
+                    <p>A plugin and extension system for adding more features.</p>
                 </div>
               </div>
             </div>
@@ -280,7 +284,7 @@
               <div class="concept-card">
                 <div class="concept-card-wrapper">
                     <p><strong>Submodules</strong></p>
-                    <p>called Gems, that enable you to add features and functionality</p>
+                    <p>Called Gems, that enable you to add features and functionality.</p>
                 </div>
               </div>
             </div>
@@ -288,7 +292,7 @@
               <div class="concept-card">
                 <div class="concept-card-wrapper">
                     <p><strong>Asset Pipeline Tools</strong></p>
-                    <p>For converting, optimizing, and bundling assets</p>
+                    <p>For converting, optimizing, and bundling assets.</p>
                 </div>
               </div>
             </div>
@@ -296,13 +300,17 @@
               <div class="concept-card">
                 <div class="concept-card-wrapper">
                     <p><strong>Build system</strong></p>
-                    <p>to build and package a shippable launcher</p>
+                    <p>To build and package a shippable launcher.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 mb-50">
+          <hr>
+        </div>
+        
+        <div class="col-12 mt-50">
           <div class="row mb-40 align-items-end w-100">
             <div class="col-sm-8 ">
                 <h2 class="bold-font">HOW O3DE WORKS</h2>
@@ -329,7 +337,7 @@
       </div>
     </div>
   </div>
-  <div class="scroll-section section-3">
+  <div id="features" class="scroll-section section-3">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -407,7 +415,7 @@
       </div>
     </div>
   </div>
-  <div class="scroll-section section-4">
+  <div id="gems" class="scroll-section section-4">
     <div class="container">
       <div class="row">
 
@@ -616,6 +624,6 @@
   <div class="scroll-section section-6"></div>
 </div>
 
-{{ partial "newHome/newsletter.html" . }}
+{{ partial "newHome/getstarted-secion.html" . }}
 {{ partial "newHome/footer.html" . }}
 {{ end }}
