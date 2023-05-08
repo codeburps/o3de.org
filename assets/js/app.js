@@ -457,6 +457,104 @@ $(function(){
   }
 })
 
+$(function(){
+  const api_url = "http://o3de.garethd4.sg-host.com/wp-json/o3de/v1/navigation-posts";
+
+  $.ajax( {
+    url: api_url,
+    success: function ( data ) {
+      if(data){
+         //     hideloader();
+         showBlog(data);
+         showEvents(data);
+      }
+     
+    },
+    cache: false
+  } );
+
+
+function hideloader() {
+  document.getElementById('loading').style.display = 'none';
+}
+
+
+function showEvents(data) {
+  let featuredEvents= data.events;
+  const date = new Date(featuredEvents.meta.event_date_and_time);
+  const month = date.toLocaleString('default', { month: 'long' });
+  const postDate = ("0" + date.getDate()).slice(-2)+"."+("0" + date.getMonth()).slice(-2)+"."+date.getFullYear();
+  const eventLocation = featuredEvents.meta.event_location ? featuredEvents.meta.event_location+' | ' : '';
+  const readTime = featuredEvents.meta.read_time ? ' | '+featuredEvents.meta.read_time : '';
+  const postThumbnail =featuredEvents.post_thumbnail;
+  const navDate = month+" "+("0" + date.getDate()).slice(-2)+", "+date.getFullYear();
+  
+  
+  let homeBlog = `<a href="${featuredEvents.meta.event_link}" >
+        <div class="community--card_img-wrapper">
+            <div class="community--card_img" style="background-image: url('${postThumbnail}')"></div>
+        </div>
+        <div class="community--card_text">
+            <span>Blog</span>
+            <h3>${featuredEvents.content.post_title}</h3>
+            <p>${eventLocation} <time datetime="${postDate}">${postDate} </time></p>
+        </div>
+      </a>`
+      document.getElementById("home-event").innerHTML = homeBlog;
+
+    let navBlog = `<div class="main-menu-item__image-wrapper">
+              <div class="bg-image" style="background-image: url('${postThumbnail}');"></div>
+            </div>
+            <div class="main-menu-item__text-wrapper">
+                <span class="author-category">BLOG POST</span>
+                <span class="main-menu-item__title">
+                ${featuredEvents.content.post_title}
+                </span>
+                <span class="main-menu-item__date">${navDate}</span>
+            </div>
+            <a href="${featuredEvents.meta.event_link}" class="blog-link"></a>`
+      document.getElementById("nav-event").innerHTML = navBlog;
+    }  
+function showBlog(data) {
+  let featuredNews= data.news;
+  const date = new Date(featuredNews.content.post_date);
+  const month = date.toLocaleString('default', { month: 'long' });
+  const postDate = ("0" + date.getDate()).slice(-2)+"."+("0" + date.getMonth()).slice(-2)+"."+date.getFullYear();
+  const author = featuredNews.meta.author ? featuredNews.meta.author+' | ' : '';
+  const readTime = featuredNews.meta.read_time ? ' | '+featuredNews.meta.read_time : '';
+  const postThumbnail =featuredNews.post_thumbnail;
+  const navDate = month+" "+("0" + date.getDate()).slice(-2)+", "+date.getFullYear();
+  
+  
+  let homeBlog = `<a href="${featuredNews.content.guid}" >
+        <div class="community--card_img-wrapper">
+            <div class="community--card_img" style="background-image: url('${postThumbnail}')"></div>
+        </div>
+        <div class="community--card_text">
+            <span>Blog</span>
+            <h3>${featuredNews.content.post_title}</h3>
+            <p>${author} <time datetime="${postDate}">${postDate} </time>${readTime}</p>
+        </div>
+      </a>`
+      document.getElementById("home-blog").innerHTML = homeBlog;
+
+    let navBlog = `<div class="main-menu-item__image-wrapper">
+              <div class="bg-image" style="background-image: url('${postThumbnail}');"></div>
+            </div>
+            <div class="main-menu-item__text-wrapper">
+                <span class="author-category">BLOG POST</span>
+                <span class="main-menu-item__title">
+                ${featuredNews.content.post_title}
+                </span>
+                <span class="main-menu-item__date">${navDate}</span>
+            </div>
+            <a href="${featuredNews.content.guid}" class="blog-link"></a>`
+      document.getElementById("nav-blog").innerHTML = navBlog;
+    }  
+  
+
+});
+
 
 // Updated home slider
 $(function(){
