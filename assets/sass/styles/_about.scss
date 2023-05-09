@@ -152,7 +152,7 @@
             .title{
                 h3.thin-font{
                     font-family: $font-family-axiforma;
-                    font-size: 1.25rem;
+                    font-size: 16px;
                     line-height: 140%;
                     font-weight: 800;
                     letter-spacing: 0.2em;
@@ -631,18 +631,19 @@
         }
 
         .staff-profile{
-            height: 230px;
+            height: 270px;
             @include breakpoint(991px){
                 height: auto;
             }
             img{
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
         }
         .staff-content{
             padding: 24px;
-            height: calc(100% - 230px);
+            height: calc(100% - 270px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -1043,18 +1044,25 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px; 
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             h4{
                 font-family: $font-family-axiforma;
                 font-weight: 800;
-                font-size: 28px;
-                line-height: 1.3;
-                margin-bottom: 14px;
+                font-size: 26px;
+                line-height: 40px;
+                margin-bottom: 30px;
+                letter-spacing: 0.05em;
             }
             p{
                 font-family: $font-family-axiforma;
-                font-size: 1rem;
+                font-size: 14px;
+                line-height: 26px;
                 font-weight: 400;
                 margin-bottom: 30px;
+                color: #767676;
+                letter-spacing: 0.05em;
             }
             a{
                 font-family: $font-family-axiforma;
@@ -1074,10 +1082,10 @@
     .title{
         h3.thin-font{
             font-family: $font-family-axiforma;
-            font-size: 1.25rem;
+            font-size: 16px;
             line-height: 140%;
             font-weight: 800;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.15em;
             color: #fff;
             text-transform: uppercase;
             span{
@@ -1240,7 +1248,7 @@
 .gems-section{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #F4F4F4;
+    // background-color: #F4F4F4;
     .title{
         margin-bottom: 40px;
         h3.thin-font{
@@ -1456,7 +1464,6 @@
         display: flex;
         flex-direction: row;
         max-height: 70vh;
-        overflow-y: auto;
         @include breakpoint(991px){
             flex-direction: column;
         }
@@ -1475,6 +1482,11 @@
         }
         .staff-content{
             padding: 50px 40px 40px 40px;
+            max-height: 70vh;
+            overflow-y: auto;
+            @include breakpoint(767px){
+                padding: 30px 20px 20px 20px;
+            }
             .staff-identity{
                 margin-bottom: 25px;
                 h3{

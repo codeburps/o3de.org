@@ -144,75 +144,11 @@
             </div>
         </div>
     </div>
-    <div class="download-section">
-        <div class="container br-b">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title mb-80">
-                        <h3 class="thin-font"><span>02 </span>SUPPORTED PLATFORMS</h3>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 download-wrapper">
-                            <h2>O3DE is available for Linux and Windows</h2>
-                            <div class="download-links">
-                                <div class="linux-link">
-                                    <a href="">
-                                        <img src="/img/logos/linux.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="windows-link">
-                                    <a href="">
-                                        <img src="/img/logos/windows.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-11 col-12">
-                                    <p>Our latest version is now live, with exciting new features built from our incredible open source community</p>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-sm-7">
-                                    <a href="" class="btn-primary-black mb-30">DOWNLOAD INSTALLER  <i class="icon-arrow"></i></a>
-                                    <a href="" class="btn-secondary-white mb-30">SEE DOCUMENTATION</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="sys-requirement">
-                                <h4>Minimum system requirements</h4>
-                                <ul>
-                                    <li>2.5 GHz Intel or AMD processor with 4 physical cores</li>
-                                    <li>8 GB RAM</li>
-                                    <li>DirectX 12, Vulkan-compatible, or Metal-compatible video card with 2 GB VRAM minimum</li>
-                                    <li>4 GB VRAM recommended</li>
-                                    <li>40 to 100 GB of free disk space</li>
-                                    <li>1366 x 768 px screen resolution</li>
-                                </ul>
-                                <div class="doc-link">
-                                    <span>
-                                        <svg width="32" height="40" viewBox="0 0 32 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="2.91406" y="2" width="26.7338" height="36" stroke="white" stroke-width="4"/>
-                                            <line x1="9.10938" y1="9.99219" x2="23.4518" y2="9.99219" stroke="white" stroke-width="2"/>
-                                            <line x1="9.10938" y1="16.0176" x2="23.4518" y2="16.0176" stroke="white" stroke-width="2"/>
-                                            <line x1="9.10938" y1="22.0137" x2="23.4518" y2="22.0137" stroke="white" stroke-width="2"/>
-                                            <line x1="9.10938" y1="28.0078" x2="23.4518" y2="28.0078" stroke="white" stroke-width="2"/>
-                                        </svg>                                            
-                                    </span>
-                                    <div>
-                                        <p>For the full detailed requirements read our</p>
-                                        <a href="">O3DE System Requirements</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{/*  download section  */}}
+    
+    {{ partial "download/download-section.html" (dict "count" "03" ) }}
+   
+    {{/*  download section  */}}
     <div class="assets-section" id="assets">
         <div class="container br-b">
             <div class="row">
@@ -289,7 +225,7 @@
             </div>
         </div>
     </div>
-    <div class="gems-section">
+    <div class="gems-section section-gradient">
         <div class="container br-b">
             <div class="row">
                 <div class="col-12">
@@ -298,9 +234,9 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="row mb-80 align-items-end w-100">
+                    <div class="row mb-80 align-items-start w-100">
                       <div class="col-sm-9 ">
-                          <h2 class="bold-font">Add features and functionality with O3DES PLUGINS AKA GEMS</h2>
+                          <h2 class="bold-font">ADD FEATURES AND FUNCTIONALITY WITH O3DE GEMS (PLUGINS)</h2>
                       </div> 
                       <div class="col-sm-3 text-right">
                           <a href="" class="btn btn-underline">SEE ALL GEMS</a>
