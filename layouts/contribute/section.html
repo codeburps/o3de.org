@@ -1,14 +1,294 @@
 {{ define "main" }}
-{{ partial "contribute/hero.html" . }}
-{{ with .Content }}
-<section class="container pt-4 pb-5">
+<div class="text-banner gem-page">
+  <div class="container short-container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="title">
+          {{ .Title }}
+        </h1>
+      </div>
+      </div>  
+      <div class="row justify-content-between">
+      <div class="col col-12 col-md-6 ">
+        {{ .Content | replaceRE "<p>" "<p class=\"p-15 mb-80\">" | safeHTML }}  
+          <p class="d-flex">
+            <a href="" target="_blank" class="btn-secondary-black font-10">Community Values</a>
+          </p>
+      </div>
+      <div class="col-lg-5">
+        <div class="d-flex">
+          <img src="/img/download/contribute-banner.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>  
+  </div>
+</div> 
+<div class="p-100 section-gradient">
+  <div class="container z-index">
+    <div class="row">
+      <div class="col-12">
+          <div class="row  w-100">
+            <div class="col-sm-9 ">
+                <h2 class="mb-64 h-30">CONTRIBUTION GUIDELINES</h2>
+            </div> 
+          </div>
+          <div class="row mb-40">
+            <div class="col-9">
+              <p class="p-normal">At the heart of O3DE’s strength is our vibrant, inclusive community, focused on collaborating to advance the Engine’s capabilities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p class="mb-64 h-16 text-upper">Here’s how you can GET STARTED:</p>
+          <div class="row">
+            <div class="col-sm-6 col-lg-3">
+              <a href="/docs/contributing/to-code/">
+                <div class="contribute-card">
+                  <div class="contribute-card-img">
+                    <svg width="102" height="103" viewBox="0 0 102 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M102 52.899C102 39.0033 96.6265 25.6767 87.0614 15.8507C77.4964 6.02474 64.5233 0.504169 50.9959 0.503418C37.4697 0.505672 24.4983 6.02699 14.9349 15.8529C5.37146 25.6788 -0.000731644 39.0045 7.4738e-08 52.899C0.000967718 63.8085 3.31541 74.446 9.48141 83.3286C15.6474 92.2113 24.3576 98.8965 34.3981 102.452C35.1148 102.075 35.7295 101.521 36.1876 100.84C36.6457 100.159 36.9332 99.3728 37.0242 98.5506C37.0242 95.6688 36.9634 88.2562 36.9634 88.2562C35.1845 88.5257 33.3881 88.6555 31.5899 88.6444C29.0468 88.8075 26.5226 88.102 24.4106 86.6377C22.2985 85.1734 20.7174 83.0326 19.9134 80.5489C18.8045 77.6376 16.7903 75.1841 14.184 73.5698C12.8654 72.6971 12.5621 71.6685 14.0875 71.3738C21.1354 70.0194 22.9367 79.5373 27.6426 81.0561C30.8975 82.0976 34.4179 81.8093 37.471 80.2514C37.9035 77.544 39.3563 75.1203 41.515 73.5047C29.546 72.3287 22.4483 68.0812 18.7685 61.2552L18.374 60.4901L17.4501 58.3224L17.1741 57.546C15.9937 53.7101 15.4347 49.7011 15.5191 45.679C15.4054 42.911 15.846 40.1485 16.8135 37.5624C17.7809 34.9763 19.2547 32.6216 21.1436 30.6441C19.6004 25.6709 19.916 20.2854 22.0291 15.5383C22.0291 15.5383 27.2095 14.4418 37.0048 21.605C42.3121 19.2815 56.4658 19.0888 63.1634 21.0893C67.2707 18.3124 74.7904 14.3766 77.822 15.4788C78.6495 16.8304 80.4121 20.7663 78.8949 29.4172C83.1794 34.1085 85.4814 40.3515 85.2975 46.7813C85.2857 50.4116 84.8456 54.0272 83.9871 57.5488L83.5458 59.0875C83.5458 59.0875 83.2919 59.8129 83.0188 60.5042L82.6963 61.2693C79.1461 69.2373 71.8609 72.2126 60.0767 73.4537C63.8917 75.9075 64.984 78.9848 64.984 87.3127C64.984 95.6405 64.8764 96.757 64.9012 98.6724C65.0119 99.4661 65.297 100.223 65.7348 100.887C66.1725 101.551 66.7515 102.104 67.428 102.503C77.509 98.9748 86.2626 92.2948 92.4623 83.3994C98.6619 74.504 101.997 63.839 102 52.899Z" fill="url(#paint0_linear_3387_16213)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_3387_16213" x1="-5" y1="35" x2="109" y2="102.503" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#47D1D5"/>
+                      <stop offset="1" stop-color="#42C3C7"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="contribute-card-title">
+                    Code
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <a href="/docs/contributing/to-docs/">
+                <div class="contribute-card">
+                  <div class="contribute-card-img">
+                    <svg width="75" height="97" viewBox="0 0 75 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M55.0661 3.28369H17.5137V78.2761H71.3388V16.4074M55.0661 3.28369L71.3388 16.4074M55.0661 3.28369V16.4074H71.3388" stroke="#0BB0B6" stroke-width="6"/>
+                      <path d="M3 94.0002V19.0078H40.5524L56.8252 32.1315V94.0002H3Z" fill="white"/>
+                      <path d="M40.5524 19.0078H3V94.0002H56.8252V32.1315M40.5524 19.0078L56.8252 32.1315M40.5524 19.0078V32.1315H56.8252" stroke="#47D1D5" stroke-width="6"/>
+                      <path d="M15.6992 53.48H44.1238" stroke="#47D1D5" stroke-width="4"/>
+                      <path d="M15.6992 65.5757H44.1238" stroke="#47D1D5" stroke-width="4"/>
+                      <path d="M15.6992 78.2759H44.1238" stroke="#47D1D5" stroke-width="4"/>
+                    </svg>                      
+                  </div>
+                  <div class="contribute-card-title">
+                    Documentation
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <a href="/docs/contributing/security/">
+                <div class="contribute-card">
+                  <div class="contribute-card-img">
+                    <svg width="93" height="115" viewBox="0 0 93 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.15" d="M46.5 4.99999V110.102L51.2865 107.795C61.1909 103.021 69.7457 95.8484 76.1736 86.9282C84.2142 75.7701 88.5409 62.3652 88.5409 48.6119V19.7143L46.5 4.99999Z" fill="#0AC1C7"/>
+                      <path d="M46.4991 5L4.45898 20.2398V49.0134C4.45898 62.6093 8.72251 75.8629 16.6495 86.9088V86.9088C23.1633 95.9854 31.8921 103.244 42.0049 107.992L46.4991 110.102L51.2857 107.795C61.1901 103.021 69.7448 95.8484 76.1728 86.9282V86.9282C84.2134 75.7701 88.54 62.3653 88.54 48.6119V19.7143L46.4991 5Z" stroke="#0BB0B6" stroke-width="8"/>
+                    </svg>                      
+                  </div>
+                  <div class="contribute-card-title">
+                    Security
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <a href="#advocacy">
+                <div class="contribute-card">
+                  <div class="contribute-card-img">
+                    <svg width="125" height="92" viewBox="0 0 125 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M60.3254 73.4963C59.6345 75.8874 58.4571 78.1251 56.8604 80.0817C55.2637 82.0384 53.2789 83.6756 51.0195 84.8999C48.76 86.1243 46.2701 86.9117 43.6919 87.2173C41.1137 87.523 38.4977 87.3408 35.9932 86.6812C33.4888 86.0216 31.1449 84.8975 29.0955 83.373C27.046 81.8486 25.3312 79.9538 24.0488 77.7966C22.7664 75.6395 21.9416 73.2623 21.6215 70.8008C21.3013 68.3393 21.4922 65.8417 22.1831 63.4507" stroke="#0BB0B6" stroke-width="7.46437" stroke-linecap="square"/>
+                      <path d="M4.53516 37.8689L120.464 5.6665V82.9523L4.53516 57.1904V37.8689Z" fill="white" stroke="#0AC1C7" stroke-width="7.46437" stroke-linecap="square"/>
+                    </svg>                      
+                  </div>
+                  <div class="contribute-card-title">
+                    Advocacy
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+  </div>
   <div class="row">
     <div class="col-12">
-      {{ . }}
+
     </div>
   </div>
-</section>
-{{ end }}
-{{ partial "home/download.html" . }}  
-{{ partial "footer.html" . }}  
+    <div class="row">
+      <div class="col-12 p-100">
+        <hr>
+      </div>
+      <div class="col-lg-9">
+        <div class="issue-image mb-50">
+          <svg width="46" height="56" viewBox="0 0 46 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.25 3H8C6.67392 3 5.40215 3.52678 4.46447 4.46447C3.52678 5.40215 3 6.67392 3 8V48C3 49.3261 3.52678 50.5979 4.46447 51.5355C5.40215 52.4732 6.67392 53 8 53H38C39.3261 53 40.5979 52.4732 41.5355 51.5355C42.4732 50.5979 43 49.3261 43 48V16.75L29.25 3Z" stroke="black" stroke-width="4.7834" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M28.002 3V18H43.002" stroke="black" stroke-width="4.7834" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M33 30.5H13" stroke="#0AC1C7" stroke-width="4.7834" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M33 40.5H13" stroke="#0AC1C7" stroke-width="4.7834" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 20.5H13" stroke="#0AC1C7" stroke-width="4.7834" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>                          
+        </div>
+        <div class="issue-content">
+          <h3 class="h-30 text-upper mb-64">
+            CONTRIBUTION GUIDELINES
+          </h3>
+          <p class="p-normal mb-64">Before you start participating in and contributing to O3DE, review our code of conduct and contribution guidelines. Contribution guidelines for our project and SIGs are hosted in their GitHub repositories, within the root directory in a CONTRIBUTING.md file. You can also get pointers on how to dive in and begin contributing to O3DE’s codebase, documentation and security.</p>
+          <p class="d-flex">
+            <a href="" target="_blank" class="btn-secondary-black font-10">Code of Conduct</a>
+            <a href="" target="_blank" class="btn-secondary-black font-10">Contributor Guide</a>
+          </p>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<div class="p-100 section-gradient">
+  <div class="container z-index br-b">
+      <div class="row">
+          <div class="col-12">
+              <div class="row  w-100">
+                <div class="col-sm-9 ">
+                    <h2 class="mb-70 h-30">SPECIAL INTEREST GROUPS<br>(SIGS)</h2>
+                </div> 
+              </div>
+              <div class="row mb-40">
+                <div class="col-9">
+                  <p class="p-normal">As O3DE is a very large project. Special Interest Groups (SIGs) help us divide up the planning and communication for the different areas and responsibilities around developing and maintaining the engine. Explore and join the ones that map best to your interests and experience.</p>
+                </div>
+                <div class="col-sm-3 text-right">
+                  <a href="" class="btn btn-underline">SEE ALL</a>
+              </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-50">
+          <div class="gem-card">
+            <div class="gen-img--wrapper">
+              <div class="gen-img" style="background-image: url('/img/sigs/audio.jpg')">
+               
+              </div>
+  
+            </div>
+            <div class="gem-text">
+              <h3><strong>GRAPHICS &amp; AUDIO</strong></h3>
+              <p>2D/3D GPU video renderer, audio renderer, AR/VR rendering, data specification mesh, material, shader, and textures.</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-md-6 col-lg-4 mb-50">
+          <div class="gem-card">
+            <div class="gen-img--wrapper">
+              <div class="gen-img" style="background-image: url('/img/sigs/platform.jpg')"></div>
+            </div>
+            <div class="gem-text">
+              <h3><strong>PLATFORM</strong></h3>
+              <p>Define branch and release process / schedules, merge stabilization to release, freeze resolution.</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-md-6 col-lg-4 mb-50">
+          <div class="gem-card">
+            <div class="gen-img--wrapper">
+              <div class="gen-img" style="background-image: url('/img/sigs/simulation.jpg')"></div>
+            </div>
+            <div class="gem-text">
+              <h3><strong>SIMULATION</strong></h3>
+              <p>Modeling of real-world processes which evolve over time, physics, animation, navigation, destruction, cloth.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<div class="p-100 section-gradient">
+  <div class="container z-index">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="issue-image mb-50">
+          <svg width="30" height="56" viewBox="0 0 30 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.6349 15.3142L2.09766 3V27.6284L25.6349 15.3142Z" fill="#0AC1C7"/>
+            <path d="M2.09766 53V3L27.0977 15.5L2.09766 28" stroke="black" stroke-width="4.16386" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+        </div>
+        <div class="issue-content">
+          <h3 class="h-30 text-upper mb-64">
+            GREAT FIRST ISSUES TO HELP WITH
+          </h3>
+          <p class="p-normal mb-64">Are you just getting started? Check out our list of issues and areas that are a great place to get started on your contributor journey. We really appreciate it!</p>
+          <p class="d-flex">
+            <a href="https://github.com/o3de/o3de.org/issues?q=is%3Aopen+is%3Aissue+label%3Agood-first-issue" target="_blank" class="btn-secondary-black font-10">Good first issues</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-12 p-100">
+        <hr>
+      </div>
+    </div>
+    <div class="row" id="advocacy">
+      <div class="col-lg-9">
+        <div class="issue-image mb-50">
+          <svg width="65" height="47" viewBox="0 0 65 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.8523 3.20361L15.351 14.8047H3.75V32.2062H15.351L29.8523 43.8073V3.20361Z" stroke="black" stroke-width="5.58994" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M43.0195 13.2373C45.7381 15.9567 47.2653 19.6445 47.2653 23.4897C47.2653 27.3349 45.7381 31.0227 43.0195 33.7421" stroke="#0AC1C7" stroke-width="5.58994" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M53.2598 3C58.6969 8.43879 61.7513 15.8144 61.7513 23.5048C61.7513 31.1953 58.6969 38.5709 53.2598 44.0097" stroke="#0AC1C7" stroke-width="5.58994" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>                        
+        </div>
+        <div class="issue-content">
+          <h3 class="h-30 text-upper mb-64">
+            COMMUNITY & DEVELOPER ADVOCACY
+          </h3>
+          <p class="p-normal mb-64">We recognize that a thriving community is a diverse community, and we value contributions from individuals with varied talent and expertise. If writing, speaking, organizing meetups, and other community activities are your jam, a breadth of opportunities await you. </p>
+          <p class="d-flex">
+            <a href="https://github.com/o3de/o3de.org/issues?q=is%3Aopen+is%3Aissue+label%3Agood-first-issue" target="_blank" class="btn-secondary-black font-10">Marketing/Outreach Committee</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-12 p-100">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="issue-image mb-50">
+          <svg width="56" height="50" viewBox="0 0 56 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.2502 3.52046L20.041 16.1904V22.8709L24.6483 25.4049L32.2502 18.9547L39.1611 16.1904L45.6112 20.7976L51.6006 22.8709L52.7524 12.7349L47.4541 5.36336L41.004 2.36865L32.2502 3.52046Z" fill="#0AC1C7"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.89295 1.22274C11.837 0.415524 13.9212 0 16.0262 0C18.1311 0 20.2154 0.415524 22.1594 1.22274C24.1034 2.02996 25.869 3.213 27.3548 4.70401L27.3632 4.71235L27.5089 4.86007L27.6547 4.71237L27.663 4.70401C29.1489 3.213 30.9144 2.02996 32.8585 1.22274C34.8025 0.415524 36.8867 0 38.9917 0C41.0967 0 43.1809 0.415524 45.1249 1.22274C47.0683 2.02969 48.8333 3.21219 50.3188 4.70247C56.6788 11.0641 56.8202 21.5826 49.284 29.2599L49.2678 29.2764L29.276 49.2681C28.8073 49.7367 28.1717 50 27.5089 50C26.8462 50 26.2106 49.7367 25.7419 49.2681L5.73376 29.2599C-1.80237 21.5827 -1.66087 11.0641 4.69907 4.70246C6.18459 3.21218 7.9496 2.02968 9.89295 1.22274ZM16.0262 4.99794C14.579 4.99794 13.1461 5.28361 11.8096 5.83857C10.4731 6.39354 9.25924 7.20687 8.23773 8.23194L8.23466 8.23501C4.00238 12.4673 3.49324 19.8356 9.29275 25.7508L27.5089 43.967L45.7251 25.7508C51.5246 19.8356 51.0155 12.4673 46.7832 8.23501L46.7801 8.23194C45.7586 7.20687 44.5448 6.39354 43.2083 5.83857C41.8718 5.28361 40.4389 4.99794 38.9917 4.99794C37.5445 4.99794 36.1116 5.28361 34.7751 5.83857C33.4403 6.39281 32.228 7.20473 31.2073 8.2279C31.2059 8.22925 31.2046 8.23059 31.2032 8.23194L29.2873 10.1728C28.8178 10.6484 28.1773 10.9161 27.5089 10.9161C26.8406 10.9161 26.2001 10.6484 25.7305 10.1728L23.8146 8.23194C23.8133 8.23059 23.8119 8.22925 23.8106 8.2279C22.7899 7.20473 21.5775 6.39281 20.2428 5.83857C18.9063 5.28361 17.4733 4.99794 16.0262 4.99794Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2752 6.64757C30.2526 7.62192 30.2552 9.20418 29.2808 10.1816L21.4634 18.024C21.4628 18.0246 21.4622 18.0253 21.4616 18.0259C20.9381 18.5546 20.6444 19.2686 20.6444 20.0126C20.6444 20.7542 20.9361 21.4659 21.4563 21.994C21.9844 22.5142 22.6961 22.8059 23.4376 22.8059C24.1826 22.8059 24.8974 22.5115 25.4263 21.9869L25.4389 21.9744L25.4389 21.9744L31.0817 16.4565C32.9526 14.6083 35.4765 13.5717 38.1066 13.5717C40.7392 13.5717 43.2656 14.6103 45.137 16.462L45.1465 16.4713L45.1464 16.4713L51.144 22.4689C52.1199 23.4448 52.1199 25.027 51.144 26.0029C50.1681 26.9788 48.5858 26.9788 47.6099 26.0029L41.6218 20.0148C41.6204 20.0134 41.619 20.012 41.6175 20.0106C40.6823 19.0874 39.4209 18.5697 38.1066 18.5697C36.7903 18.5697 35.5271 19.089 34.5914 20.0148L34.581 20.0251L34.5809 20.0251L28.9391 25.5421C27.4748 26.991 25.4979 27.8038 23.4376 27.8038C21.3742 27.8038 19.3943 26.9884 17.9294 25.5353L19.6892 23.7611L17.915 25.5209C16.4619 24.0559 15.6465 22.0761 15.6465 20.0126C15.6465 17.9492 16.4619 15.9693 17.915 14.5043L17.9193 14.5L17.9193 14.5L25.7411 6.65321C26.7155 5.67575 28.2977 5.67322 29.2752 6.64757Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.7378 25.7422C36.7137 24.7663 38.296 24.7663 39.2719 25.7422L44.2698 30.7401C45.2457 31.716 45.2457 33.2983 44.2698 34.2742C43.2939 35.2501 41.7116 35.2501 40.7357 34.2742L35.7378 29.2763C34.7619 28.3004 34.7619 26.7181 35.7378 25.7422Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.2417 33.2393C29.2176 32.2633 30.7999 32.2633 31.7758 33.2393L36.7737 38.2372C37.7496 39.2131 37.7496 40.7954 36.7737 41.7713C35.7978 42.7472 34.2155 42.7472 33.2396 41.7713L28.2417 36.7733C27.2658 35.7974 27.2658 34.2152 28.2417 33.2393Z" fill="black"/>
+            </svg>                                  
+        </div>
+        <div class="issue-content">
+          <h3 class="h-30 text-upper mb-64">
+            OUR VALUES
+          </h3>
+          <p class="p-normal mb-64">Before you start participating in and contributing to O3DE, review our code of conduct and contribution guidelines. Contribution guidelines for our project and SIGs are hosted in their GitHub repositories, within the root directory in a CONTRIBUTING.md file. You can also get pointers on how to dive in and begin contributing to O3DE’s codebase, documentation and security.</p>
+          <p class="d-flex">
+            <a href="" target="_blank" class="btn-secondary-black font-10">COMMUNITY VALUES</a>
+          </p>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+{{ partial "community/community-support.html" . }}
+{{ partial "newHome/getstarted-secion.html" . }}
+{{ partial "newHome/footer.html" . }}
 {{ end }}
