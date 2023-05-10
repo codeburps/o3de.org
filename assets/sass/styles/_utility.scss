@@ -246,6 +246,9 @@
 }
 .mb-64{
     margin-bottom: 64px !important;
+    @include breakpoint(575px){
+        margin-bottom: 40px !important;
+    }
 }
 .mb-50{
     margin-bottom: 50px !important;
@@ -258,6 +261,9 @@
 }
 .mb-40{
     margin-bottom: 40px !important;
+}
+.mt-40{
+    margin-top: 40px !important;
 }
 @include breakpoint(767px){
     .mb-xs-50{
