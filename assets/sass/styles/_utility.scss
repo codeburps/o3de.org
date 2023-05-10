@@ -181,6 +181,17 @@
     position: relative;
     padding-right: 0;
     box-shadow: none;
+    &:hover{
+        color: #333;
+        transition: 200ms ease;
+    }
+    &.white{
+        color: #fff;
+        &:hover{
+            color: rgba(255, 255, 255, 0.553);
+            transition: 200ms ease;
+        }
+    }
     &:after{
         content: '';
         position: absolute;
@@ -189,11 +200,12 @@
         height: 4px;
         width: 36px;
         background-color: $o3de-aqua;
+        @include breakpoint(767px){
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
-    &:hover{
-        color: #333;
-        transition: 200ms ease;
-    }
+   
 }
 .btn-purple{
     color: #fff;
