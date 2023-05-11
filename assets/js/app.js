@@ -458,7 +458,7 @@ $(function(){
 })
 
 $(function(){
-  const api_url = "http://o3de.garethd4.sg-host.com/wp-json/o3de/v1/navigation-posts";
+  const api_url = "https://o3de.garethd4.sg-host.com/wp-json/o3de/v1/navigation-posts";
 
   $.ajax( {
     url: api_url,
