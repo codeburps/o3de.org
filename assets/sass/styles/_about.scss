@@ -92,6 +92,13 @@
                 font-weight: 900;
                 line-height: 1.1;
                 color: #fff;
+                @include breakpoint(1200px){
+                    font-size: 50px;
+                }
+                @include breakpoint(991px){
+                    font-size: 42px
+                }
+              
             }
         }
         .scroll-to-nav{
@@ -120,6 +127,9 @@
                         color: #fff;
                         text-transform: uppercase;
                         letter-spacing: 0.2em;
+                        @include breakpoint(1200px){
+                            font-size: 13px;
+                        }
                         span{
                             margin-left: 5px;
                         }
@@ -199,6 +209,9 @@
                     color: #000;
                     margin-bottom: 80px;
                     letter-spacing: 0.05em;
+                    @include breakpoint(1200px){
+                        font-size: 22px;
+                    }
                 }
                 p{
                     font-family: $font-family-axiforma;
@@ -256,6 +269,9 @@
                                 margin-bottom: 35px;
                                 margin-top: 40px;
                                 letter-spacing: 0.03em;
+                                @include breakpoint(1200px){
+                                    font-size: 22px;
+                                }
                             }
                             p{
                                 strong{
@@ -289,6 +305,9 @@
                                 font-size: 36px;
                                 color: #000;
                                 font-weight: 950;
+                                @include breakpoint(1200px){
+                                    font-size: 22px;
+                                }
                             }
                             
                         }
@@ -417,6 +436,11 @@
         color: #000;
         margin-bottom: 73px;
         letter-spacing: 0.06em;
+        @include breakpoint(1200px){
+            font-size: 30px;
+            margin-bottom: 31px;
+        }
+        
         @include breakpoint(991px){
             margin-bottom: 31px;
             font-size: 28px;
@@ -430,7 +454,10 @@
         line-height: 1.6;
         margin-bottom: 77px;
         letter-spacing: 0.05em;
-        
+        @include breakpoint(1200px){
+            font-size: 20px;
+            margin-bottom: 38px;
+        }
         @include breakpoint(767px){
             font-size: 20px;
             margin-bottom: 38px;

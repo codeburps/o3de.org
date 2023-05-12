@@ -36,6 +36,9 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    @include breakpoint(1200px){
+        font-size: 12px;  
+    }
     .icon-arrow{
         margin-left:12px;
     }
@@ -72,6 +75,9 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    @include breakpoint(1200px){
+        font-size: 12px;  
+    }
     .icon-arrow{
         margin-left:12px;
     }
@@ -95,6 +101,9 @@
     background-color: #8122D2;;
     text-transform: uppercase;
     color: #fff;
+    @include breakpoint(1200px){
+        font-size: 12px;  
+    }
 }
 .btn-primary-white{
     color: #fff;
@@ -114,6 +123,9 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    @include breakpoint(1200px){
+        font-size: 12px;  
+    }
     &:hover{
         background: #0BB6BC;
         color: #fff;
@@ -136,6 +148,10 @@
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    @include breakpoint(1200px){
+        font-size: 12px;  
+    }
+      
     &:hover{
         background: rgba(146, 146, 146, 0.1);
         color: #000;
@@ -158,6 +174,9 @@
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    @include media-breakpoint-down(xl){
+        font-size: 12px;  
+    }
     &:hover{
         background: rgba(146, 146, 146, 0.1);
         color: #fff;
@@ -181,6 +200,9 @@
     position: relative;
     padding-right: 0;
     box-shadow: none;
+    @include media-breakpoint-down(xl){
+        font-size: 12px;  
+    }
     &:hover{
         color: #333;
         transition: 200ms ease;

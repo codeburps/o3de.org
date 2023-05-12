@@ -502,7 +502,9 @@ function showEvents(data) {
             <p>${eventLocation} <time datetime="${postDate}">${postDate} </time></p>
         </div>
       </a>`
+      if($("#home-event").length >0 ){
       document.getElementById("home-event").innerHTML = homeBlog;
+      }
 
     let navBlog = `<div class="main-menu-item__image-wrapper">
               <div class="bg-image" style="background-image: url('${postThumbnail}');"></div>
@@ -540,7 +542,9 @@ function showBlog(data) {
             <p>${author} <time datetime="${postDate}">${postDate} </time>${readTime}</p>
         </div>
       </a>`
-      document.getElementById("home-blog").innerHTML = homeBlog;
+      if($("#home-blog").length >0 ){
+        document.getElementById("home-blog").innerHTML = homeBlog;
+      }
 
     let navBlog = `<div class="main-menu-item__image-wrapper">
               <div class="bg-image" style="background-image: url('${postThumbnail}');"></div>

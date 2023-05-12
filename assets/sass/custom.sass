@@ -2557,6 +2557,8 @@ body.new-look
             font-weight: 900;
             line-height: 110%;
             margin-bottom: 50px;
+            @include breakpoint(1200px)
+              font-size: 50px;
             @include media-breakpoint-down(md)
               font-size: 42px
               
@@ -2665,8 +2667,8 @@ body.new-look
     text-transform: uppercase;
     margin-bottom: 0;
     color: $o3de-black;
-    @include media-breakpoint-down(md)
-      font-size: 26px;
+    @include breakpoint(1200px)
+      font-size: 30px;
 .contribute--card
   position: relative;
   background: #ffffff;
@@ -2739,8 +2741,8 @@ body.new-look
     letter-spacing: 0.06em;
     text-transform: uppercase;
     // margin-bottom: 25px;
-    @include media-breakpoint-down(xs)
-      font-size: 26px;
+    @include breakpoint(1200px)
+      font-size: 30px;
       margin-bottom: 50px
 
   p
@@ -2850,8 +2852,8 @@ body.new-look
     text-transform: uppercase;
     margin-bottom: 62px;
     color: $o3de-black;
-    @include media-breakpoint-down(sm)
-      font-size: 28px 
+    @include breakpoint(1200px)
+      font-size: 30px 
   
   .community--card
     position: relative;
@@ -2949,9 +2951,12 @@ body.new-look
     text-transform: uppercase;
     margin-bottom: 48px;
     color: $o3de-black;
+    @include breakpoint(1200px)
+      font-size: 30px; 
     @include media-breakpoint-down(sm)
       font-size: 28px 
       text-align: left;
+    
   p
     font-family: $font-family-axiforma;
     font-weight: 500
@@ -3015,6 +3020,10 @@ body.new-look
       line-height: 43px;
       letter-spacing: 0.05em;
       margin-bottom: 40px
+    @include breakpoint(1200px)
+    
+     font-size: 50px;
+
 .newsletter-section
   background: #1F1F1F;
   padding: 33px 0;
@@ -3125,8 +3134,8 @@ body.new-look
       text-transform: uppercase;
       color: #fff;
       // margin-bottom: 25px;
-      @include media-breakpoint-down(xs)
-        font-size: 28px;  
+      @include breakpoint(1200px)
+        font-size: 30px;  
     p
       font-family: $font-family-axiforma;
       font-weight: 400;
@@ -3378,6 +3387,9 @@ body.new-look
               width: 180px;
               border-radius: 3px;
               overflow: hidden;
+              @include breakpoint(1200px)
+                height: auto;
+                
               .bg-image
                 height: 100%;
                 width: 100%;
@@ -3392,6 +3404,8 @@ body.new-look
               flex-direction: column;
               padding-left: 15px;
               padding-right: 10px;
+              @include breakpoint(1200px)
+                width: calc( 100% - 120px );
               
 
               .author-category 
@@ -3964,9 +3978,10 @@ html.has-menu-active
     letter-spacing: 0.05em;
     text-transform: uppercase;
     // margin-bottom: 25px;
-    @include media-breakpoint-down(xs)
+    @include breakpoint(1200px)
       font-size: 30px;
       margin-bottom: 40px;
+   
   p
     font-family: $font-family-axiforma;
     font-weight: 500;
