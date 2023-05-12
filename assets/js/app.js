@@ -495,8 +495,10 @@ function showEvents(data) {
             <div class="community--card_img" style="background-image: url('${postThumbnail}')"></div>
         </div>
         <div class="community--card_text">
+            <div> 
             <span>Blog</span>
             <h3>${featuredEvents.content.post_title}</h3>
+            </div>
             <p>${eventLocation} <time datetime="${postDate}">${postDate} </time></p>
         </div>
       </a>`
@@ -531,8 +533,10 @@ function showBlog(data) {
             <div class="community--card_img" style="background-image: url('${postThumbnail}')"></div>
         </div>
         <div class="community--card_text">
-            <span>Blog</span>
+        <div>     
+        <span>Blog</span>
             <h3>${featuredNews.content.post_title}</h3>
+            </div>
             <p>${author} <time datetime="${postDate}">${postDate} </time>${readTime}</p>
         </div>
       </a>`
