@@ -490,20 +490,20 @@ function showEvents(data) {
   const navDate = month+" "+("0" + date.getDate()).slice(-2)+", "+date.getFullYear();
   
   
-  let homeBlog = `<a href="${featuredEvents.meta.event_link}" >
+  let homeEvent = `<a href="${featuredEvents.meta.event_link}" >
         <div class="community--card_img-wrapper">
             <div class="community--card_img" style="background-image: url('${postThumbnail}')"></div>
+            <div class="card_text"> 
+              <span>Event</span>
+              <h3>${featuredEvents.content.post_title}</h3>
+            </div>
         </div>
         <div class="community--card_text">
-            <div> 
-            <span>Blog</span>
-            <h3>${featuredEvents.content.post_title}</h3>
-            </div>
             <p>${eventLocation} <time datetime="${postDate}">${postDate} </time></p>
         </div>
       </a>`
       if($("#home-event").length >0 ){
-      document.getElementById("home-event").innerHTML = homeBlog;
+      document.getElementById("home-event").innerHTML = homeEvent;
       }
 
     let navBlog = `<div class="main-menu-item__image-wrapper">
@@ -533,12 +533,12 @@ function showBlog(data) {
   let homeBlog = `<a href="${featuredNews.content.guid}" >
         <div class="community--card_img-wrapper">
             <div class="community--card_img" style="background-image: url('${postThumbnail}')"></div>
+            <div class="card_text">     
+              <span>Blog</span>
+              <h3>${featuredNews.content.post_title}</h3>
+            </div>
         </div>
         <div class="community--card_text">
-        <div>     
-        <span>Blog</span>
-            <h3>${featuredNews.content.post_title}</h3>
-            </div>
             <p>${author} <time datetime="${postDate}">${postDate} </time>${readTime}</p>
         </div>
       </a>`
