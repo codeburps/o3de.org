@@ -914,6 +914,13 @@
                 display: flex;
                 flex-direction: column;
                 height: 100%;
+                transform: translateZ(0);
+                transition-duration: .3s;
+                transition-property: transform;
+                &:hover{
+                    transform: scale(1.013) translateZ(0);
+                    transition: 300ms ease;
+                }
 
                 .feature-card-label{
                     margin-bottom: 24px;
