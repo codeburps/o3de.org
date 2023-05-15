@@ -22,15 +22,16 @@
 
 <div id="os-selector" class="os-selector">
   <div class="os-selector-row">
-    <a id="os-windows" class="os-selector-button active" href="#windows" data-os="windows">Windows</a>
-    <a id="os-linux" class="os-selector-button" href="#linux" data-os="linux">Linux</a>
+    <a id="os-linux" class="os-selector-button active" href="#linux" data-os="linux">Linux</a>
+    <a id="os-windows" class="os-selector-button " href="#windows" data-os="windows">Windows</a>
+    
   </div>
 </div>
-<div id="content-windows" class="os-content active br-top">
+<div id="content-windows" class="os-content  br-top">
   {{ partial "download/content-windows.html" . }}
   {{ partial "download/getting-started-windows.html" . }}
 </div>
-<div id="content-linux" class="os-content br-top">
+<div id="content-linux" class="os-content active br-top">
   {{ partial "download/content-linux.html" . }}
   {{ partial "download/getting-started-linux.html" . }}
 </div>
