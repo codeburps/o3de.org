@@ -3016,14 +3016,14 @@ body.new-look
     line-height: 72px;
     color: #fff;
     letter-spacing: 0.05em;
+    @include breakpoint(1200px)
+     font-size: 50px;
     @include media-breakpoint-down(md)
       font-size: 36px;
       line-height: 43px;
       letter-spacing: 0.05em;
       margin-bottom: 40px
-    @include breakpoint(1200px)
     
-     font-size: 50px;
 
 .newsletter-section
   background: #1F1F1F;
@@ -3059,6 +3059,8 @@ body.new-look
 
   .footer-links-wrapper
     margin-bottom: 0px;
+    @include media-breakpoint-down(md)
+      display: none
     h5
       margin-bottom: 26px;
       font-family: $font-family-axiforma;
@@ -3099,6 +3101,9 @@ body.new-look
     .footer-links
       display: flex;
       justify-content: space-between;
+      @include media-breakpoint-down(md)
+        flex-wrap: wrap;
+        justify-content: flex-start;
       a
         font-family: $font-family-axiforma;
         font-weight: 700;
@@ -3884,7 +3889,7 @@ html.has-menu-active
               .col1
                 padding: 0
                 padding-top: 30px
-                border-top: 1px solid rgba(0,0,0,0.5)
+                border-top: 1px solid rgba(135, 53, 53, 0.5)
               .col2
                 padding: 0
                 padding-top: 30px

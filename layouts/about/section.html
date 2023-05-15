@@ -8,8 +8,8 @@
             Open up your<br>
             world with O3DE
           </h1>
-          <p class="d-flex">
-            <a href="/download" class="mt-4 btn-primary-outline with-icon">DOWNLOAD {{ partial "svg-icons/down-arrow.svg" . }}</a>
+          <p class="d-flex ">
+            <a href="/download" class="hide-mobile mt-4 btn-primary-outline with-icon">DOWNLOAD {{ partial "svg-icons/down-arrow.svg" . }}</a>
           </p>
           
       </div>
@@ -17,10 +17,10 @@
 
   
   </div>
-  <div class="scroll-to-nav hide-mobile">
+  <div class="scroll-to-nav ">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 overflow-x">
           <ul>
             <li><a href="#intro">01 <span class="f-400">INTRO</span></a></li>
             <li><a href="#why-o3de">02 <span class="f-400">WHY O3DE?</span></a></li>
@@ -239,22 +239,22 @@
         </div>
         <div class="col-12">
           <div class="row mb-40 align-items-end w-100">
-            <div class="col-sm-8 ">
+            <div class="col-sm-8 col-8">
                 <h2 class="bold-font">HOW O3DE WORKS</h2>
             </div> 
             
           </div> 
           <div class="row mb-40 justify-content-between">
-            <div class="col-7">
+            <div class="col-12 col-sm-7">
               <p class="p-14">Open 3D Engine (O3DE) provides a complete, end-to-end development environment that consists of code, scripts, tools, editors, and systems that help you build your project:</p>
             </div>
             <div class="col-sm-4 text-right">
-              <a href="https://www.o3de.org/docs/welcome-guide/key-concepts/" class="btn btn-underline">Learn more</a>
+              <a href="https://www.o3de.org/docs/welcome-guide/key-concepts/" class="hide-mobile btn btn-underline">Learn more</a>
           </div>
           </div>
         </div>
 
-        <div class="col-12 ">
+        <div class="col-12 flex-scroll">
           <div class="row">
             <div class="col-lg-4 mb-30">
               <div class="concept-card">
@@ -340,7 +340,7 @@
             <div class="col-md-8">
               <h2>CREATE IN THE OPEN</h2>
               <p class="mb-40">Create captivating experiences with the Open 3D Engine using a suite of tools wrapped in a modular framework. Developed for cutting-edge, real-time graphics, and complex interactions.</p>
-              <div class="btn-wrapper ">
+              <div class="btn-wrapper fe-b ">
                 <a href="" class="btn-primary-black">ALL FEATURES</a>
                 <a href="" class="btn-secondary-black">WHAT’S NEW</a>
               </div>
@@ -348,10 +348,11 @@
           </div>
           
         </div>
-        <div class="col-12">
+        <div class="col-12 feature-list">
           <div class="row justify-content-between mb-50 mt-80">
             <div class="col-lg-4"> 
               <h2>Flexible Runtime <br>Scripting</h2>
+              <img src = "/img/overview/feature 1.jpg" class="img-fluid d-lg-none mb-50">
               <p class="mb-50">Build runtime logic with scripting environments for all experience levels to speed experimentation and iteration, leveraging visual scripting with Script Canvas, and Lua scripting language.</p>
               <div class="btn-wrapper flex-start">
                 <a href="https://www.youtube.com/watch?v=fTNcUV4zAgE&list=PLCQwFpnHSZQgr8Qfq-gNv3AcZ8VLv9d5s&index=12" target="_blank" class="btn-secondary-black font-10">GET OVERVIEW</a>
@@ -359,16 +360,17 @@
               </div>
             </div>
             <div class="col-lg-7">
-              <img src = "/img/overview/feature 1.jpg" class="img-fluid">
+              <img src = "/img/overview/feature 1.jpg" class="img-fluid d-none d-lg-block">
             </div>
           </div>
           <hr>
           <div class="row justify-content-between mb-80 mt-80">
             <div class="col-lg-7">
-              <img src = "/img/overview/feature 2.jpeg" class="img-fluid">
+              <img src = "/img/overview/feature 2.jpeg" class="img-fluid d-none d-lg-block">
             </div>
             <div class="col-lg-4"> 
               <h2>Physically based <br>photorealistic renderer</h2>
+              <img src = "/img/overview/feature 2.jpeg" class="img-fluid d-lg-none mb-50">
               <p class="mb-50">Create content using the latest multi-threaded, data-driven rendering technology that supports modern rendering pipelines.</p>
               <div class="btn-wrapper flex-start">
                 <a href="https://www.youtube.com/watch?v=GTJ_ie7yHdI" target="_blank" class="btn-secondary-black font-10">GET OVERVIEW</a>
@@ -380,6 +382,7 @@
           <div class="row justify-content-between mb-80 mt-80">
             <div class="col-lg-4"> 
               <h2>Robust <br>Networking</h2>
+              <img src = "/img/overview/feature 3.jpeg" class="img-fluid d-lg-none mb-50">
               <p class="mb-50">Build runtime logic using your choice of scripting environments. Create scripts as flow graphs, no programming required, and experiment and iterate quickly, with an easy yet powerful entry point for new developers using Script Canvas.</p>
               <div class="btn-wrapper flex-start">
                 <a href="https://www.youtube.com/watch?v=FfrkHJJt_X0&list=PLCQwFpnHSZQgr8Qfq-gNv3AcZ8VLv9d5s&index=10" target="_blank" class="btn-secondary-black font-10">GET OVERVIEW</a>
@@ -387,16 +390,17 @@
               </div>
             </div>
             <div class="col-lg-7">
-              <img src = "/img/overview/feature 3.jpeg" class="img-fluid">
+              <img src = "/img/overview/feature 3.jpeg" class="img-fluid d-none d-lg-block">
             </div>
           </div>
           <hr>
           <div class="row justify-content-between mb-80 mt-80">
             <div class="col-lg-7">
-              <img src = "/img/overview/feature 4.jpeg" class="img-fluid">
+              <img src = "/img/overview/feature 4.jpeg" class="img-fluid d-none d-lg-block">
             </div>
             <div class="col-lg-4"> 
               <h2>Terrain<br> Performance </h2>
+              <img src = "/img/overview/feature 4.jpeg" class="img-fluid d-lg-none mb-50">
               <p class="mb-50">Craft massive, immersive worlds with a terrain system optimized to support areas up to an impressive 64x64km.</p>
               <div class="btn-wrapper flex-start">
                 <a href="https://www.o3de.org/docs/user-guide/visualization/environments/" target="_blank" class="btn-secondary-black font-10"> DOCUMENTATION</a>
@@ -417,22 +421,22 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="row mb-40 align-items-start w-100">
-            <div class="col-sm-8 ">
+          <div class="row mb-40 align-items-start w-100 rm-margin">
+            <div class="col-sm-8 col-8">
                 <h2 class="bold-font">UNLEASH COUNTLESS POSSIBILITIES</h2>
             </div> 
-            <div class="col-sm-4 text-right">
+            <div class="col-sm-4 text-right hide-mobile">
                 <a href="/gems/" class="btn btn-underline">See All Gems</a>
             </div>
           </div> 
           <div class="row mb-40">
-            <div class="col-7">
+            <div class="col-12 col-md-7">
               <p class="p-14">With modular plug-ins (Gems) you can customize and extend the Engine’s capabilities to meet your unique requirements.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 flex-scroll">
 
           
           <div class="row">
@@ -553,7 +557,7 @@
     <div class="create-contribute-section">
       <div class="container">
           <div class="row mb-64 justify-content-center text-center">
-              <div class="col-sm-6">
+              <div class="col-10 col-sm-6">
                   <h2 class="bold-font">PLUGIN COUNTLESS POSSIBILITIES</h2>
                   <p>Open up your world with O3DE.<br>Get started today and build your first world in less than 30 minutes.</p>
               </div>

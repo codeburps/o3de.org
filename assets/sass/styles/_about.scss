@@ -46,6 +46,9 @@
     .gem-text{
         padding: 33px 27px;
         text-align: left;
+        @include breakpoint(767px){
+            padding: 30px 22px;
+        }
         h3{
             font-family: $font-family-axiforma;
             font-weight: 400;
@@ -74,6 +77,9 @@
         background-size: cover;
         background-position: center;
         position: relative;
+        @include breakpoint(767px){
+            height: 320px;
+        }
         .short-container{
             position: absolute;
             left: 50%;
@@ -85,19 +91,24 @@
                 font-weight: 300;
                 letter-spacing: 0.3em;
                 color: #fff;
+                @include breakpoint(767px){
+                    font-size: 12px;
+                }
             }
             h1.title{
                 font-size: 3.75rem;
                 font-family: $font-family-axiforma;
                 font-weight: 900;
-                line-height: 1.1;
+                line-height: 130%;
                 color: #fff;
+               
                 @include breakpoint(1200px){
                     font-size: 50px;
                 }
                 @include breakpoint(991px){
                     font-size: 42px
                 }
+               
               
             }
         }
@@ -119,6 +130,14 @@
                     padding-top: 22px;
                     padding-bottom: 22px;
                     position: relative;
+                    @include breakpoint(991px){
+                        flex-grow: 1;
+                        flex-shrink: 0;
+                        padding-right: 22px;
+                        padding-top: 19px;
+                        padding-bottom: 19px;
+                    }
+
                     a{
                         font-family: $font-family-axiforma;
                         font-size: 14px;
@@ -129,6 +148,9 @@
                         letter-spacing: 0.2em;
                         @include breakpoint(1200px){
                             font-size: 13px;
+                        }
+                        @include breakpoint(991px){
+                            font-size: 11px;
                         }
                         span{
                             margin-left: 5px;
@@ -172,6 +194,10 @@
                     span{
                         color: #8122d2;
                     }
+                    @include breakpoint(991px){
+                        margin-bottom: 40px;
+                        font-size: 13px;
+                    }
                 }
                 
             }
@@ -187,6 +213,9 @@
                 color: #000;
                 margin-bottom: 0px;
                 letter-spacing: 0.05em;
+                @include breakpoint(991px){
+                    font-size: 28px;
+                }
             }
             .p-14{
                 font-family: $font-family-axiforma;
@@ -195,11 +224,20 @@
                 line-height: 2;
                 margin-bottom: 20px;
                 letter-spacing: 0.05em;
+                @include breakpoint(767px){
+                    font-size: 13px;
+                }
             }
             &.section-1{
                 margin-top: 100px;
                 margin-bottom: 50px;
-                
+                @include breakpoint(991px){
+                    margin-top: 70px;
+                    margin-bottom: 20px;
+                    .title{
+                        text-align: center;
+                    }
+                }
                 h2{
                     font-family: $font-family-axiforma;
                     font-weight: 950;
@@ -210,7 +248,9 @@
                     margin-bottom: 80px;
                     letter-spacing: 0.05em;
                     @include breakpoint(1200px){
-                        font-size: 22px;
+                        font-size: 26px;
+                        text-align: center;
+                        margin-bottom: 70px;
                     }
                 }
                 p{
@@ -221,6 +261,11 @@
                     margin-bottom: 20px;
                     letter-spacing: 0.05em;
                 }
+                img{
+                    @include breakpoint(991px){
+                        display: none;
+                    }
+                }
                 .intro-iframe{
                     position: absolute;
                     top: 50%;
@@ -228,6 +273,10 @@
                     transform: translate(-50% ,-50%);
                     @include breakpoint(991px){
                         width: 100%;
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        transform: translate(0% ,0%);
                     }
                 }
                 .licensing-section{
@@ -240,17 +289,37 @@
                         margin-bottom: 0;
                         text-transform: none;
                     }
+                    @include breakpoint(991px){
+                        margin-top: 70px;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding: 40px 10px;
+                        h2{
+                            text-align: left;
+                            font-size: 24px;
+                            margin-bottom: 50px;
+                        }
+                        .text-right{
+                            text-align: left !important;
+                        }
+                    }
                 }
             }
             &.section-2{
                 margin-bottom: 100px;
+                @include breakpoint(991px){
+                    margin-bottom: 20px;
+                    .title{
+                        text-align: center;
+                    }
+                }
                 .feature-row{
                     margin: 0 -30px;
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     @include breakpoint(991px){
-
+                        margin: 0 -20px;
                     }
                     .feature-outer{
                         width: 25%;
@@ -259,6 +328,8 @@
                         margin-bottom: 40px;
                         @include breakpoint(991px){
                             width: 50%;
+                            padding: 0 20px;
+                            margin-top: 0;
                         }
                         .card-feature{
                             h3{
@@ -271,6 +342,12 @@
                                 letter-spacing: 0.03em;
                                 @include breakpoint(1200px){
                                     font-size: 22px;
+                                }
+                                @include breakpoint(991px){
+                                    font-size: 20px;
+                                    margin-top: 22px;
+                                    margin-bottom: 28px;
+                                    font-weight: 800;
                                 }
                             }
                             p{
@@ -288,6 +365,9 @@
                                 margin-bottom: 0;
                                 letter-spacing: 0.05em;
                                 padding-right: 0;
+                                @include breakpoint(991px){
+                                    font-size: 11px;
+                                }
                             }
 
                         }
@@ -308,6 +388,9 @@
                                 @include breakpoint(1200px){
                                     font-size: 22px;
                                 }
+                                @include breakpoint(991px){
+                                    font-weight: 800;
+                                }
                             }
                             
                         }
@@ -318,6 +401,27 @@
                 padding-top: 100px;
                 padding-bottom: 100px;
                 background-color: #F4F4F4;
+                position: relative;
+                @include breakpoint(991px){
+                    padding-top: 70px;
+                    background-color: #fff;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 175px;
+                        background: linear-gradient(180deg, #E6E6E6 0%, rgba(230, 230, 230, 0) 100%);
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                        z-index: 0;
+                    }
+                    .container{
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
                 h2{
                     font-family: $font-family-axiforma;
                     font-weight: 950;
@@ -335,6 +439,9 @@
                         text-decoration-line: underline;
                         margin-bottom: 0;
                     }
+                    @include breakpoint(991px){
+                        font-size: 26px;
+                    }
                 }
                 p{
                     font-family: $font-family-axiforma;
@@ -343,19 +450,39 @@
                     line-height: 2;
                     margin-bottom: 20px;
                     letter-spacing: 0.05em;
+                    @include breakpoint(767px){
+                        font-size: 13px;
+                    }
                 }
                 .btn-wrapper{
                     margin-bottom: 69px;
                     display: flex;
                     justify-content: center;
+                    @include breakpoint(991px){
+                        margin-bottom: 0;
+                        &.fe-b{
+                            margin-bottom: 0px;
+                        }
+                        
+                    }
                 }
                 img{
                     border-radius: 10px;
+                }
+            
+            }
+            &.section-6{
+                @include breakpoint(991px){
+                    padding-top: 0;
+                    padding-bottom: 30px;
                 }
             }
             &.section-4{
                 padding-top: 100px;
                 padding-bottom: 50px;
+                @include breakpoint(991px){
+                    padding-top: 70px;
+                }
                 
                 h2{
                     font-family: $font-family-axiforma;
@@ -374,6 +501,9 @@
                         text-decoration-line: underline;
                         margin-bottom: 0;
                     }
+                    @include breakpoint(991px){
+                        font-size: 26px;
+                    }
                 }
                
             }
@@ -381,6 +511,27 @@
                 background-color: #F4F4F4;
                 padding-top: 100px;
                 padding-bottom: 50px;
+                @include breakpoint(991px){
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                    background-color: #fff;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 175px;
+                        background: linear-gradient(180deg, #E6E6E6 0%, rgba(230, 230, 230, 0) 100%);
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                        z-index: 0;
+                    }
+                    .container{
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
                 .mb-40{
                     margin-bottom: 40px;
                 }
@@ -400,6 +551,10 @@
                             margin: 0;
                             letter-spacing: 0.05em;
                             color: #767676;
+                            @include breakpoint(767px){
+                                font-size: 13px;
+                                line-height: 170%;
+                            }
                             strong{
                                 font-weight: 950;
                                 font-size: 26px;
@@ -407,6 +562,10 @@
                                 letter-spacing: 0.05em;
                                 display: block;
                                 color: #000;
+                                @include breakpoint(767px){
+                                    font-size: 20px;
+                                    line-height: 140%;
+                                }
                             }
                         }
                         
@@ -1114,6 +1273,9 @@
 .download-section{
     background-color: #000;
     padding: 120px 0;
+    @include breakpoint(767px){
+        padding: 70px 0;
+    }
     .title{
         h3.thin-font{
             font-family: $font-family-axiforma;
@@ -1139,7 +1301,7 @@
             color: #fff;
             margin-bottom: 30px;
             @include breakpoint(767px){
-                font-size: 35px;
+                font-size: 28px;
             }
         }
         p{
@@ -1156,7 +1318,7 @@
         .download-links{
             display: flex;
             @include breakpoint(767px){
-                justify-content: center;
+                justify-content: start;
             }
             .linux-link{
                 margin-right: 70px;
@@ -1174,6 +1336,14 @@
         padding: 50px;
         border-radius: 6px;
         height: 100%;
+        @include breakpoint(767px){
+            border: none;
+            border-top: 1px solid #fff;
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0;
+            padding-bottom: 0;
+        }
         h4{
             font-family: $font-family-axiforma;
             font-size: 1.85rem;
@@ -1181,6 +1351,13 @@
             font-weight: 950;
             color: $o3de-aqua;
             margin-bottom: 50px;
+            @include breakpoint(767px){
+                color: #fff;
+                font-size: 13px;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
         }
         ul{
             padding-left: 15px;
@@ -1190,6 +1367,10 @@
                 font-size: 12px;
                 color: #fff;
                 line-height: 160%;
+                @include breakpoint(767px){
+                    font-size: 12px;
+                    line-height: 170%;
+                }
             }
         }
         .doc-link{
@@ -1197,6 +1378,9 @@
             align-items: center;
             span{
                 padding-right: 35px;
+                @include breakpoint(767px){
+                    padding-right: 15px;
+                }
             }
             div{
                 p{
@@ -1205,6 +1389,11 @@
                     font-weight: 500;
                     color: #fff;
                     margin-bottom: 5px;
+                    @include breakpoint(767px){
+                        font-size: 11px;
+                        margin-bottom: 0;
+                        line-height: 17px;
+                    }
                 }
                 a{
                     font-family: $font-family-axiforma;
@@ -1212,6 +1401,10 @@
                     text-transform: uppercase;
                     color: $o3de-aqua;
                     font-weight: 800;
+                    @include breakpoint(767px){
+                        font-size: 11px;
+                        line-height: 17px;
+                    }
                 }
             }
         }

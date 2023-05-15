@@ -378,8 +378,34 @@
         opacity: 0.5;
         z-index: 0;
     }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
     
     @include breakpoint(767px){
         padding: 60px 0;
+    }
+}
+.overflow-x{
+    overflow-x: auto;
+}
+.flex-scroll{
+    @include breakpoint(991px){
+        overflow-x: auto;
+        .row{
+            flex-wrap: nowrap;
+            .col-lg-4 {
+                flex-grow: 1;
+                flex-shrink: 0;
+                width: 80%;
+                margin-bottom: 5 !important;
+            }
+        }
+    }
+}
+.rm-margin{
+    @include breakpoint(991px){
+        margin-bottom: 0 !important;
     }
 }
