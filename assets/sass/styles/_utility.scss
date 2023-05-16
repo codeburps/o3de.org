@@ -395,7 +395,7 @@
         overflow-x: auto;
         .row{
             flex-wrap: nowrap;
-            .col-lg-4 {
+            .col-lg-4 ,.col-sm-6{
                 flex-grow: 1;
                 flex-shrink: 0;
                 width: 80%;

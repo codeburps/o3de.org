@@ -78,7 +78,7 @@
         background-position: center;
         position: relative;
         @include breakpoint(767px){
-            height: 320px;
+            height: 380px;
         }
         .short-container{
             position: absolute;
@@ -92,7 +92,7 @@
                 letter-spacing: 0.3em;
                 color: #fff;
                 @include breakpoint(767px){
-                    font-size: 12px;
+                    font-size: 13px;
                 }
             }
             h1.title{
@@ -150,7 +150,7 @@
                             font-size: 13px;
                         }
                         @include breakpoint(991px){
-                            font-size: 11px;
+                            font-size: 12px;
                         }
                         span{
                             margin-left: 5px;
@@ -385,6 +385,7 @@
                                 font-size: 36px;
                                 color: #000;
                                 font-weight: 950;
+                                text-transform: uppercase;
                                 @include breakpoint(1200px){
                                     font-size: 22px;
                                 }
