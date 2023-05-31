@@ -1461,6 +1461,8 @@ $os-selector-mobile-height: 48px
 .community-section-download
   background-color: #F4F4F4
   padding: 115px 0;
+  @include media-breakpoint-down(md)
+    padding: 75px 0
   h2
     font-family: $font-family-axiforma;
     font-size: 2.5rem;
@@ -1468,6 +1470,12 @@ $os-selector-mobile-height: 48px
     font-weight: 950;
     letter-spacing: 0.03em;
     margin-bottom: 48px;
+    @include media-breakpoint-down(md)
+      text-align: center;
+      font-size: 28px;
+      line-height: 140%;
+      padding: 0 30px;
+
   p
       font-family: $font-family-axiforma;
       margin-bottom: 0
@@ -1475,6 +1483,11 @@ $os-selector-mobile-height: 48px
       font-weight: 400;
       font-size: 1rem;
       line-height: 180%;
+      @include media-breakpoint-down(md)
+        font-size: 13px;
+        line-height: 170%;
+        text-align: center;
+        padding: 0 30px;
 
   .community-card
     height: 100%
